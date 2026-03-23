@@ -8,8 +8,9 @@ export default async function Home({
 }) {
   const { locale } = await params;
 
-  const dict = await getDictionary((locale as Locale) ?? "fr");
+  const resolvedLocale = (locale as Locale) ?? "fr";
+  const dict = await getDictionary(resolvedLocale);
 
-  return <SpotBulleLanding dict={dict} />;
+  return <SpotBulleLanding dict={dict} locale={resolvedLocale} />;
 }
 

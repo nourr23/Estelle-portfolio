@@ -1,6 +1,15 @@
 import React from "react";
 
-export default function SpotBulleLanding({ dict }: { dict: any }) {
+export default function SpotBulleLanding({
+  dict,
+  locale,
+}: {
+  dict: any;
+  locale: "fr" | "en";
+}) {
+  const targetLocale = locale === "fr" ? "en" : "fr";
+  const switchLabel = locale === "fr" ? "EN" : "FR";
+
   return (
     <div className="min-h-screen bg-[#f5efe4] font-sans text-[#1a1a1a]">
       <header className="sticky top-0 z-20 border-b border-[#d5b162]/25 bg-[#111111]/95 backdrop-blur">
@@ -24,6 +33,13 @@ export default function SpotBulleLanding({ dict }: { dict: any }) {
             </a>
             <a className="hover:text-[#43c6c8]" href="#contact">
               {dict.nav?.contact}
+            </a>
+            <a
+              className="rounded-md border border-[#43c6c8]/60 px-3 py-1 text-[#9ee4e5] transition hover:bg-[#43c6c8]/10"
+              href={`/${targetLocale}`}
+              aria-label="Switch language"
+            >
+              {switchLabel}
             </a>
           </nav>
         </div>
