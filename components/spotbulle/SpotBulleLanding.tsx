@@ -6,7 +6,7 @@ export default function SpotBulleLanding({ dict }: { dict: any }) {
       <header className="sticky top-0 z-20 border-b border-[#d5b162]/25 bg-[#111111]/95 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 text-[#f7f1e3]">
           <div className="text-xl font-semibold tracking-[0.2em] text-[#d5b162]">
-            {dict.nav?.home}
+            ESTELLE DRION
           </div>
 
           <nav className="hidden items-center gap-6 md:flex text-xs uppercase tracking-[0.16em] text-[#f7f1e3]/80">
