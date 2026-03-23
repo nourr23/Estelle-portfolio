@@ -1,6 +1,6 @@
 {
   "nav": {
-    "home": "Lumi",
+    "home": "Lumi guides you",
     "about": "About",
     "journey": "Journey",
     "programmes": "Programs",
@@ -9,20 +9,70 @@
   },
   "hero": {
     "tagline": "Personalised educational support • Confidence • Self-awareness • Guidance for the future",
-    "title": "Lumi guides you",
+    "title": "Certified teacher • Learning coach • Guidance • Project-based pedagogy",
+    "subtitle": "Developing self-awareness, confidence and the ability to build a future plan.",
+    "meta": "30 years of teaching • France & international • CAPES • senior certified teacher",
+    "intro": "As a certified teacher with 30 years of experience, I support students from primary to high school — including students with special needs — to develop confidence, self-awareness and clarity in their guidance path. My approach combines academic experience, personality insight and project-based pedagogy.",
     "cta": "Book a 1h30 session",
-    "secondary": "Discover the Four Elements test"
+    "secondary": "Discover the Four Elements test",
+    "micro": "3 minutes to better understand your child’s profile",
+    "guide": "Lumi helps you get started • Lumi guides the Four Elements test"
   },
   "about": {
     "title": "About",
     "estelleHeading": "ESTELLE DRION",
-    "intro": "As a certified teacher with 30 years of experience, I support students from primary to high school to build confidence, self-awareness and clarity in their future path.",
+    "role": "Certified teacher & learning coach",
+    "tone": "Academic & reassuring",
+    "portrait": "Portrait of Estelle Drion",
+    "immediate": "What parents should understand immediately",
+    "pillars": "Experience • method • tailored support • simple booking",
+    "audiencesTitle": "Students supported",
+    "audiences": [
+      "primary school when needed",
+      "middle school",
+      "high school"
+    ],
+    "session": "1h30 session by appointment, after a focused needs analysis",
+    "stays": "+ Tailor-made themed stays with specialists and coaches from my ecosystem",
+    "intro": "Certified teacher in Modern Literature • CAPES. 30 years of experience • France & international.",
+    "experienceTitle": "30 YEARS OF EXPERIENCE",
+    "experienceSubtitle": "Strong academic legitimacy serving deeply human support",
+    "experienceBody": "For over thirty years, I have supported students in their school and personal journeys. My career began after obtaining the CAPES in Modern Literature in 1995. Very quickly, I understood that a teacher’s role is not limited to transmitting knowledge: it also means helping young people understand who they are, build confidence and find their place. Over the years, as a head teacher and guidance project mentor, I met hundreds of students: some brilliant but stressed, others lacking confidence, and others still who could not find their path.",
+    "whyTitle": "Why I created SpotBulle",
+    "whyBody": "This field experience led me to develop a broader approach. I wanted to create a support space where students can better know themselves, understand how they function and build a project that fits who they are. This is how SpotBulle was born: a place where confidence, self-awareness and guidance come together.",
+    "visionTitle": "My vision of support",
+    "visionBody": "Every student has talents, but they are not always visible in a traditional school setting. My role is to help reveal these resources, put words to students’ strengths and transform those talents into a future project.",
+    "methodTitle": "What makes my method different",
+    "methodBody": "With SpotBulle, I combine my teaching experience with personality tools such as the Four Elements model and Process Communication. This approach allows truly personalized support that connects pedagogy, personal development and guidance.",
+    "stats": [
+      "30 years of teaching and student support",
+      "France & international — experience in middle school, high school and French institutions in Casablanca"
+    ],
     "points": [
       "emotion and stress management",
       "public speaking and oral expression",
       "guidance and careers of tomorrow",
       "personality tests and tailored support"
-    ]
+    ],
+    "timelineTitle": "Journey timeline",
+    "timeline": [
+      "1995 — CAPES in Modern Literature • beginning of teaching career",
+      "2005–2025 — 20 years as a head teacher, including 10 years in grade 9 guidance issues",
+      "2022 — Senior certified teacher",
+      "2023–2025 — Lead for Cordées de la Réussite and guidance project coordinator",
+      "Public engagement — National elected delegate for the think tank “Je m'engage pour l'École”, alongside Jean‑Michel Blanquer, Minister of Education (2017–2022)",
+      "2025 — Careers forum and Défi Industrie project in the institution",
+      "2025–2026 — Mission at Lycée français Léon l’Africain in Casablanca and development of SpotBulle"
+    ],
+    "docsTitle": "Available documents",
+    "docsBody": "CV, recommendation letter and reference documents can be made available on the site to confirm this journey, responsibilities held and the quality of support provided.",
+    "docsLinks": [
+      "View full CV",
+      "Read recommendation letter",
+      "View inspection report"
+    ],
+    "guaranteeTitle": "What this guarantees families",
+    "guaranteeBody": "Support grounded in real field experience, strong understanding of school pathways, a strong commitment to guidance and the ability to build tailor-made responses, including for students who need a more individualized framework."
   },
   "journey": {
     "title": "SPOTBULLE JOURNEY",
@@ -50,7 +100,20 @@
       "speak clearly with confidence",
       "build my guidance pathway",
       "grow my self-confidence",
-      "middle-school and French exam preparation"
+      "middle school exam preparation",
+      "French baccalaureate preparation (written and oral)",
+      "Grand Oral preparation",
+      "reading acquisition and consolidation",
+      "support for CNED-enrolled students"
+    ],
+    "offerTitle": "TAILOR-MADE OFFER",
+    "offerBody": "Focused needs assessment before any proposal. Pricing and formats are built according to age, level, personality, goals and any specific student needs.",
+    "formatsTitle": "Available formats",
+    "formats": [
+      "individual support",
+      "premium multi-session program",
+      "tailor-made thematic workshop or stay",
+      "support with ecosystem specialists"
     ]
   },
   "parents": {
@@ -80,12 +143,21 @@
           "identify your talents",
           "build a coherent pathway"
         ]
+      },
+      {
+        "title": "Confidence & personal development",
+        "items": [
+          "build self-confidence",
+          "better understand your own functioning",
+          "develop personal resources"
+        ]
       }
     ]
   },
   "test": {
     "title": "FOUR ELEMENTS TEST",
     "subtitle": "Know yourself better to learn better and choose better",
+    "body": "An interactive test to identify a student’s dominant energy, learning style, relational needs, strengths and guidance pathways.",
     "elements": [
       {
         "name": "Fire",
@@ -105,9 +177,68 @@
       }
     ]
   },
+  "bridges": {
+    "title": "MEDITERRANEAN BRIDGES",
+    "subtitle": "Building educational bridges between both sides of the Mediterranean",
+    "intro": "I also support high-school and university students in building pathways between Morocco and France, especially between Casablanca, Marseille and Paris. This support can include international guidance reflection, understanding education systems, preparing transitions between institutions and developing educational or cultural projects.",
+    "points": [
+      "international guidance",
+      "Casablanca – Marseille – Paris bridges",
+      "educational and cultural projects",
+      "study transition support"
+    ],
+    "opennessTitle": "International and institutional openness",
+    "opennessBody1": "These bridges help young people discover other learning environments, broaden their horizons and build educational projects across cultures. They also rely on strong knowledge of public policy and European institutions.",
+    "opennessBody2": "They can also take shape through educational stays, pedagogical projects or international guidance pathways. I can notably offer turnkey educational stays in Brussels to discover European institutions, understand public-policy challenges and foster curiosity, ambition and intellectual openness."
+  },
+  "testimonials": {
+    "title": "THEY SUPPORT ME",
+    "subtitle": "Support and testimonials",
+    "intro": "Parents, students and partners can share their experience of SpotBulle support and endorse the educational approach offered.",
+    "items": [
+      {
+        "quote": "Parent testimonial coming soon. This space will share the experience of support, observed student progress and impact on confidence and guidance.",
+        "name": "Parent or partner name",
+        "role": "Student parent – level to be specified"
+      },
+      {
+        "quote": "Parent testimonial coming soon. This space will share the experience of support, observed student progress and impact on confidence and guidance.",
+        "name": "Parent or partner name",
+        "role": "Student parent – level to be specified"
+      },
+      {
+        "quote": "Parent testimonial coming soon. This space will share the experience of support, observed student progress and impact on confidence and guidance.",
+        "name": "Parent or partner name",
+        "role": "Student parent – level to be specified"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "PRICING & QUOTES",
+    "subtitle": "Plans tailored to each student",
+    "intro": "Because each support pathway is personalized, pricing is proposed after a first exchange and a precise needs analysis. The goal is to build a fair format adapted to school level, personality and objectives.",
+    "offers": [
+      {
+        "title": "Individual session",
+        "text": "First exploration session (1h30) to analyze the situation, understand the student’s functioning and define support priorities."
+      },
+      {
+        "title": "Personalized program",
+        "text": "Multi-session pathway to work on confidence, guidance, oral expression or exam preparation."
+      },
+      {
+        "title": "Workshops & stays",
+        "text": "Educational stays or thematic workshops organized with specialists and coaches from the SpotBulle ecosystem."
+      }
+    ],
+    "cta": "Request a personalized quote"
+  },
   "booking": {
     "title": "BOOKING",
     "subtitle": "A first 1h30 session to set the right framework",
+    "intro": "This session helps analyze the student’s situation, understand their way of functioning, clarify needs and build the most relevant support format.",
+    "slotsTitle": "BOOKABLE SLOTS",
+    "days": ["Wed 16", "Thu 17", "Fri 18"],
     "tags": [
       "primary",
       "middle school",
@@ -116,12 +247,28 @@
       "guidance",
       "oral exams"
     ],
-    "slots": ["09:00", "11:00", "14:30", "16:30", "18:00", "19:30"]
+    "slots": ["09:00", "11:00", "14:30", "16:30", "18:00", "19:30"],
+    "cta": "Choose a slot"
+  },
+  "gallery": {
+    "title": "SOME IMAGES",
+    "subtitle": "Support moments and educational projects",
+    "intro": "This gallery can present work moments, educational projects, workshops or educational stays carried out with students.",
+    "items": [
+      "photo to add",
+      "photo to add",
+      "photo to add",
+      "photo to add",
+      "photo to add",
+      "photo to add"
+    ]
   },
   "footer": {
     "contact": "Contact",
-    "line": "Estelle Drion • Certified teacher • Learning coach • Casablanca – Anfa",
-    "phone": "WhatsApp: +33 6 28 35 34 50"
+    "line": "Estelle Drion • Certified teacher • Learning coach • Tailored support • France & international",
+    "phone": "WhatsApp: +33 6 28 35 34 50",
+    "location": "Casablanca – Anfa",
+    "site": "Website: spotbulle.com"
   }
 }
 

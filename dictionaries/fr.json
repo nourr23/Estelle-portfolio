@@ -1,6 +1,6 @@
 {
   "nav": {
-    "home": "Lumi",
+    "home": "Lumi vous guide",
     "about": "À propos",
     "journey": "Parcours",
     "programmes": "Programmes",
@@ -9,20 +9,70 @@
   },
   "hero": {
     "tagline": "Accompagnement éducatif personnalisé • Confiance • Conscience de soi • Orientation",
-    "title": "Lumi vous guide",
+    "title": "Professeure certifiée • Coach pédagogique • Orientation • Pédagogie de projet",
+    "subtitle": "Développer la conscience de soi, la confiance et la capacité à construire un projet d’avenir.",
+    "meta": "30 ans d’enseignement • France & international • CAPES • professeure certifiée hors classe",
+    "intro": "Professeure certifiée avec 30 ans d’expérience, j’accompagne les élèves du primaire au lycée — y compris les élèves à besoins particuliers — pour développer confiance, conscience de soi et clarté dans leur orientation. Mon approche relie expérience académique, compréhension de la personnalité et pédagogie de projet.",
     "cta": "Réserver une séance (1h30)",
-    "secondary": "Découvrir le test des 4 éléments"
+    "secondary": "Découvrir le test des 4 éléments",
+    "micro": "3 minutes pour mieux comprendre le profil de votre enfant",
+    "guide": "Lumi t’aide à commencer • Lumi guide le test des 4 éléments"
   },
   "about": {
     "title": "À propos",
     "estelleHeading": "ESTELLE DRION",
-    "intro": "Professeure certifiée avec 30 ans d’expérience, j’accompagne les élèves du primaire au lycée pour développer confiance, conscience de soi et clarté dans leur orientation.",
+    "role": "Professeure certifiée & coach pédagogique",
+    "tone": "Académique & rassurante",
+    "portrait": "Portrait d’Estelle Drion",
+    "immediate": "Ce que les parents doivent comprendre immédiatement",
+    "pillars": "Expérience • méthode • accompagnement sur-mesure • réservation simple",
+    "audiencesTitle": "Publics accompagnés",
+    "audiences": [
+      "école primaire si besoin",
+      "collège",
+      "lycée"
+    ],
+    "session": "Séance 1h30 sur rendez-vous, après étude ciblée des besoins",
+    "stays": "+ Séjours à thème sur-mesure avec intervenants et coaches de mon écosystème",
+    "intro": "Professeure certifiée de Lettres modernes • CAPES. 30 ans d’expérience • France & international.",
+    "experienceTitle": "30 ANS D’EXPÉRIENCE",
+    "experienceSubtitle": "Une légitimité académique solide, au service d’un accompagnement profondément humain",
+    "experienceBody": "Depuis plus de trente ans, j’accompagne des élèves dans leur parcours scolaire et personnel. Ma carrière a commencé après l’obtention du CAPES de Lettres modernes en 1995. Très vite, j’ai compris que le rôle d’un professeur ne se limite pas à transmettre des connaissances : il consiste aussi à aider les jeunes à comprendre qui ils sont, à prendre confiance et à trouver leur place. Au fil des années, comme professeure principale et accompagnatrice de projets d’orientation, j’ai rencontré des centaines d’élèves : certains brillants mais stressés, d’autres en perte de confiance, d’autres encore qui ne trouvaient pas leur voie.",
+    "whyTitle": "Pourquoi j’ai créé SpotBulle",
+    "whyBody": "Cette expérience de terrain m’a amenée à développer une approche plus globale. J’ai voulu créer un espace d’accompagnement où l’élève peut à la fois mieux se connaître, comprendre son fonctionnement et construire un projet qui lui correspond. C’est ainsi qu’est né SpotBulle : un lieu où l’on relie confiance, conscience de soi et orientation.",
+    "visionTitle": "Ma vision de l’accompagnement",
+    "visionBody": "Chaque élève possède des talents, mais ils ne sont pas toujours visibles dans le cadre scolaire classique. Mon rôle est d’aider à révéler ces ressources, à mettre des mots sur les forces de l’élève et à transformer ces talents en projet d’avenir.",
+    "methodTitle": "Ce qui fait la différence dans ma méthode",
+    "methodBody": "Avec SpotBulle, j’associe mon expérience d’enseignante à des outils de compréhension de la personnalité comme le modèle des 4 éléments et la Process Communication. Cette approche permet de construire un accompagnement réellement personnalisé, qui relie pédagogie, développement personnel et orientation.",
+    "stats": [
+      "30 ans d’enseignement et d’accompagnement des élèves",
+      "France & international — expérience en collège, lycée et établissement français à Casablanca"
+    ],
     "points": [
       "gestion des émotions et du stress",
       "expression orale et prise de parole",
       "orientation et métiers de demain",
       "tests de personnalité et accompagnement sur-mesure"
-    ]
+    ],
+    "timelineTitle": "Timeline de parcours",
+    "timeline": [
+      "1995 — CAPES de Lettres modernes • début de carrière dans l’enseignement",
+      "2005–2025 — 20 ans comme professeure principale, dont 10 ans en troisième sur les enjeux d’orientation",
+      "2022 — Professeure certifiée hors classe",
+      "2023–2025 — Responsable des Cordées de la Réussite et coordinatrice de projets d’orientation",
+      "Engagement public — Élue nationale et déléguée pour le think tank « Je m'engage pour l'École », aux côtés de Jean‑Michel Blanquer, ministre de l'Éducation nationale (2017–2022)",
+      "2025 — Forum des métiers et projet Défi Industrie dans l’établissement",
+      "2025–2026 — Mission au Lycée français Léon l’Africain de Casablanca et développement de SpotBulle"
+    ],
+    "docsTitle": "Documents consultables",
+    "docsBody": "CV, lettre de recommandation et pièces de référence peuvent être mis à disposition sur le site pour attester du parcours, des responsabilités exercées et de la qualité de l’accompagnement proposé.",
+    "docsLinks": [
+      "Consulter le CV complet",
+      "Lire la lettre de recommandation",
+      "Voir le rapport d’inspection"
+    ],
+    "guaranteeTitle": "Ce que cela garantit aux familles",
+    "guaranteeBody": "Un accompagnement fondé sur une vraie expérience de terrain, une bonne connaissance des parcours scolaires, un engagement fort sur l’orientation et une capacité à construire des réponses sur-mesure, y compris pour les élèves qui ont besoin d’un cadre plus individualisé."
   },
   "journey": {
     "title": "PARCOURS SPOTBULLE",
@@ -50,7 +100,20 @@
       "m’exprimer clairement à l’oral",
       "construire mon parcours d’orientation",
       "prendre confiance en moi",
-      "préparation au brevet et au bac de français"
+      "préparation au brevet des collèges",
+      "préparation au bac de français (écrit et oral)",
+      "préparation au Grand Oral",
+      "apprentissage et consolidation de la lecture",
+      "suivi des élèves scolarisés avec le CNED"
+    ],
+    "offerTitle": "OFFRE SUR-MESURE",
+    "offerBody": "Étude ciblée des besoins avant toute proposition. Les tarifs et les formules sont construits selon l’âge, le niveau, la personnalité, les objectifs et les besoins particuliers éventuels de l’élève.",
+    "formatsTitle": "Formats possibles",
+    "formats": [
+      "accompagnement individuel",
+      "programme premium sur plusieurs séances",
+      "stage ou séjour thématique sur-mesure",
+      "accompagnement avec intervenants de l’écosystème"
     ]
   },
   "parents": {
@@ -80,12 +143,21 @@
           "identifier ses talents",
           "construire un parcours cohérent"
         ]
+      },
+      {
+        "title": "Confiance & développement personnel",
+        "items": [
+          "prendre confiance en soi",
+          "mieux comprendre son fonctionnement",
+          "développer ses ressources"
+        ]
       }
     ]
   },
   "test": {
     "title": "TEST DES 4 ÉLÉMENTS",
     "subtitle": "Mieux se connaître pour mieux apprendre et mieux choisir",
+    "body": "Un test interactif pour identifier l’énergie dominante de l’élève, sa manière d’apprendre, ses besoins relationnels, ses points d’appui et ses axes d’orientation.",
     "elements": [
       {
         "name": "Feu",
@@ -105,9 +177,68 @@
       }
     ]
   },
+  "bridges": {
+    "title": "PASSERELLES MÉDITERRANÉE",
+    "subtitle": "Créer des ponts éducatifs entre les deux rives de la Méditerranée",
+    "intro": "J’accompagne également les lycéens et les étudiants dans la construction de parcours entre le Maroc et la France, notamment entre Casablanca, Marseille et Paris. Cet accompagnement peut inclure la réflexion sur l’orientation internationale, la compréhension des systèmes éducatifs, la préparation à des transitions entre établissements et le développement de projets éducatifs ou culturels.",
+    "points": [
+      "orientation internationale",
+      "passerelles Casablanca – Marseille – Paris",
+      "projets éducatifs et culturels",
+      "accompagnement des transitions d’études"
+    ],
+    "opennessTitle": "Une ouverture internationale et institutionnelle",
+    "opennessBody1": "Ces passerelles permettent aux jeunes de découvrir d’autres environnements d’apprentissage, d’élargir leur horizon et de construire des projets éducatifs entre différentes cultures. Elles s’appuient également sur une bonne connaissance de l’action publique et du fonctionnement des institutions européennes.",
+    "opennessBody2": "Elles peuvent aussi s’inscrire dans des séjours éducatifs, des projets pédagogiques ou des parcours d’orientation internationale. Je peux notamment proposer des séjours pédagogiques à Bruxelles clé en main pour découvrir les institutions européennes, comprendre les enjeux de l’action publique et susciter chez les élèves curiosité, ambition et ouverture intellectuelle."
+  },
+  "testimonials": {
+    "title": "ILS ME SOUTIENNENT",
+    "subtitle": "Ils me soutiennent et témoignent",
+    "intro": "Des parents, élèves et partenaires pourront partager ici leur expérience de l’accompagnement SpotBulle et soutenir la démarche pédagogique proposée.",
+    "items": [
+      {
+        "quote": "Témoignage parent à venir. Cet espace permettra de partager l’expérience d’un accompagnement, les progrès observés chez l’élève et l’impact sur la confiance et l’orientation.",
+        "name": "Nom du parent ou partenaire",
+        "role": "Parent d’élève – niveau à préciser"
+      },
+      {
+        "quote": "Témoignage parent à venir. Cet espace permettra de partager l’expérience d’un accompagnement, les progrès observés chez l’élève et l’impact sur la confiance et l’orientation.",
+        "name": "Nom du parent ou partenaire",
+        "role": "Parent d’élève – niveau à préciser"
+      },
+      {
+        "quote": "Témoignage parent à venir. Cet espace permettra de partager l’expérience d’un accompagnement, les progrès observés chez l’élève et l’impact sur la confiance et l’orientation.",
+        "name": "Nom du parent ou partenaire",
+        "role": "Parent d’élève – niveau à préciser"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "TARIFS & DEVIS",
+    "subtitle": "Des formules adaptées à chaque élève",
+    "intro": "Chaque accompagnement étant personnalisé, les tarifs sont proposés après un premier échange et une analyse précise des besoins de l’élève. L’objectif est de construire une formule juste, adaptée au niveau scolaire, à la personnalité et aux objectifs.",
+    "offers": [
+      {
+        "title": "Séance individuelle",
+        "text": "Première séance d’exploration (1h30) pour analyser la situation, comprendre le fonctionnement de l’élève et définir les axes d’accompagnement."
+      },
+      {
+        "title": "Programme personnalisé",
+        "text": "Parcours sur plusieurs séances pour travailler la confiance, l’orientation, l’expression orale ou la préparation d’examens."
+      },
+      {
+        "title": "Stages & séjours",
+        "text": "Séjours pédagogiques ou ateliers thématiques organisés avec des intervenants et coaches de l’écosystème SpotBulle."
+      }
+    ],
+    "cta": "Demander un devis personnalisé"
+  },
   "booking": {
     "title": "RÉSERVATION",
     "subtitle": "Une première séance de 1h30 pour poser un cadre juste",
+    "intro": "Cette séance permet d’analyser la situation de l’élève, de comprendre son mode de fonctionnement, de préciser les besoins et de construire la formule la plus pertinente.",
+    "slotsTitle": "CRÉNEAUX RÉSERVABLES",
+    "days": ["Mer 16", "Jeu 17", "Ven 18"],
     "tags": [
       "primaire",
       "collège",
@@ -116,12 +247,28 @@
       "orientation",
       "oral"
     ],
-    "slots": ["09:00", "11:00", "14:30", "16:30", "18:00", "19:30"]
+    "slots": ["09:00", "11:00", "14:30", "16:30", "18:00", "19:30"],
+    "cta": "Choisir un créneau"
+  },
+  "gallery": {
+    "title": "QUELQUES IMAGES",
+    "subtitle": "Moments d’accompagnement et projets pédagogiques",
+    "intro": "Cette galerie pourra présenter des moments de travail, des projets éducatifs, des ateliers ou des séjours pédagogiques réalisés avec les élèves.",
+    "items": [
+      "photo à ajouter",
+      "photo à ajouter",
+      "photo à ajouter",
+      "photo à ajouter",
+      "photo à ajouter",
+      "photo à ajouter"
+    ]
   },
   "footer": {
     "contact": "Contact",
-    "line": "Estelle Drion • Professeure certifiée • Coach pédagogique • Casablanca – Anfa",
-    "phone": "WhatsApp : +33 6 28 35 34 50"
+    "line": "Estelle Drion • Professeure certifiée • Coach pédagogique • Accompagnement sur-mesure • France & international",
+    "phone": "WhatsApp : +33 6 28 35 34 50",
+    "location": "Casablanca – Anfa",
+    "site": "Site : spotbulle.com"
   }
 }
 
