@@ -1,6 +1,34 @@
 {
+  "nav": {
+    "home": "Lumi",
+    "about": "À propos",
+    "journey": "Parcours",
+    "programmes": "Programmes",
+    "parents": "Parents",
+    "contact": "Contact"
+  },
   "hero": {
-    "title": "Lumi vous guide"
+    "tagline": "Accompagnement éducatif personnalisé • Confiance • Conscience de soi • Orientation",
+    "title": "Lumi vous guide",
+    "cta": "Réserver une séance (1h30)",
+    "secondary": "Découvrir le test des 4 éléments"
+  },
+  "about": {
+    "title": "À propos",
+    "estelleHeading": "ESTELLE DRION"
+  },
+  "programs": {
+    "title": "Programmes PREMIUM"
+  },
+  "parents": {
+    "title": "POUR LES PARENTS"
+  },
+  "booking": {
+    "title": "RÉSERVATION",
+    "subtitle": "Une première séance de 1h30 pour poser un cadre juste"
+  },
+  "footer": {
+    "contact": "Contact"
   }
 }
 

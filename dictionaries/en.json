@@ -1,6 +1,34 @@
 {
+  "nav": {
+    "home": "Lumi",
+    "about": "About",
+    "journey": "Journey",
+    "programmes": "Programs",
+    "parents": "For parents",
+    "contact": "Contact"
+  },
   "hero": {
-    "title": "Lumi guides you"
+    "tagline": "Personalised educational support • Confidence • Self-awareness • Guidance for the future",
+    "title": "Lumi guides you",
+    "cta": "Book a 1h30 session",
+    "secondary": "Discover the Four Elements test"
+  },
+  "about": {
+    "title": "About",
+    "estelleHeading": "ESTELLE DRION"
+  },
+  "programs": {
+    "title": "PREMIUM PROGRAMS"
+  },
+  "parents": {
+    "title": "FOR PARENTS"
+  },
+  "booking": {
+    "title": "BOOKING",
+    "subtitle": "A first 1h30 session to set the right framework"
+  },
+  "footer": {
+    "contact": "Contact"
   }
 }
 
