@@ -15,20 +15,113 @@
   },
   "about": {
     "title": "About",
-    "estelleHeading": "ESTELLE DRION"
+    "estelleHeading": "ESTELLE DRION",
+    "intro": "As a certified teacher with 30 years of experience, I support students from primary to high school to build confidence, self-awareness and clarity in their future path.",
+    "points": [
+      "emotion and stress management",
+      "public speaking and oral expression",
+      "guidance and careers of tomorrow",
+      "personality tests and tailored support"
+    ]
+  },
+  "journey": {
+    "title": "SPOTBULLE JOURNEY",
+    "subtitle": "A method connecting self-awareness, confidence and guidance",
+    "steps": [
+      {
+        "title": "Personality tests",
+        "text": "Better understand how each student functions through the Four Elements model and Process Communication."
+      },
+      {
+        "title": "Tailored support",
+        "text": "Each pathway is designed after a focused analysis of needs, level and goals."
+      },
+      {
+        "title": "Project-based pedagogy",
+        "text": "Connect confidence, skills, guidance and speaking ability to turn talents into a future plan."
+      }
+    ]
   },
   "programs": {
-    "title": "PREMIUM PROGRAMS"
+    "title": "PREMIUM PROGRAMS",
+    "items": [
+      "manage my emotions",
+      "manage my stress",
+      "speak clearly with confidence",
+      "build my guidance pathway",
+      "grow my self-confidence",
+      "middle-school and French exam preparation"
+    ]
   },
   "parents": {
-    "title": "FOR PARENTS"
+    "title": "FOR PARENTS",
+    "subtitle": "Precise, human and structured support",
+    "cards": [
+      {
+        "title": "Confidence & stress management",
+        "items": [
+          "manage emotions better",
+          "strengthen self-esteem",
+          "feel calmer with learning"
+        ]
+      },
+      {
+        "title": "Public speaking",
+        "items": [
+          "speak with clarity",
+          "prepare presentations and oral exams",
+          "improve ease and impact"
+        ]
+      },
+      {
+        "title": "Guidance",
+        "items": [
+          "know yourself better",
+          "identify your talents",
+          "build a coherent pathway"
+        ]
+      }
+    ]
+  },
+  "test": {
+    "title": "FOUR ELEMENTS TEST",
+    "subtitle": "Know yourself better to learn better and choose better",
+    "elements": [
+      {
+        "name": "Fire",
+        "text": "drive, courage, leadership"
+      },
+      {
+        "name": "Air",
+        "text": "analysis, strategy, clarity"
+      },
+      {
+        "name": "Water",
+        "text": "creativity, intuition, sensitivity"
+      },
+      {
+        "name": "Earth",
+        "text": "structure, perseverance, execution"
+      }
+    ]
   },
   "booking": {
     "title": "BOOKING",
-    "subtitle": "A first 1h30 session to set the right framework"
+    "subtitle": "A first 1h30 session to set the right framework",
+    "tags": [
+      "primary",
+      "middle school",
+      "high school",
+      "special needs",
+      "guidance",
+      "oral exams"
+    ],
+    "slots": ["09:00", "11:00", "14:30", "16:30", "18:00", "19:30"]
   },
   "footer": {
-    "contact": "Contact"
+    "contact": "Contact",
+    "line": "Estelle Drion • Certified teacher • Learning coach • Casablanca – Anfa",
+    "phone": "WhatsApp: +33 6 28 35 34 50"
   }
 }
 

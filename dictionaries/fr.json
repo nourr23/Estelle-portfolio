@@ -15,20 +15,113 @@
   },
   "about": {
     "title": "À propos",
-    "estelleHeading": "ESTELLE DRION"
+    "estelleHeading": "ESTELLE DRION",
+    "intro": "Professeure certifiée avec 30 ans d’expérience, j’accompagne les élèves du primaire au lycée pour développer confiance, conscience de soi et clarté dans leur orientation.",
+    "points": [
+      "gestion des émotions et du stress",
+      "expression orale et prise de parole",
+      "orientation et métiers de demain",
+      "tests de personnalité et accompagnement sur-mesure"
+    ]
+  },
+  "journey": {
+    "title": "PARCOURS SPOTBULLE",
+    "subtitle": "Une méthode qui relie conscience de soi, confiance et orientation",
+    "steps": [
+      {
+        "title": "Tests de personnalité",
+        "text": "Mieux comprendre le fonctionnement de l’élève grâce aux 4 éléments et à la Process Communication."
+      },
+      {
+        "title": "Accompagnement sur-mesure",
+        "text": "Chaque parcours est construit après une étude ciblée des besoins, du niveau et des objectifs."
+      },
+      {
+        "title": "Pédagogie de projet",
+        "text": "Relier confiance, compétences, orientation et expression orale pour transformer les talents en projet."
+      }
+    ]
   },
   "programs": {
-    "title": "Programmes PREMIUM"
+    "title": "Programmes PREMIUM",
+    "items": [
+      "gérer mes émotions",
+      "gérer mon stress",
+      "m’exprimer clairement à l’oral",
+      "construire mon parcours d’orientation",
+      "prendre confiance en moi",
+      "préparation au brevet et au bac de français"
+    ]
   },
   "parents": {
-    "title": "POUR LES PARENTS"
+    "title": "POUR LES PARENTS",
+    "subtitle": "Un accompagnement précis, humain et structuré",
+    "cards": [
+      {
+        "title": "Confiance & gestion du stress",
+        "items": [
+          "mieux gérer les émotions",
+          "renforcer l’estime de soi",
+          "retrouver de la sérénité face aux apprentissages"
+        ]
+      },
+      {
+        "title": "Expression orale",
+        "items": [
+          "parler avec clarté",
+          "préparer un exposé ou un oral",
+          "gagner en aisance et en impact"
+        ]
+      },
+      {
+        "title": "Orientation",
+        "items": [
+          "mieux se connaître",
+          "identifier ses talents",
+          "construire un parcours cohérent"
+        ]
+      }
+    ]
+  },
+  "test": {
+    "title": "TEST DES 4 ÉLÉMENTS",
+    "subtitle": "Mieux se connaître pour mieux apprendre et mieux choisir",
+    "elements": [
+      {
+        "name": "Feu",
+        "text": "élan, courage, leadership"
+      },
+      {
+        "name": "Air",
+        "text": "analyse, stratégie, clarté"
+      },
+      {
+        "name": "Eau",
+        "text": "créativité, intuition, sensibilité"
+      },
+      {
+        "name": "Terre",
+        "text": "structure, persévérance, concrétisation"
+      }
+    ]
   },
   "booking": {
     "title": "RÉSERVATION",
-    "subtitle": "Une première séance de 1h30 pour poser un cadre juste"
+    "subtitle": "Une première séance de 1h30 pour poser un cadre juste",
+    "tags": [
+      "primaire",
+      "collège",
+      "lycée",
+      "besoins particuliers",
+      "orientation",
+      "oral"
+    ],
+    "slots": ["09:00", "11:00", "14:30", "16:30", "18:00", "19:30"]
   },
   "footer": {
-    "contact": "Contact"
+    "contact": "Contact",
+    "line": "Estelle Drion • Professeure certifiée • Coach pédagogique • Casablanca – Anfa",
+    "phone": "WhatsApp : +33 6 28 35 34 50"
   }
 }
 
