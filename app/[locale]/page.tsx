@@ -1,5 +1,5 @@
 import { getDictionary, type Locale } from "../../dictionaries";
-import SpotBulleLanding from "../../components/spotbulle/SpotBulleLanding";
+import SpotBulleHome from "../../components/spotbulle/SpotBulleHome";
 
 export default async function Home({
   params,
@@ -11,6 +11,6 @@ export default async function Home({
   const resolvedLocale = (locale as Locale) ?? "fr";
   const dict = await getDictionary(resolvedLocale);
 
-  return <SpotBulleLanding dict={dict} locale={resolvedLocale} />;
+  return <SpotBulleHome dict={dict} locale={resolvedLocale} />;
 }
 

@@ -1,10 +1,9 @@
 {
   "nav": {
-    "home": "Lumi vous guide",
+    "home": "Accueil",
+    "offres": "Offres",
     "about": "À propos",
-    "journey": "Parcours",
-    "programmes": "Programmes",
-    "parents": "Parents",
+    "reservation": "Réservation",
     "contact": "Contact"
   },
   "hero": {
@@ -17,6 +16,98 @@
     "secondary": "Découvrir le test des 4 éléments",
     "micro": "3 minutes pour mieux comprendre le profil de votre enfant",
     "guide": "Lumi t’aide à commencer • Lumi guide le test des 4 éléments"
+  },
+  "home": {
+    "positioning": "Accompagnement éducatif premium pour adolescents et familles.",
+    "parentLine": "J’aide les collégiens et lycéens à reprendre confiance, mieux s’exprimer et construire leur orientation grâce à un accompagnement personnalisé.",
+    "offersSectionTitle": "Trois axes pour vous repérer",
+    "offersDetailCta": "Voir le détail",
+    "offers": [
+      {
+        "title": "Confiance & méthode",
+        "text": "Émotions, stress, estime de soi, prise de parole et méthodes de travail — pour retrouver de la sérénité et des repères concrets."
+      },
+      {
+        "title": "Orientation & projet d’avenir",
+        "text": "Mieux se connaître, tests de personnalité (4 éléments, Process Communication), identification des talents et construction d’un parcours cohérent."
+      },
+      {
+        "title": "Préparation scolaire & examens",
+        "text": "Brevet, bac de français, Grand Oral, lecture, CNED — préparation ciblée selon le niveau et les objectifs."
+      }
+    ],
+    "journeyTeaserTitle": "Comment je travaille",
+    "journeyTeaserSubtitle": "Tests de personnalité, accompagnement sur-mesure après analyse des besoins, et pédagogie de projet pour relier confiance, compétences et orientation.",
+    "journeyTeaserCta": "Découvrir les offres",
+    "aboutTeaser": "Professeure certifiée avec 30 ans d’expérience, j’accompagne les élèves du primaire au lycée — y compris les élèves à besoins particuliers — pour développer confiance, conscience de soi et clarté dans leur orientation.",
+    "readAboutCta": "Lire mon parcours"
+  },
+  "personas": {
+    "sectionTitle": "Par où commencer ?",
+    "sectionSubtitle": "Deux entrées selon votre situation.",
+    "parent": {
+      "title": "Vous êtes un parent",
+      "body": "Vous cherchez un cadre clair pour soutenir votre enfant : confiance, méthode, stress, oral, orientation ou examens. Voici l’accompagnement pensé pour les familles.",
+      "cta": "Voir mes offres parents",
+      "anchor": "parents"
+    },
+    "student": {
+      "title": "Vous êtes un(e) lycéen(ne)",
+      "body": "Vous voulez avancer sur l’orientation, vous lancer dans le networking ou l’entrepreneuriat, ou vivre un séjour à thème. Pourquoi attendre ? Entreprendre, c’est apprendre.",
+      "cta": "Voir les parcours jeunes",
+      "anchor": "jeunes"
+    }
+  },
+  "offresPage": {
+    "title": "Offres & parcours",
+    "intro": "Tout le détail des programmes, du parcours SpotBulle, des séjours et des passerelles — au-delà de la synthèse de la page d’accueil.",
+    "buckets": [
+      {
+        "title": "Confiance & méthode",
+        "items": [
+          "gérer mes émotions",
+          "gérer mon stress",
+          "prendre confiance en moi",
+          "m’exprimer clairement à l’oral"
+        ]
+      },
+      {
+        "title": "Orientation & projet d’avenir",
+        "items": [
+          "construire mon parcours d’orientation",
+          "tests de personnalité et accompagnement sur-mesure",
+          "modèle des 4 éléments & Process Communication"
+        ]
+      },
+      {
+        "title": "Préparation scolaire & examens",
+        "items": [
+          "préparation au brevet des collèges",
+          "préparation au bac de français (écrit et oral)",
+          "préparation au Grand Oral",
+          "apprentissage et consolidation de la lecture",
+          "suivi des élèves scolarisés avec le CNED"
+        ]
+      }
+    ],
+    "jeunes": {
+      "title": "Pour les lycéens & jeunes",
+      "tagline": "Pourquoi attendre ? Entreprendre, c’est apprendre.",
+      "intro": "Parcours et séjours pensés pour les jeunes : orientation, projets, prise de parole, ouverture internationale — avec des formats dynamiques, y compris des séjours à thème.",
+      "bullets": [
+        "Orientation : mieux se connaître et construire un projet qui vous ressemble",
+        "Oral, posture et confiance pour oser parler et présenter vos idées",
+        "Networking & entrepreneuriat : apprendre en expérimentant, pas seulement en théorie",
+        "Séjours à thème sur-mesure (ex. conscience de soi / bien-être / institutions européennes — aussi pensés dans une logique parents–jeunes selon le projet)",
+        "Exemple de dynamique jeunes : séjour du type « entreprendre pour apprendre » (ex. Agadir) — contenu et dates selon calendrier"
+      ],
+      "ctaReservation": "Réserver une première séance"
+    }
+  },
+  "contactPage": {
+    "title": "Contact",
+    "intro": "Pour échanger ou réserver une première séance, contactez-moi par WhatsApp ou via les coordonnées ci-dessous.",
+    "ctaReservation": "Réserver une séance"
   },
   "about": {
     "title": "À propos",
@@ -66,10 +157,10 @@
     ],
     "docsTitle": "Documents consultables",
     "docsBody": "CV, lettre de recommandation et pièces de référence peuvent être mis à disposition sur le site pour attester du parcours, des responsabilités exercées et de la qualité de l’accompagnement proposé.",
-    "docsLinks": [
-      "Consulter le CV complet",
-      "Lire la lettre de recommandation",
-      "Voir le rapport d’inspection"
+    "docButtons": [
+      { "label": "Voir mon CV", "href": "/documents/cv-estelle-drion.pdf" },
+      { "label": "Lire une recommandation", "href": "/documents/recommandation.pdf" },
+      { "label": "Consulter mes références", "href": "/documents/rapport-inspection.pdf" }
     ],
     "guaranteeTitle": "Ce que cela garantit aux familles",
     "guaranteeBody": "Un accompagnement fondé sur une vraie expérience de terrain, une bonne connaissance des parcours scolaires, un engagement fort sur l’orientation et une capacité à construire des réponses sur-mesure, y compris pour les élèves qui ont besoin d’un cadre plus individualisé."
@@ -195,23 +286,7 @@
     "title": "ILS ME SOUTIENNENT",
     "subtitle": "Ils me soutiennent et témoignent",
     "intro": "Des parents, élèves et partenaires pourront partager ici leur expérience de l’accompagnement SpotBulle et soutenir la démarche pédagogique proposée.",
-    "items": [
-      {
-        "quote": "Témoignage parent à venir. Cet espace permettra de partager l’expérience d’un accompagnement, les progrès observés chez l’élève et l’impact sur la confiance et l’orientation.",
-        "name": "Nom du parent ou partenaire",
-        "role": "Parent d’élève – niveau à préciser"
-      },
-      {
-        "quote": "Témoignage parent à venir. Cet espace permettra de partager l’expérience d’un accompagnement, les progrès observés chez l’élève et l’impact sur la confiance et l’orientation.",
-        "name": "Nom du parent ou partenaire",
-        "role": "Parent d’élève – niveau à préciser"
-      },
-      {
-        "quote": "Témoignage parent à venir. Cet espace permettra de partager l’expérience d’un accompagnement, les progrès observés chez l’élève et l’impact sur la confiance et l’orientation.",
-        "name": "Nom du parent ou partenaire",
-        "role": "Parent d’élève – niveau à préciser"
-      }
-    ]
+    "comingSoon": "Les premiers témoignages seront publiés prochainement."
   },
   "pricing": {
     "title": "TARIFS & DEVIS",
@@ -248,27 +323,22 @@
       "oral"
     ],
     "slots": ["09:00", "11:00", "14:30", "16:30", "18:00", "19:30"],
-    "cta": "Choisir un créneau"
+    "cta": "Choisir un créneau",
+    "reassurance": "À l’issue de cette première séance, vous repartez avec un premier éclairage clair sur le profil, les besoins et les pistes de travail."
   },
   "gallery": {
     "title": "QUELQUES IMAGES",
     "subtitle": "Moments d’accompagnement et projets pédagogiques",
     "intro": "Cette galerie pourra présenter des moments de travail, des projets éducatifs, des ateliers ou des séjours pédagogiques réalisés avec les élèves.",
-    "items": [
-      "photo à ajouter",
-      "photo à ajouter",
-      "photo à ajouter",
-      "photo à ajouter",
-      "photo à ajouter",
-      "photo à ajouter"
-    ]
+    "comingSoon": "Des visuels seront ajoutés prochainement. Une belle photo authentique vaut mieux que plusieurs emplacements vides."
   },
   "footer": {
     "contact": "Contact",
     "line": "Estelle Drion • Professeure certifiée • Coach pédagogique • Accompagnement sur-mesure • France & international",
     "phone": "WhatsApp : +33 6 28 35 34 50",
     "location": "Casablanca – Anfa",
-    "site": "Site : spotbulle.com"
+    "site": "Site : spotbulle.com",
+    "contactPageLink": "Page contact"
   }
 }
 
