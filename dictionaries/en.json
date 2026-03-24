@@ -1,10 +1,9 @@
 {
   "nav": {
-    "home": "Lumi guides you",
+    "home": "Home",
+    "offres": "Programs",
     "about": "About",
-    "journey": "Journey",
-    "programmes": "Programs",
-    "parents": "For parents",
+    "reservation": "Booking",
     "contact": "Contact"
   },
   "hero": {
@@ -17,6 +16,98 @@
     "secondary": "Discover the Four Elements test",
     "micro": "3 minutes to better understand your child’s profile",
     "guide": "Lumi helps you get started • Lumi guides the Four Elements test"
+  },
+  "home": {
+    "positioning": "Premium educational support for teenagers and families.",
+    "parentLine": "I help middle- and high-school students rebuild confidence, express themselves better and shape their guidance path through personalised support.",
+    "offersSectionTitle": "Three ways to find what you need",
+    "offersDetailCta": "See details",
+    "offers": [
+      {
+        "title": "Confidence & method",
+        "text": "Emotions, stress, self-esteem, public speaking and study habits — to regain calm and clear, practical frameworks."
+      },
+      {
+        "title": "Guidance & future project",
+        "text": "Self-knowledge, personality tools (Four Elements, Process Communication), identifying strengths and building a coherent pathway."
+      },
+      {
+        "title": "School preparation & exams",
+        "text": "Middle school exam, French baccalaureate, Grand Oral, reading, CNED — targeted preparation by level and goals."
+      }
+    ],
+    "journeyTeaserTitle": "How I work",
+    "journeyTeaserSubtitle": "Personality tools, tailored support after a needs analysis, and project-based pedagogy linking confidence, skills and guidance.",
+    "journeyTeaserCta": "Explore programs",
+    "aboutTeaser": "As a certified teacher with 30 years of experience, I support students from primary to high school — including special needs — to build confidence, self-awareness and clarity in their guidance path.",
+    "readAboutCta": "Read my story"
+  },
+  "personas": {
+    "sectionTitle": "Where to start?",
+    "sectionSubtitle": "Two paths depending on who you are.",
+    "parent": {
+      "title": "You are a parent",
+      "body": "You want clear support for your child: confidence, study habits, stress, speaking up, guidance or exams. Here is what I offer families.",
+      "cta": "See parent & family offers",
+      "anchor": "parents"
+    },
+    "student": {
+      "title": "You are a high-school student",
+      "body": "You want to move forward on guidance, networking or entrepreneurship, or join a themed stay. Why wait? Learning by doing is still learning.",
+      "cta": "See student pathways",
+      "anchor": "jeunes"
+    }
+  },
+  "offresPage": {
+    "title": "Programs & pathway",
+    "intro": "Full detail on programs, the SpotBulle pathway, stays and bridges — beyond the homepage summary.",
+    "buckets": [
+      {
+        "title": "Confidence & method",
+        "items": [
+          "manage my emotions",
+          "manage my stress",
+          "grow my self-confidence",
+          "speak clearly with confidence"
+        ]
+      },
+      {
+        "title": "Guidance & future project",
+        "items": [
+          "build my guidance pathway",
+          "personality tests and tailored support",
+          "Four Elements model & Process Communication"
+        ]
+      },
+      {
+        "title": "School preparation & exams",
+        "items": [
+          "middle school exam preparation",
+          "French baccalaureate preparation (written and oral)",
+          "Grand Oral preparation",
+          "reading acquisition and consolidation",
+          "support for CNED-enrolled students"
+        ]
+      }
+    ],
+    "jeunes": {
+      "title": "For high-school students & young people",
+      "tagline": "Why wait? Learning by doing is still learning.",
+      "intro": "Pathways and stays designed for young people: guidance, projects, public speaking and international openness — including dynamic formats and themed stays.",
+      "bullets": [
+        "Guidance: know yourself better and shape a path that fits you",
+        "Speaking, presence and confidence to present your ideas",
+        "Networking & entrepreneurship: learn by trying, not only in theory",
+        "Themed stays on demand (e.g. self-awareness / wellbeing / European institutions — also framed for parent–youth projects when relevant)",
+        "Example for youth: a stay such as “learn by entrepreneuring” (e.g. Agadir) — content and dates depend on the calendar"
+      ],
+      "ctaReservation": "Book a first session"
+    }
+  },
+  "contactPage": {
+    "title": "Contact",
+    "intro": "To discuss or book a first session, reach out via WhatsApp or the details below.",
+    "ctaReservation": "Book a session"
   },
   "about": {
     "title": "About",
@@ -66,10 +157,10 @@
     ],
     "docsTitle": "Available documents",
     "docsBody": "CV, recommendation letter and reference documents can be made available on the site to confirm this journey, responsibilities held and the quality of support provided.",
-    "docsLinks": [
-      "View full CV",
-      "Read recommendation letter",
-      "View inspection report"
+    "docButtons": [
+      { "label": "View my CV", "href": "/documents/cv-estelle-drion.pdf" },
+      { "label": "Read a recommendation", "href": "/documents/recommandation.pdf" },
+      { "label": "View references", "href": "/documents/rapport-inspection.pdf" }
     ],
     "guaranteeTitle": "What this guarantees families",
     "guaranteeBody": "Support grounded in real field experience, strong understanding of school pathways, a strong commitment to guidance and the ability to build tailor-made responses, including for students who need a more individualized framework."
@@ -195,23 +286,7 @@
     "title": "THEY SUPPORT ME",
     "subtitle": "Support and testimonials",
     "intro": "Parents, students and partners can share their experience of SpotBulle support and endorse the educational approach offered.",
-    "items": [
-      {
-        "quote": "Parent testimonial coming soon. This space will share the experience of support, observed student progress and impact on confidence and guidance.",
-        "name": "Parent or partner name",
-        "role": "Student parent – level to be specified"
-      },
-      {
-        "quote": "Parent testimonial coming soon. This space will share the experience of support, observed student progress and impact on confidence and guidance.",
-        "name": "Parent or partner name",
-        "role": "Student parent – level to be specified"
-      },
-      {
-        "quote": "Parent testimonial coming soon. This space will share the experience of support, observed student progress and impact on confidence and guidance.",
-        "name": "Parent or partner name",
-        "role": "Student parent – level to be specified"
-      }
-    ]
+    "comingSoon": "The first testimonials will be published soon."
   },
   "pricing": {
     "title": "PRICING & QUOTES",
@@ -248,27 +323,22 @@
       "oral exams"
     ],
     "slots": ["09:00", "11:00", "14:30", "16:30", "18:00", "19:30"],
-    "cta": "Choose a slot"
+    "cta": "Choose a slot",
+    "reassurance": "After this first session, you leave with a clear initial read on the student’s profile, needs and directions for next steps."
   },
   "gallery": {
     "title": "SOME IMAGES",
     "subtitle": "Support moments and educational projects",
     "intro": "This gallery can present work moments, educational projects, workshops or educational stays carried out with students.",
-    "items": [
-      "photo to add",
-      "photo to add",
-      "photo to add",
-      "photo to add",
-      "photo to add",
-      "photo to add"
-    ]
+    "comingSoon": "Visuals will be added soon. One authentic photo is better than several empty placeholders."
   },
   "footer": {
     "contact": "Contact",
     "line": "Estelle Drion • Certified teacher • Learning coach • Tailored support • France & international",
     "phone": "WhatsApp: +33 6 28 35 34 50",
     "location": "Casablanca – Anfa",
-    "site": "Website: spotbulle.com"
+    "site": "Website: spotbulle.com",
+    "contactPageLink": "Contact page"
   }
 }
 
