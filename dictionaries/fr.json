@@ -1,10 +1,13 @@
 {
   "nav": {
     "home": "Accueil",
-    "offres": "Offres",
+    "parents": "Parents",
+    "young": "Jeunes",
+    "spotbulle": "SpotBulle",
+    "experiences": "Expériences",
     "about": "À propos",
-    "reservation": "Réservation",
-    "contact": "Contact"
+    "contact": "Contact",
+    "book": "Réserver un appel"
   },
   "hero": {
     "tagline": "Accompagnement éducatif personnalisé • Confiance • Conscience de soi • Orientation",
@@ -18,29 +21,88 @@
     "guide": "Lumi t’aide à commencer • Lumi guide le test des 4 éléments"
   },
   "home": {
-    "positioning": "Accompagnement éducatif premium pour adolescents et familles.",
-    "parentLine": "J’aide les collégiens et lycéens à reprendre confiance, mieux s’exprimer et construire leur orientation grâce à un accompagnement personnalisé.",
-    "offersSectionTitle": "Trois axes pour vous repérer",
-    "offersDetailCta": "Voir le détail",
+    "heroTitle": "Révéler le potentiel de chaque jeune par la parole et la confiance",
+    "heroSubtitle": "Coaching scolaire, préparation au bac et expériences uniques pour apprendre à se connaître, s’exprimer et réussir.",
+    "ctaParent": "Je suis parent",
+    "ctaYoung": "Je suis lycéen / étudiant",
+    "problemTitle": "Aujourd’hui, beaucoup de jeunes doutent d’eux-mêmes.",
+    "problemBullets": [
+      "peur de l’oral",
+      "manque de confiance",
+      "difficulté à trouver leur voie",
+      "pression scolaire"
+    ],
+    "problemPunchline": "Et si on transformait ces blocages en force ?",
+    "solutionTitle": "Je vous accompagne pour révéler ce potentiel.",
+    "solutionBody": "Professeure expérimentée, engagée à l’international, je propose une approche unique mêlant :",
+    "solutionBullets": [
+      "exigence scolaire",
+      "développement personnel",
+      "prise de parole",
+      "ouverture sur le monde"
+    ],
+    "personaTitle": "Choisissez votre parcours",
+    "personaParentTitle": "Vous êtes parent",
+    "personaParentBody": "Vous souhaitez accompagner votre enfant vers la réussite, la confiance et l’autonomie.",
+    "personaParentCta": "Découvrir les accompagnements",
+    "personaYoungTitle": "Tu es lycéen ou étudiant",
+    "personaYoungBody": "Tu veux prendre confiance, réussir tes examens et te démarquer.",
+    "personaYoungCta": "Commencer ton parcours",
+    "offersTitle": "Offres ultra claires",
     "offers": [
       {
-        "title": "Confiance & méthode",
-        "text": "Émotions, stress, estime de soi, prise de parole et méthodes de travail — pour retrouver de la sérénité et des repères concrets."
+        "title": "Coaching scolaire & bac",
+        "bullets": [
+          "préparation bac français",
+          "Grand Oral",
+          "méthodologie",
+          "suivi personnalisé"
+        ],
+        "result": "Résultat : confiance + progression"
       },
       {
-        "title": "Orientation & projet d’avenir",
-        "text": "Mieux se connaître, tests de personnalité (4 éléments, Process Communication), identification des talents et construction d’un parcours cohérent."
+        "title": "Coaching prise de parole",
+        "bullets": [
+          "apprendre à s’exprimer",
+          "structurer sa pensée",
+          "gagner en impact"
+        ],
+        "result": "Résultat : aisance + leadership"
       },
       {
-        "title": "Préparation scolaire & examens",
-        "text": "Brevet, bac de français, Grand Oral, lecture, CNED — préparation ciblée selon le niveau et les objectifs."
+        "title": "Expériences & séjours",
+        "bullets": [
+          "Bruxelles : institutions européennes",
+          "Agadir : entreprendre pour apprendre",
+          "séjours thématiques (conscience de soi, orientation…)"
+        ],
+        "result": "Résultat : ouverture + ambition"
+      },
+      {
+        "title": "SpotBulle (innovation)",
+        "bullets": [
+          "portfolio vidéo du futur",
+          "pitch vidéo",
+          "analyse IA",
+          "valorisation des compétences"
+        ],
+        "result": "Résultat : se démarquer dans le monde de demain"
       }
     ],
-    "journeyTeaserTitle": "Comment je travaille",
-    "journeyTeaserSubtitle": "Tests de personnalité, accompagnement sur-mesure après analyse des besoins, et pédagogie de projet pour relier confiance, compétences et orientation.",
-    "journeyTeaserCta": "Découvrir les offres",
-    "aboutTeaser": "Professeure certifiée avec 30 ans d’expérience, j’accompagne les élèves du primaire au lycée — y compris les élèves à besoins particuliers — pour développer confiance, conscience de soi et clarté dans leur orientation.",
-    "readAboutCta": "Lire mon parcours"
+    "proofTitle": "Ils m’ont fait confiance",
+    "proofBody": "Témoignages et résultats concrets seront ajoutés prochainement.",
+    "aboutTitle": "À propos (version courte)",
+    "aboutBullets": [
+      "Professeure certifiée",
+      "30 ans d’expérience",
+      "International (AEFE)",
+      "Engagement éducatif"
+    ],
+    "aboutCta": "En savoir plus",
+    "finalCtaTitle": "Et si on commençait ?",
+    "finalCtaPrimary": "Réserver un appel",
+    "finalCtaSecondary": "Demander un devis",
+    "finalCtaTertiary": "Être accompagné"
   },
   "personas": {
     "sectionTitle": "Par où commencer ?",
@@ -108,6 +170,123 @@
     "title": "Contact",
     "intro": "Pour échanger ou réserver une première séance, contactez-moi par WhatsApp ou via les coordonnées ci-dessous.",
     "ctaReservation": "Réserver une séance"
+  },
+  "parentsPage": {
+    "title": "Parents",
+    "intro": "Vous souhaitez accompagner votre enfant vers la réussite, la confiance et l’autonomie. Voici un cadre clair, humain et exigeant.",
+    "problemsTitle": "Ce que vous vivez (souvent)",
+    "problems": [
+      "peur de l’oral et du regard des autres",
+      "manque de confiance",
+      "stress et pression scolaire",
+      "difficulté à trouver sa voie"
+    ],
+    "solutionTitle": "Ce que je propose",
+    "solutionBody": "Un accompagnement premium, sur-mesure, qui relie exigence scolaire, développement personnel, prise de parole et orientation.",
+    "solutionBullets": [
+      "un cadre rassurant et structurant",
+      "des outils concrets (méthode, oral, orientation)",
+      "des échanges réguliers et une progression visible",
+      "une approche adaptée au profil (4 éléments / Process Communication)"
+    ],
+    "offersTitle": "Accompagnements",
+    "offers": [
+      {
+        "title": "Confiance & méthode",
+        "bullets": ["émotions", "stress", "organisation", "prise de parole"],
+        "result": "Résultat : sérénité + autonomie"
+      },
+      {
+        "title": "Orientation & projet",
+        "bullets": ["mieux se connaître", "identifier ses talents", "construire un parcours"],
+        "result": "Résultat : clarté + motivation"
+      },
+      {
+        "title": "Examens",
+        "bullets": ["brevet", "bac français", "Grand Oral", "préparation ciblée"],
+        "result": "Résultat : progression + confiance"
+      }
+    ],
+    "proofTitle": "Preuves & crédibilité",
+    "proofBody": "Témoignages et résultats concrets seront ajoutés. En attendant, vous pouvez consulter CV, recommandation et références.",
+    "pricingTitle": "Tarifs / devis",
+    "pricingBody": "Chaque accompagnement étant personnalisé, les tarifs sont proposés après un premier échange et une analyse précise des besoins.",
+    "ctaQuote": "Demander un devis",
+    "ctaProof": "Voir les documents"
+  },
+  "jeunesPage": {
+    "kicker": "JEUNES",
+    "title": "Prendre confiance. Réussir. Te démarquer.",
+    "intro": "Tu veux progresser à l’oral, réussir tes examens, construire ton orientation, ou vivre une expérience qui te fait grandir ?",
+    "tagline": "Pourquoi attendre ? Entreprendre, c’est apprendre.",
+    "ctaExperiences": "Voir les expériences",
+    "benefitsTitle": "Ce que tu vas gagner",
+    "benefits": [
+      "plus d’aisance à l’oral",
+      "une méthode pour apprendre",
+      "une orientation plus claire",
+      "un vrai boost de confiance"
+    ],
+    "experiencesTitle": "Expériences & séjours",
+    "experiencesIntro": "Des formats dynamiques pour apprendre, oser et se projeter.",
+    "experiencesBullets": [
+      "Bruxelles : institutions européennes",
+      "Agadir : entreprendre pour apprendre",
+      "séjours thématiques (conscience de soi, orientation…)"
+    ],
+    "spotbulleTitle": "SpotBulle",
+    "spotbulleBody": "Une approche innovante pour valoriser tes compétences et t’aider à te démarquer : pitch, portfolio vidéo, posture, identité.",
+    "ctaSpotbulle": "Découvrir SpotBulle"
+  },
+  "spotbullePage": {
+    "title": "SpotBulle",
+    "intro": "Projection, innovation et différenciation : SpotBulle relie parole, identité et compétences pour le monde de demain.",
+    "sections": [
+      {
+        "title": "Vision",
+        "body": "Le monde change. Les compétences de demain se construisent par la parole, l’identité et la confiance.",
+        "bullets": ["compétences 2035", "parole", "identité", "confiance"]
+      },
+      {
+        "title": "Expérience",
+        "body": "Capsules, pitch, immersion : des formats pour apprendre à se présenter, convaincre et se projeter.",
+        "bullets": ["capsule", "pitch", "immersion"]
+      },
+      {
+        "title": "Plateforme",
+        "body": "Portfolio vidéo, galaxie des talents, Spotcoach : des outils pour valoriser les compétences.",
+        "bullets": ["portfolio vidéo", "galaxie des talents", "IA / Spotcoach"]
+      },
+      {
+        "title": "Utilité",
+        "body": "Orientation, employabilité, confiance : SpotBulle sert à se démarquer et à construire un projet.",
+        "bullets": ["orientation", "employabilité", "confiance"]
+      }
+    ],
+    "ctaPrimary": "Découvrir SpotBulle",
+    "ctaSecondary": "Participer"
+  },
+  "experiencesPage": {
+    "title": "Expériences & séjours",
+    "intro": "Des programmes premium pour apprendre autrement, s’ouvrir au monde et gagner en confiance.",
+    "cards": [
+      {
+        "title": "Bruxelles",
+        "body": "Institutions européennes, excellence et découverte des enjeux publics.",
+        "bullets": ["institutions européennes", "excellence", "ouverture"]
+      },
+      {
+        "title": "Agadir",
+        "body": "Entreprendre pour apprendre : une expérience dynamique pour oser et expérimenter.",
+        "bullets": ["entrepreneuriat", "projet", "confiance"]
+      },
+      {
+        "title": "Séjours thématiques",
+        "body": "Conscience de soi, bien-être, orientation… formats sur-mesure selon les besoins.",
+        "bullets": ["conscience de soi", "bien-être", "orientation"]
+      }
+    ],
+    "cta": "Demander des infos"
   },
   "about": {
     "title": "À propos",

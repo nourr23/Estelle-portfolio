@@ -1,10 +1,13 @@
 {
   "nav": {
     "home": "Home",
-    "offres": "Programs",
+    "parents": "Parents",
+    "young": "Young",
+    "spotbulle": "SpotBulle",
+    "experiences": "Experiences",
     "about": "About",
-    "reservation": "Booking",
-    "contact": "Contact"
+    "contact": "Contact",
+    "book": "Book a call"
   },
   "hero": {
     "tagline": "Personalised educational support • Confidence • Self-awareness • Guidance for the future",
@@ -18,29 +21,88 @@
     "guide": "Lumi helps you get started • Lumi guides the Four Elements test"
   },
   "home": {
-    "positioning": "Premium educational support for teenagers and families.",
-    "parentLine": "I help middle- and high-school students rebuild confidence, express themselves better and shape their guidance path through personalised support.",
-    "offersSectionTitle": "Three ways to find what you need",
-    "offersDetailCta": "See details",
+    "heroTitle": "Unlock every young person’s potential through confidence and speaking",
+    "heroSubtitle": "Academic coaching, baccalaureate preparation and unique experiences to know yourself, express yourself and succeed.",
+    "ctaParent": "I’m a parent",
+    "ctaYoung": "I’m a student",
+    "problemTitle": "Today, many young people doubt themselves.",
+    "problemBullets": [
+      "fear of speaking",
+      "lack of confidence",
+      "difficulty finding their path",
+      "academic pressure"
+    ],
+    "problemPunchline": "What if we turned these blocks into strengths?",
+    "solutionTitle": "I support you to unlock that potential.",
+    "solutionBody": "An experienced teacher engaged internationally, I offer a unique approach combining:",
+    "solutionBullets": [
+      "academic excellence",
+      "personal development",
+      "public speaking",
+      "openness to the world"
+    ],
+    "personaTitle": "Choose your path",
+    "personaParentTitle": "You are a parent",
+    "personaParentBody": "You want to guide your child toward success, confidence and autonomy.",
+    "personaParentCta": "Discover the support options",
+    "personaYoungTitle": "You are a high-school or university student",
+    "personaYoungBody": "You want confidence, better results and to stand out.",
+    "personaYoungCta": "Start your journey",
+    "offersTitle": "Clear offers",
     "offers": [
       {
-        "title": "Confidence & method",
-        "text": "Emotions, stress, self-esteem, public speaking and study habits — to regain calm and clear, practical frameworks."
+        "title": "Academic coaching & exams",
+        "bullets": [
+          "French baccalaureate prep",
+          "Grand Oral",
+          "methodology",
+          "personalized follow-up"
+        ],
+        "result": "Outcome: confidence + progress"
       },
       {
-        "title": "Guidance & future project",
-        "text": "Self-knowledge, personality tools (Four Elements, Process Communication), identifying strengths and building a coherent pathway."
+        "title": "Public speaking coaching",
+        "bullets": [
+          "learn to express yourself",
+          "structure your thinking",
+          "increase impact"
+        ],
+        "result": "Outcome: ease + leadership"
       },
       {
-        "title": "School preparation & exams",
-        "text": "Middle school exam, French baccalaureate, Grand Oral, reading, CNED — targeted preparation by level and goals."
+        "title": "Experiences & stays",
+        "bullets": [
+          "Brussels: European institutions",
+          "Agadir: learn by entrepreneuring",
+          "themed stays (self-awareness, guidance…)"
+        ],
+        "result": "Outcome: openness + ambition"
+      },
+      {
+        "title": "SpotBulle (innovation)",
+        "bullets": [
+          "the video portfolio of the future",
+          "video pitch",
+          "AI analysis",
+          "skills valorization"
+        ],
+        "result": "Outcome: stand out in tomorrow’s world"
       }
     ],
-    "journeyTeaserTitle": "How I work",
-    "journeyTeaserSubtitle": "Personality tools, tailored support after a needs analysis, and project-based pedagogy linking confidence, skills and guidance.",
-    "journeyTeaserCta": "Explore programs",
-    "aboutTeaser": "As a certified teacher with 30 years of experience, I support students from primary to high school — including special needs — to build confidence, self-awareness and clarity in their guidance path.",
-    "readAboutCta": "Read my story"
+    "proofTitle": "They trusted me",
+    "proofBody": "Testimonials and concrete results will be added soon.",
+    "aboutTitle": "About (short version)",
+    "aboutBullets": [
+      "Certified teacher",
+      "30 years of experience",
+      "International (AEFE)",
+      "Educational commitment"
+    ],
+    "aboutCta": "Learn more",
+    "finalCtaTitle": "Shall we start?",
+    "finalCtaPrimary": "Book a call",
+    "finalCtaSecondary": "Request a quote",
+    "finalCtaTertiary": "Get support"
   },
   "personas": {
     "sectionTitle": "Where to start?",
@@ -108,6 +170,123 @@
     "title": "Contact",
     "intro": "To discuss or book a first session, reach out via WhatsApp or the details below.",
     "ctaReservation": "Book a session"
+  },
+  "parentsPage": {
+    "title": "Parents",
+    "intro": "You want to guide your child toward success, confidence and autonomy. Here is a clear, human and demanding framework.",
+    "problemsTitle": "What you often see",
+    "problems": [
+      "fear of speaking and being judged",
+      "lack of confidence",
+      "stress and academic pressure",
+      "difficulty finding their path"
+    ],
+    "solutionTitle": "What I offer",
+    "solutionBody": "Premium, tailored support that combines academic standards, personal development, public speaking and guidance.",
+    "solutionBullets": [
+      "a reassuring, structured framework",
+      "practical tools (method, speaking, guidance)",
+      "regular check-ins and visible progress",
+      "an approach adapted to each profile (Four Elements / Process Communication)"
+    ],
+    "offersTitle": "Support options",
+    "offers": [
+      {
+        "title": "Confidence & method",
+        "bullets": ["emotions", "stress", "organization", "public speaking"],
+        "result": "Outcome: calm + autonomy"
+      },
+      {
+        "title": "Guidance & project",
+        "bullets": ["know yourself", "identify strengths", "build a pathway"],
+        "result": "Outcome: clarity + motivation"
+      },
+      {
+        "title": "Exams",
+        "bullets": ["middle school exam", "French baccalaureate", "Grand Oral", "targeted preparation"],
+        "result": "Outcome: progress + confidence"
+      }
+    ],
+    "proofTitle": "Proof & credibility",
+    "proofBody": "Testimonials and concrete results will be added. In the meantime, you can review CV, recommendation and references.",
+    "pricingTitle": "Pricing / quotes",
+    "pricingBody": "Because each support pathway is personalized, pricing is proposed after a first exchange and a precise needs analysis.",
+    "ctaQuote": "Request a quote",
+    "ctaProof": "View documents"
+  },
+  "jeunesPage": {
+    "kicker": "YOUNG",
+    "title": "Build confidence. Succeed. Stand out.",
+    "intro": "You want to improve your speaking, succeed at exams, clarify guidance, or live an experience that helps you grow?",
+    "tagline": "Why wait? Learning by doing is still learning.",
+    "ctaExperiences": "See experiences",
+    "benefitsTitle": "What you’ll gain",
+    "benefits": [
+      "more ease when speaking",
+      "a method to learn",
+      "clearer guidance",
+      "a real confidence boost"
+    ],
+    "experiencesTitle": "Experiences & stays",
+    "experiencesIntro": "Dynamic formats to learn, dare and project yourself.",
+    "experiencesBullets": [
+      "Brussels: European institutions",
+      "Agadir: learn by entrepreneuring",
+      "themed stays (self-awareness, guidance…)"
+    ],
+    "spotbulleTitle": "SpotBulle",
+    "spotbulleBody": "An innovative approach to help you stand out: pitch, video portfolio, presence, identity and confidence.",
+    "ctaSpotbulle": "Discover SpotBulle"
+  },
+  "spotbullePage": {
+    "title": "SpotBulle",
+    "intro": "Projection, innovation and differentiation: SpotBulle connects speaking, identity and skills for tomorrow’s world.",
+    "sections": [
+      {
+        "title": "Vision",
+        "body": "The world is changing. Tomorrow’s skills are built through speaking, identity and confidence.",
+        "bullets": ["skills 2035", "speaking", "identity", "confidence"]
+      },
+      {
+        "title": "Experience",
+        "body": "Capsules, pitches, immersion: formats to learn to present yourself, convince and project yourself.",
+        "bullets": ["capsule", "pitch", "immersion"]
+      },
+      {
+        "title": "Platform",
+        "body": "Video portfolio, talent galaxy, Spotcoach: tools to showcase skills.",
+        "bullets": ["video portfolio", "talent galaxy", "AI / Spotcoach"]
+      },
+      {
+        "title": "Usefulness",
+        "body": "Guidance, employability, confidence: SpotBulle helps you stand out and build a project.",
+        "bullets": ["guidance", "employability", "confidence"]
+      }
+    ],
+    "ctaPrimary": "Discover SpotBulle",
+    "ctaSecondary": "Participate"
+  },
+  "experiencesPage": {
+    "title": "Experiences & stays",
+    "intro": "Premium programs to learn differently, open your horizons and build confidence.",
+    "cards": [
+      {
+        "title": "Brussels",
+        "body": "European institutions, excellence and discovering public-policy issues.",
+        "bullets": ["European institutions", "excellence", "openness"]
+      },
+      {
+        "title": "Agadir",
+        "body": "Learn by entrepreneuring: a dynamic experience to dare and experiment.",
+        "bullets": ["entrepreneurship", "project", "confidence"]
+      },
+      {
+        "title": "Themed stays",
+        "body": "Self-awareness, wellbeing, guidance… tailor-made formats depending on needs.",
+        "bullets": ["self-awareness", "wellbeing", "guidance"]
+      }
+    ],
+    "cta": "Request info"
   },
   "about": {
     "title": "About",
