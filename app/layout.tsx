@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SpotBulle",
+  title: "GenUp",
   description: "Accompagnement éducatif personnalisé",
 };
 

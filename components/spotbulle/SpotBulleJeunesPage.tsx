@@ -75,12 +75,14 @@ export default function SpotBulleJeunesPage({
           <h2 className="text-2xl font-semibold text-[#1c1b19]">{dict.jeunesPage?.spotbulleTitle}</h2>
           <p className="mt-4 max-w-3xl leading-8 text-[#44423c]">{dict.jeunesPage?.spotbulleBody}</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              href={`${prefix}/spotbulle`}
+            <a
+              href="https://spotbulle.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-md bg-[#111111] px-6 py-3 text-sm font-semibold text-[#d5b162] hover:bg-[#2a2a2a]"
             >
               {dict.jeunesPage?.ctaSpotbulle}
-            </Link>
+            </a>
             <Link
               href={`${prefix}/contact`}
               className="rounded-md bg-[#d5b162] px-6 py-3 text-sm font-semibold text-[#101010] transition hover:bg-[#e1c47e]"

@@ -19,17 +19,6 @@ export default function SpotBulleParentsPage({
         <h1 className="text-3xl font-semibold text-[#1c1b19]">{dict.parentsPage?.title}</h1>
         <p className="mt-4 max-w-3xl leading-8 text-[#44423c]">{dict.parentsPage?.intro}</p>
 
-        <section className="mt-12">
-          <h2 className="text-xl font-semibold text-[#1f1d18]">{dict.parentsPage?.problemsTitle}</h2>
-          <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-            {dict.parentsPage?.problems?.map((p: string) => (
-              <li key={p} className="rounded-md border border-[#d5b162]/25 bg-white/70 px-4 py-3 text-sm">
-                {p}
-              </li>
-            ))}
-          </ul>
-        </section>
-
         <section className="mt-12 rounded-xl bg-[#111111] px-8 py-10 text-[#f7f1e3]">
           <h2 className="text-xl font-semibold text-[#d5b162]">{dict.parentsPage?.solutionTitle}</h2>
           <p className="mt-4 max-w-3xl leading-8 text-[#f7f1e3]/85">{dict.parentsPage?.solutionBody}</p>
