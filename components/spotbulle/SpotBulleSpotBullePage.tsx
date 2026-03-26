@@ -37,7 +37,9 @@ export default function SpotBulleSpotBullePage({
 
         <div className="mt-12 flex flex-wrap gap-3">
           <Link
-            href={`${prefix}/contact`}
+            href="https://spotbulle.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-md bg-[#d5b162] px-6 py-3 text-sm font-semibold text-[#101010] transition hover:bg-[#e1c47e]"
           >
             {dict.spotbullePage?.ctaPrimary}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import LanguageSwitch from "./LanguageSwitch";
 
 export default function SpotBulleHeader({
@@ -18,9 +19,17 @@ export default function SpotBulleHeader({
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4 text-[#f7f1e3]">
         <Link
           href={prefix}
-          className="text-xl font-semibold tracking-[0.2em] text-[#d5b162]"
+          className="flex items-center"
+          aria-label="GenUp"
         >
-          ESTELLE DRION
+          <Image
+            src="/brand/Logo_GenUp_LQ_contours_blanc.png"
+            alt="GenUp"
+            width={160}
+            height={48}
+            priority
+            className="h-[68px] w-auto"
+          />
         </Link>
 
         <nav className="flex flex-wrap items-center justify-end gap-4 text-xs uppercase tracking-[0.14em] text-[#f7f1e3]/80 md:gap-6">
