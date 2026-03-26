@@ -24,6 +24,7 @@ export function proxy(request: Request) {
 }
 
 export const config = {
-  matcher: ["/((?!_next).*)"],
+  // Don't redirect static assets (e.g. /images/*, /favicon.ico, or any path with an extension)
+  matcher: ["/((?!_next|images|.*\\..*).*)"],
 };
 

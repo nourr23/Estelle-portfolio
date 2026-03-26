@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import SpotBulleFooter from "./SpotBulleFooter";
 import SpotBulleHeader from "./SpotBulleHeader";
 
@@ -154,23 +155,38 @@ export default function SpotBulleHome({
 
       <section className="border-y border-[#d5b162]/25 bg-[#fffaf1]">
         <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
-          <h2 className="text-2xl font-semibold text-[#1c1b19]">{dict.home?.aboutTitle}</h2>
-          <ul className="mt-6 grid gap-3 sm:grid-cols-2">
-            {dict.home?.aboutBullets?.map((b: string) => (
-              <li
-                key={b}
-                className="rounded-md border border-[#d5b162]/25 bg-white px-4 py-3 text-sm text-[#3a372f]"
+          <div className="grid gap-8 md:grid-cols-[180px_1fr] md:items-start">
+            <div className="flex justify-center md:justify-start">
+              <div className="overflow-hidden rounded-2xl border border-[#d5b162]/35 bg-white shadow-sm">
+                <Image
+                  src="/images/profile-picture.jpeg"
+                  alt={dict.about?.portrait ?? "Portrait"}
+                  width={360}
+                  height={360}
+                  className="h-[180px] w-[180px] object-cover"
+                />
+              </div>
+            </div>
+            <div>
+              <h2 className="text-2xl font-semibold text-[#1c1b19]">{dict.home?.aboutTitle}</h2>
+              <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+                {dict.home?.aboutBullets?.map((b: string) => (
+                  <li
+                    key={b}
+                    className="rounded-md border border-[#d5b162]/25 bg-white px-4 py-3 text-sm text-[#3a372f]"
+                  >
+                    {b}
+                  </li>
+                ))}
+              </ul>
+              <Link
+                href={`${prefix}/a-propos`}
+                className="mt-8 inline-block rounded-md bg-[#111111] px-6 py-3 text-sm font-semibold text-[#d5b162] hover:bg-[#2a2a2a]"
               >
-                {b}
-              </li>
-            ))}
-          </ul>
-          <Link
-            href={`${prefix}/a-propos`}
-            className="mt-8 inline-block rounded-md bg-[#111111] px-6 py-3 text-sm font-semibold text-[#d5b162] hover:bg-[#2a2a2a]"
-          >
-            {dict.home?.aboutCta}
-          </Link>
+                {dict.home?.aboutCta}
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 

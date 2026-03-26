@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import SpotBulleFooter from "./SpotBulleFooter";
 import SpotBulleHeader from "./SpotBulleHeader";
 
@@ -23,13 +24,28 @@ export default function SpotBulleAboutFull({
           {" / "}
           {dict.about?.title}
         </p>
-        <h1 className="mt-4 text-3xl font-semibold text-[#1c1b19]">{dict.about?.title}</h1>
-        <p className="mt-2 text-xs uppercase tracking-[0.2em] text-[#43a9aa]">
-          {dict.about?.estelleHeading}
-        </p>
-        <p className="mt-2 text-sm text-[#5f5a50]">{dict.about?.role}</p>
-        <p className="mt-1 text-sm text-[#5f5a50]">{dict.about?.tone}</p>
-        <p className="mt-1 text-sm text-[#5f5a50]">{dict.about?.portrait}</p>
+        <div className="mt-6 grid gap-8 md:grid-cols-[220px_1fr] md:items-start">
+          <div className="flex justify-center md:justify-start">
+            <div className="overflow-hidden rounded-2xl border border-[#d5b162]/35 bg-white/70 shadow-sm">
+              <Image
+                src="/images/profile-picture.jpeg"
+                alt={dict.about?.portrait ?? "Portrait"}
+                width={420}
+                height={420}
+                priority
+                className="h-[220px] w-[220px] object-cover"
+              />
+            </div>
+          </div>
+          <div>
+            <h1 className="text-3xl font-semibold text-[#1c1b19]">{dict.about?.title}</h1>
+            <p className="mt-2 text-xs uppercase tracking-[0.2em] text-[#43a9aa]">
+              {dict.about?.estelleHeading}
+            </p>
+            <p className="mt-2 text-sm text-[#5f5a50]">{dict.about?.role}</p>
+            <p className="mt-1 text-sm text-[#5f5a50]">{dict.about?.tone}</p>
+          </div>
+        </div>
         <p className="mt-1 text-sm text-[#5f5a50]">{dict.about?.immediate}</p>
         <p className="mt-1 text-sm text-[#5f5a50]">{dict.about?.pillars}</p>
         <p className="mt-4 text-sm font-semibold text-[#1f1d18]">{dict.about?.audiencesTitle}</p>
