@@ -2,12 +2,54 @@ import Link from "next/link";
 import Image from "next/image";
 import SpotBulleFooter from "./SpotBulleFooter";
 import SpotBulleHeader from "./SpotBulleHeader";
+import { SpotBulleDiagnosticModalTrigger } from "./SpotBulleDiagnosticModal";
+import type { BookingModalDict } from "./SpotBulleBookingModal";
+
+type HomeOffer = { title: string; bullets?: string[]; result?: string };
+
+type SpotBulleHomeDict = {
+  nav: Record<string, string>;
+  footer: Record<string, string>;
+  hero?: { tagline?: string };
+  home?: {
+    heroTitle?: string;
+    heroSubtitle?: string;
+    ctaParent?: string;
+    ctaYoung?: string;
+    problemTitle?: string;
+    problemBullets?: string[];
+    problemPunchline?: string;
+    solutionTitle?: string;
+    solutionBody?: string;
+    solutionBullets?: string[];
+    personaTitle?: string;
+    personaParentTitle?: string;
+    personaParentBody?: string;
+    personaParentCta?: string;
+    personaYoungTitle?: string;
+    personaYoungBody?: string;
+    personaYoungCta?: string;
+    offersTitle?: string;
+    offers?: HomeOffer[];
+    proofTitle?: string;
+    proofBody?: string;
+    aboutTitle?: string;
+    aboutBullets?: string[];
+    aboutCta?: string;
+    finalCtaTitle?: string;
+    finalCtaPrimary?: string;
+    finalCtaSecondary?: string;
+    finalCtaTertiary?: string;
+  };
+  booking?: BookingModalDict;
+  about?: { portrait?: string };
+};
 
 export default function SpotBulleHome({
   dict,
   locale,
 }: {
-  dict: any;
+  dict: SpotBulleHomeDict;
   locale: "fr" | "en";
 }) {
   const prefix = `/${locale}`;
@@ -18,14 +60,14 @@ export default function SpotBulleHome({
 
       <section className="relative overflow-hidden bg-[#111111] text-[#f7f1e3]">
         <div className="absolute inset-x-0 bottom-0 h-20 bg-linear-to-t from-[#f5efe4] to-transparent" />
-        <div className="mx-auto max-w-6xl px-6 py-20">
+        <div className="mx-auto max-w-3xl px-6 py-16 md:py-20">
           <p className="text-xs uppercase tracking-[0.22em] text-[#d5b162]">
             {dict.hero?.tagline}
           </p>
-          <h1 className="mt-4 max-w-3xl text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
+          <h1 className="mt-4 text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
             {dict.home?.heroTitle}
           </h1>
-          <p className="mt-4 max-w-3xl text-lg leading-8 text-[#f7f1e3]/85">
+          <p className="mt-4 text-lg leading-8 text-[#f7f1e3]/85">
             {dict.home?.heroSubtitle}
           </p>
 
@@ -42,12 +84,13 @@ export default function SpotBulleHome({
             >
               {dict.home?.ctaYoung}
             </Link>
-            <Link
-              href={`${prefix}/contact`}
+            <SpotBulleDiagnosticModalTrigger
+              locale={locale}
+              bookingDict={dict.booking ?? {}}
               className="rounded-md bg-white/5 px-6 py-3 text-sm font-semibold text-[#f7f1e3] ring-1 ring-inset ring-white/15 transition hover:bg-white/10"
             >
               {dict.nav?.book}
-            </Link>
+            </SpotBulleDiagnosticModalTrigger>
           </div>
         </div>
       </section>
@@ -129,7 +172,7 @@ export default function SpotBulleHome({
           {dict.home?.offersTitle}
         </h2>
         <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {dict.home?.offers?.map((offer: any) => (
+          {dict.home?.offers?.map((offer) => (
             <article
               key={offer.title}
               className="rounded-xl bg-[#111111] px-6 py-8 text-[#f7f1e3] shadow-lg"
