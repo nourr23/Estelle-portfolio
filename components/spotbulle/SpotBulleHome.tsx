@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import SpotBulleFooter from "./SpotBulleFooter";
 import SpotBulleHeader from "./SpotBulleHeader";
+import SpotBulleAgentChat from "./SpotBulleAgentChat";
 
 export default function SpotBulleHome({
   dict,
@@ -11,6 +12,7 @@ export default function SpotBulleHome({
   locale: "fr" | "en";
 }) {
   const prefix = `/${locale}`;
+  const bookingHref = `${prefix}/reservation`;
 
   return (
     <div className="min-h-screen bg-[#f5efe4] font-sans text-[#1a1a1a]">
@@ -18,36 +20,42 @@ export default function SpotBulleHome({
 
       <section className="relative overflow-hidden bg-[#111111] text-[#f7f1e3]">
         <div className="absolute inset-x-0 bottom-0 h-20 bg-linear-to-t from-[#f5efe4] to-transparent" />
-        <div className="mx-auto max-w-6xl px-6 py-20">
-          <p className="text-xs uppercase tracking-[0.22em] text-[#d5b162]">
-            {dict.hero?.tagline}
-          </p>
-          <h1 className="mt-4 max-w-3xl text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
-            {dict.home?.heroTitle}
-          </h1>
-          <p className="mt-4 max-w-3xl text-lg leading-8 text-[#f7f1e3]/85">
-            {dict.home?.heroSubtitle}
-          </p>
+        <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-2 md:items-start md:py-20">
+          <div>
+            <p className="text-xs uppercase tracking-[0.22em] text-[#d5b162]">
+              {dict.hero?.tagline}
+            </p>
+            <h1 className="mt-4 max-w-3xl text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
+              {dict.home?.heroTitle}
+            </h1>
+            <p className="mt-4 max-w-3xl text-lg leading-8 text-[#f7f1e3]/85">
+              {dict.home?.heroSubtitle}
+            </p>
 
-          <div className="mt-10 flex flex-wrap gap-3">
-            <Link
-              href={`${prefix}/parents`}
-              className="rounded-md bg-[#d5b162] px-6 py-3 text-sm font-semibold text-[#101010] transition hover:bg-[#e1c47e]"
-            >
-              {dict.home?.ctaParent}
-            </Link>
-            <Link
-              href={`${prefix}/jeunes`}
-              className="rounded-md border border-[#43c6c8]/60 px-6 py-3 text-sm font-semibold text-[#9ee4e5] transition hover:bg-[#43c6c8]/10"
-            >
-              {dict.home?.ctaYoung}
-            </Link>
-            <Link
-              href={`${prefix}/contact`}
-              className="rounded-md bg-white/5 px-6 py-3 text-sm font-semibold text-[#f7f1e3] ring-1 ring-inset ring-white/15 transition hover:bg-white/10"
-            >
-              {dict.nav?.book}
-            </Link>
+            <div className="mt-10 flex flex-wrap gap-3">
+              <Link
+                href={`${prefix}/parents`}
+                className="rounded-md bg-[#d5b162] px-6 py-3 text-sm font-semibold text-[#101010] transition hover:bg-[#e1c47e]"
+              >
+                {dict.home?.ctaParent}
+              </Link>
+              <Link
+                href={`${prefix}/jeunes`}
+                className="rounded-md border border-[#43c6c8]/60 px-6 py-3 text-sm font-semibold text-[#9ee4e5] transition hover:bg-[#43c6c8]/10"
+              >
+                {dict.home?.ctaYoung}
+              </Link>
+              <Link
+                href={bookingHref}
+                className="rounded-md bg-white/5 px-6 py-3 text-sm font-semibold text-[#f7f1e3] ring-1 ring-inset ring-white/15 transition hover:bg-white/10"
+              >
+                {dict.nav?.book}
+              </Link>
+            </div>
+          </div>
+
+          <div className="md:pt-2">
+            <SpotBulleAgentChat locale={locale} bookingHref={bookingHref} />
           </div>
         </div>
       </section>
