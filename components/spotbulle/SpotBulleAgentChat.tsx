@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
+import { SpotBulleBookingModal, type BookingModalDict } from "./SpotBulleBookingModal";
 
 type Locale = "fr" | "en";
 
@@ -95,10 +95,16 @@ function uid(prefix: string) {
 
 export default function SpotBulleAgentChat({
   locale,
-  bookingHref,
+  bookingDict,
+  onDismiss,
+  scrollAreaClassName,
 }: {
   locale: Locale;
-  bookingHref: string;
+  bookingDict: BookingModalDict;
+  /** When set (e.g. chat opened in a modal), shows a close control that calls this. */
+  onDismiss?: () => void;
+  /** Override scroll area height for embedded layouts (e.g. modal). */
+  scrollAreaClassName?: string;
 }) {
   const t = useMemo(() => {
     const fr = {
@@ -178,6 +184,8 @@ export default function SpotBulleAgentChat({
   const [answersId, setAnswersId] = useState<string | null>(null);
   const [saveError, setSaveError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
+  const [bookingModalOpen, setBookingModalOpen] = useState(false);
+  const [bookingAnswersId, setBookingAnswersId] = useState<string>("");
 
   const [messages, setMessages] = useState<Message[]>(() => [
     { id: uid("b"), from: "bot", text: t.hook },
@@ -288,19 +296,16 @@ Estelle is ready for a 1h30 session to turn your talents into concrete results (
     setAnswersId(null);
     setSaveError(null);
     setSaving(false);
+    setBookingModalOpen(false);
+    setBookingAnswersId("");
     setResultAnnounced(false);
     setMessages([{ id: uid("b"), from: "bot", text: t.hook }]);
   };
 
-  const bookingHrefWithAnswers = useMemo(() => {
-    if (!answersId) return bookingHref;
-    const sep = bookingHref.includes("?") ? "&" : "?";
-    return `${bookingHref}${sep}a=${encodeURIComponent(answersId)}`;
-  }, [answersId, bookingHref]);
-
-  const persistAnswersIfNeeded = async () => {
-    if (answersId || saving) return;
-    if (!answers.role || !answers.learning) return;
+  const persistAnswersIfNeeded = async (): Promise<string | null> => {
+    if (answersId) return answersId;
+    if (saving) return null;
+    if (!answers.role || !answers.learning) return null;
 
     const payload = {
       locale,
@@ -313,7 +318,7 @@ Estelle is ready for a 1h30 session to turn your talents into concrete results (
       email: safeTrim(answers.email) || null,
     };
 
-    if (!payload.passion || !payload.inspiration || !payload.name) return;
+    if (!payload.passion || !payload.inspiration || !payload.name) return null;
 
     try {
       setSaving(true);
@@ -328,9 +333,14 @@ Estelle is ready for a 1h30 session to turn your talents into concrete results (
         throw new Error(txt || "Save failed");
       }
       const json = (await res.json()) as { answersId?: string };
-      if (json.answersId) setAnswersId(json.answersId);
-    } catch (e) {
+      if (json.answersId) {
+        setAnswersId(json.answersId);
+        return json.answersId;
+      }
+      return null;
+    } catch {
       setSaveError(locale === "fr" ? "Impossible d’enregistrer le récap." : "Could not save recap.");
+      return null;
     } finally {
       setSaving(false);
     }
@@ -349,8 +359,12 @@ Estelle is ready for a 1h30 session to turn your talents into concrete results (
   }, [phase, resultAnnounced, conclusionText]);
 
   return (
-    <div className="rounded-2xl border border-white/10 bg-[#0e0f10] shadow-2xl shadow-black/40">
-      <div className="flex items-center justify-between gap-3 border-b border-white/10 px-5 py-4">
+    <div
+      className={`rounded-2xl border border-white/10 bg-[#0e0f10] shadow-2xl shadow-black/40 ${
+        onDismiss ? "flex max-h-[min(92vh,720px)] flex-col overflow-hidden" : ""
+      }`}
+    >
+      <div className="flex shrink-0 items-center justify-between gap-3 border-b border-white/10 px-5 py-4">
         <div className="min-w-0">
           <p className="text-sm font-semibold text-[#f7f1e3]">{t.title}</p>
           <p className="mt-1 text-xs text-[#f7f1e3]/65">
@@ -359,16 +373,34 @@ Estelle is ready for a 1h30 session to turn your talents into concrete results (
               : "No account, no save — just a quick diagnosis."}
           </p>
         </div>
-        <button
-          type="button"
-          onClick={reset}
-          className="rounded-md bg-white/5 px-3 py-2 text-xs font-semibold text-[#f7f1e3] ring-1 ring-inset ring-white/10 transition hover:bg-white/10"
-        >
-          {t.restart}
-        </button>
+        <div className="flex shrink-0 flex-wrap items-center justify-end gap-2">
+          {onDismiss ? (
+            <button
+              type="button"
+              onClick={onDismiss}
+              className="rounded-md bg-white/5 px-3 py-2 text-xs font-semibold text-[#f7f1e3] ring-1 ring-inset ring-white/10 transition hover:bg-white/10"
+            >
+              {locale === "fr" ? "Fermer" : "Close"}
+            </button>
+          ) : null}
+          <button
+            type="button"
+            onClick={reset}
+            className="rounded-md bg-white/5 px-3 py-2 text-xs font-semibold text-[#f7f1e3] ring-1 ring-inset ring-white/10 transition hover:bg-white/10"
+          >
+            {t.restart}
+          </button>
+        </div>
       </div>
 
-      <div className="max-h-[420px] overflow-auto px-5 py-4">
+      <div
+        className={
+          scrollAreaClassName ??
+          (onDismiss
+            ? "min-h-0 flex-1 overflow-auto px-5 py-4"
+            : "max-h-[420px] overflow-auto px-5 py-4")
+        }
+      >
         <div className="space-y-3">
           {messages.map((m) => (
             <div
@@ -389,7 +421,7 @@ Estelle is ready for a 1h30 session to turn your talents into concrete results (
         </div>
       </div>
 
-      <div className="border-t border-white/10 px-5 py-4">
+      <div className="shrink-0 border-t border-white/10 px-5 py-4">
         {phase === "hook" ? (
           <button
             type="button"
@@ -521,18 +553,40 @@ Estelle is ready for a 1h30 session to turn your talents into concrete results (
                 : "You can book now, or restart the diagnosis."}
               {saveError ? <div className="mt-1 text-[#f7f1e3]/80">{saveError}</div> : null}
             </div>
-            <Link
-              href={bookingHrefWithAnswers}
+            <button
+              type="button"
               onMouseEnter={() => {
                 void persistAnswersIfNeeded();
+              }}
+              onClick={() => {
+                void persistAnswersIfNeeded().then((id) => {
+                  setBookingAnswersId(id ?? answersId ?? "");
+                  setBookingModalOpen(true);
+                });
               }}
               className="inline-flex items-center justify-center rounded-md bg-[#d5b162] px-5 py-3 text-sm font-semibold text-[#101010] transition hover:bg-[#e1c47e]"
             >
               {saving ? (locale === "fr" ? "Préparation..." : "Preparing...") : t.cta}
-            </Link>
+            </button>
           </div>
         ) : null}
       </div>
+
+      <SpotBulleBookingModal
+        open={bookingModalOpen}
+        onClose={() => setBookingModalOpen(false)}
+        locale={locale}
+        booking={bookingDict}
+        answersId={bookingAnswersId || answersId || ""}
+        onBookSuccess={
+          onDismiss
+            ? () => {
+                setBookingModalOpen(false);
+                onDismiss();
+              }
+            : undefined
+        }
+      />
     </div>
   );
 }

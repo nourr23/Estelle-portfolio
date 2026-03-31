@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 
-type Locale = "fr" | "en";
+export type Locale = "fr" | "en";
 
 type Slot = {
   id: string;
@@ -24,15 +24,34 @@ function formatSlot(locale: Locale, iso: string) {
   }).format(date);
 }
 
-export default function SpotBulleSlotsClient({ locale }: { locale: Locale }) {
-  const params = useSearchParams();
-  const answersId = params.get("a") || "";
+type SpotBulleSlotsContentProps = {
+  locale: Locale;
+  answersId: string;
+  /** Called after a successful booking (e.g. close stacked modals). Shown after `successCloseDelayMs`. */
+  onBookSuccess?: () => void;
+  /** Delay before `onBookSuccess` so the success line stays visible (ms). */
+  successCloseDelayMs?: number;
+};
 
+/** Slot list + booking; used by the reservation page and the booking modal. */
+export function SpotBulleSlotsContent({
+  locale,
+  answersId,
+  onBookSuccess,
+  successCloseDelayMs = 1800,
+}: SpotBulleSlotsContentProps) {
   const [slots, setSlots] = useState<Slot[]>([]);
   const [loading, setLoading] = useState(true);
   const [booking, setBooking] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
+  const bookSuccessTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (bookSuccessTimerRef.current) clearTimeout(bookSuccessTimerRef.current);
+    };
+  }, []);
 
   const t = useMemo(() => {
     if (locale === "fr") {
@@ -75,18 +94,18 @@ export default function SpotBulleSlotsClient({ locale }: { locale: Locale }) {
     return () => {
       cancelled = true;
     };
-  }, [t.failed]);
+  }, [locale, t]);
 
   if (!answersId) {
     return (
-      <div className="mt-8 max-w-2xl rounded-xl border border-[#d5b162]/25 bg-white/70 p-6 text-[#3a372f]">
+      <div className="mt-6 max-w-2xl rounded-xl border border-[#d5b162]/25 bg-white/70 p-6 text-[#3a372f]">
         {t.missing}
       </div>
     );
   }
 
   return (
-    <div className="mt-10">
+    <div className="mt-6">
       <h2 className="text-sm font-semibold tracking-[0.12em] text-[#1f1d18]">
         {t.available}
       </h2>
@@ -100,7 +119,14 @@ export default function SpotBulleSlotsClient({ locale }: { locale: Locale }) {
       ) : null}
 
       {success ? (
-        <p className="mt-4 text-sm font-semibold text-[#0f6f70]">{success}</p>
+        <p
+          className={`mt-4 rounded-lg border border-[#43c6c8]/50 bg-[#e8fbfb] px-4 py-3 text-sm font-semibold text-[#0f6f70] ${
+            onBookSuccess ? "ring-1 ring-[#43c6c8]/30" : ""
+          }`}
+          role="status"
+        >
+          {success}
+        </p>
       ) : null}
 
       <div className="mt-6 grid max-w-2xl grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
@@ -121,8 +147,14 @@ export default function SpotBulleSlotsClient({ locale }: { locale: Locale }) {
                 });
                 if (!res.ok) throw new Error("book failed");
                 setSuccess(t.booked);
-                // Remove booked slot from list
                 setSlots((prev) => prev.filter((s) => s.id !== slot.id));
+                if (onBookSuccess) {
+                  if (bookSuccessTimerRef.current) clearTimeout(bookSuccessTimerRef.current);
+                  bookSuccessTimerRef.current = setTimeout(() => {
+                    bookSuccessTimerRef.current = null;
+                    onBookSuccess();
+                  }, successCloseDelayMs);
+                }
               } catch {
                 setError(t.failed);
               } finally {
@@ -140,3 +172,9 @@ export default function SpotBulleSlotsClient({ locale }: { locale: Locale }) {
   );
 }
 
+/** Reservation page: reads `?a=` from the URL for answers id. */
+export default function SpotBulleSlotsClient({ locale }: { locale: Locale }) {
+  const params = useSearchParams();
+  const answersId = params.get("a") || "";
+  return <SpotBulleSlotsContent locale={locale} answersId={answersId} />;
+}
