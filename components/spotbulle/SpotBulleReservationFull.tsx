@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { Suspense } from "react";
 import SpotBulleFooter from "./SpotBulleFooter";
 import SpotBulleHeader from "./SpotBulleHeader";
+import SpotBulleSlotsClient from "./SpotBulleSlotsClient";
 
 export default function SpotBulleReservationFull({
   dict,
@@ -42,26 +44,15 @@ export default function SpotBulleReservationFull({
           {dict.booking?.reassurance}
         </p>
 
-        <p className="mt-10 text-sm font-semibold tracking-[0.12em] text-[#1f1d18]">
-          {dict.booking?.slotsTitle}
-        </p>
-        <div className="mt-2 flex flex-wrap gap-3 text-sm text-[#5f5a50]">
-          {dict.booking?.days?.map((day: string) => (
-            <span key={day}>{day}</span>
-          ))}
-        </div>
-        <div className="mt-6 grid max-w-md grid-cols-3 gap-2">
-          {dict.booking?.slots?.map((slot: string) => (
-            <button
-              key={slot}
-              type="button"
-              className="rounded-md border border-[#43c6c8]/40 bg-white px-3 py-2 text-sm text-[#0f6f70] transition hover:bg-[#43c6c8]/10"
-            >
-              {slot}
-            </button>
-          ))}
-        </div>
-        <p className="mt-6 font-medium text-[#0f6f70]">{dict.booking?.cta}</p>
+        <Suspense
+          fallback={
+            <p className="mt-10 text-sm text-[#5f5a50]">
+              {locale === "fr" ? "Chargement…" : "Loading…"}
+            </p>
+          }
+        >
+          <SpotBulleSlotsClient locale={locale} />
+        </Suspense>
 
         <p className="mt-10 text-sm text-[#5f5a50]">
           <a

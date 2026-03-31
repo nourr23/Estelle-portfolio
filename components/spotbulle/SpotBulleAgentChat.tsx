@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 
 type Locale = "fr" | "en";
@@ -15,6 +15,8 @@ type Answers = {
   passion?: string;
   inspiration?: string;
   birthdate?: string | null;
+  name?: string;
+  email?: string;
 };
 
 type Message =
@@ -117,8 +119,12 @@ export default function SpotBulleAgentChat({
       q3ph: "Ex: musique, jeu vidéo, dessin, sport…",
       q4: "Y a-t-il une personne célèbre ou un mentor qui t’inspire vraiment ?",
       q4ph: "Ex: un sportif, un entrepreneur, un proche…",
-      q5: "Optionnel : quelle est ta date de naissance ?",
-      q5ph: "JJ/MM/AAAA ou AAAA-MM-JJ",
+      q5: "Pour te renvoyer ton récap, quel est ton prénom ?",
+      q5ph: "Ex: Lina",
+      q6: "Et ton email ? (optionnel)",
+      q6ph: "Ex: lina@email.com",
+      q7: "Optionnel : quelle est ta date de naissance ?",
+      q7ph: "JJ/MM/AAAA ou AAAA-MM-JJ",
       skip: "Je préfère passer",
       send: "Envoyer",
       restart: "Recommencer",
@@ -142,8 +148,12 @@ export default function SpotBulleAgentChat({
       q3ph: "Ex: music, gaming, drawing, sports…",
       q4: "Is there a person (mentor or famous figure) who truly inspires you?",
       q4ph: "Ex: athlete, entrepreneur, someone close…",
-      q5: "Optional: what’s your birth date?",
-      q5ph: "YYYY-MM-DD",
+      q5: "To send you your recap: what’s your first name?",
+      q5ph: "Ex: Lina",
+      q6: "And your email? (optional)",
+      q6ph: "Ex: lina@email.com",
+      q7: "Optional: what’s your birth date?",
+      q7ph: "YYYY-MM-DD",
       skip: "Skip",
       send: "Send",
       restart: "Restart",
@@ -159,10 +169,15 @@ export default function SpotBulleAgentChat({
     | "q3"
     | "q4"
     | "q5"
+    | "q6"
+    | "q7"
     | "result"
   >("hook");
   const [answers, setAnswers] = useState<Answers>({});
   const [draft, setDraft] = useState("");
+  const [answersId, setAnswersId] = useState<string | null>(null);
+  const [saveError, setSaveError] = useState<string | null>(null);
+  const [saving, setSaving] = useState(false);
 
   const [messages, setMessages] = useState<Message[]>(() => [
     { id: uid("b"), from: "bot", text: t.hook },
@@ -196,7 +211,7 @@ export default function SpotBulleAgentChat({
     commitBot(t.q3);
   };
 
-  const submitText = (field: "passion" | "inspiration") => {
+  const submitText = (field: "passion" | "inspiration" | "name" | "email") => {
     const value = safeTrim(draft);
     if (!value) return;
 
@@ -207,9 +222,15 @@ export default function SpotBulleAgentChat({
     if (field === "passion") {
       setPhase("q4");
       commitBot(t.q4);
-    } else {
+    } else if (field === "inspiration") {
       setPhase("q5");
       commitBot(t.q5);
+    } else if (field === "name") {
+      setPhase("q6");
+      commitBot(t.q6);
+    } else {
+      setPhase("q7");
+      commitBot(t.q7);
     }
   };
 
@@ -238,6 +259,7 @@ export default function SpotBulleAgentChat({
 
   const conclusionText = useMemo(() => {
     if (!result) return null;
+    const name = safeTrim(answers.name);
     const passion = safeTrim(answers.passion) || (locale === "fr" ? "ta passion" : "your passion");
     const inspiration =
       safeTrim(answers.inspiration) ||
@@ -249,30 +271,82 @@ export default function SpotBulleAgentChat({
     const e2 = `${ELEMENT_EMOJI[result.secondary]} ${labelSecondary}`;
 
     if (locale === "fr") {
-      return `Génial ! 🎯 Avec ta passion pour "${passion}" et ton envie de ressembler à "${inspiration}", je vois que tu as une énergie de type ${e1} / ${e2}. Tu as un vrai potentiel de ${result.qualities[0]} (et ${result.qualities[1]}) !
+      return `${name ? `Génial ${name} !` : "Génial !"} 🎯 Avec ta passion pour "${passion}" et ton envie de ressembler à "${inspiration}", je vois que tu as une énergie de type ${e1} / ${e2}. Tu as un vrai potentiel de ${result.qualities[0]} (et ${result.qualities[1]}) !
 
 Estelle a déjà analysé ton profil. Elle t’attend pour une session de 1h30 afin de transformer tes talents en une réussite concrète (Bac, Brevet ou Orientation). On réserve ton créneau ?`;
     }
 
-    return `Great! 🎯 With your passion for "${passion}" and your desire to be like "${inspiration}", I see an energy of type ${e1} / ${e2}. You have strong potential for ${result.qualities[0]} (and ${result.qualities[1]})!
+    return `${name ? `Great ${name}!` : "Great!"} 🎯 With your passion for "${passion}" and your desire to be like "${inspiration}", I see an energy of type ${e1} / ${e2}. You have strong potential for ${result.qualities[0]} (and ${result.qualities[1]})!
 
 Estelle is ready for a 1h30 session to turn your talents into concrete results (exams or guidance). Shall we book your slot?`;
-  }, [answers.inspiration, answers.passion, locale, result]);
-
-  // When entering result phase for the first time, append the conclusion.
-  const [resultAnnounced, setResultAnnounced] = useState(false);
-  if (phase === "result" && !resultAnnounced && conclusionText) {
-    setResultAnnounced(true);
-    commitBot(conclusionText);
-  }
+  }, [answers.inspiration, answers.name, answers.passion, locale, result]);
 
   const reset = () => {
     setPhase("hook");
     setAnswers({});
     setDraft("");
+    setAnswersId(null);
+    setSaveError(null);
+    setSaving(false);
     setResultAnnounced(false);
     setMessages([{ id: uid("b"), from: "bot", text: t.hook }]);
   };
+
+  const bookingHrefWithAnswers = useMemo(() => {
+    if (!answersId) return bookingHref;
+    const sep = bookingHref.includes("?") ? "&" : "?";
+    return `${bookingHref}${sep}a=${encodeURIComponent(answersId)}`;
+  }, [answersId, bookingHref]);
+
+  const persistAnswersIfNeeded = async () => {
+    if (answersId || saving) return;
+    if (!answers.role || !answers.learning) return;
+
+    const payload = {
+      locale,
+      role: answers.role,
+      learning: answers.learning,
+      passion: safeTrim(answers.passion),
+      inspiration: safeTrim(answers.inspiration),
+      birthdate: answers.birthdate ?? null,
+      name: safeTrim(answers.name),
+      email: safeTrim(answers.email) || null,
+    };
+
+    if (!payload.passion || !payload.inspiration || !payload.name) return;
+
+    try {
+      setSaving(true);
+      setSaveError(null);
+      const res = await fetch("/api/spotbulle/answers", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) {
+        const txt = await res.text().catch(() => "");
+        throw new Error(txt || "Save failed");
+      }
+      const json = (await res.json()) as { answersId?: string };
+      if (json.answersId) setAnswersId(json.answersId);
+    } catch (e) {
+      setSaveError(locale === "fr" ? "Impossible d’enregistrer le récap." : "Could not save recap.");
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  // When entering result phase for the first time, append the conclusion and persist.
+  const [resultAnnounced, setResultAnnounced] = useState(false);
+  useEffect(() => {
+    if (phase !== "result") return;
+    if (resultAnnounced) return;
+    if (!conclusionText) return;
+    setResultAnnounced(true);
+    commitBot(conclusionText);
+    void persistAnswersIfNeeded();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase, resultAnnounced, conclusionText]);
 
   return (
     <div className="rounded-2xl border border-white/10 bg-[#0e0f10] shadow-2xl shadow-black/40">
@@ -385,19 +459,38 @@ Estelle is ready for a 1h30 session to turn your talents into concrete results (
           </div>
         ) : null}
 
-        {phase === "q3" || phase === "q4" || phase === "q5" ? (
+        {phase === "q3" || phase === "q4" || phase === "q5" || phase === "q6" || phase === "q7" ? (
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
             <input
               value={draft}
               onChange={(e) => setDraft(e.target.value)}
-              placeholder={phase === "q3" ? t.q3ph : phase === "q4" ? t.q4ph : t.q5ph}
+              placeholder={
+                phase === "q3"
+                  ? t.q3ph
+                  : phase === "q4"
+                    ? t.q4ph
+                    : phase === "q5"
+                      ? t.q5ph
+                      : phase === "q6"
+                        ? t.q6ph
+                        : t.q7ph
+              }
               className="w-full flex-1 rounded-md border border-white/10 bg-white/5 px-4 py-3 text-sm text-[#f7f1e3] placeholder:text-[#f7f1e3]/40 outline-none ring-0 focus:border-[#43c6c8]/40"
             />
             <div className="flex gap-2">
-              {phase === "q5" ? (
+              {phase === "q6" || phase === "q7" ? (
                 <button
                   type="button"
-                  onClick={skipBirthdate}
+                  onClick={() => {
+                    if (phase === "q6") {
+                      setAnswers((prev) => ({ ...prev, email: "" }));
+                      commitUser(t.skip);
+                      setPhase("q7");
+                      commitBot(t.q7);
+                    } else {
+                      skipBirthdate();
+                    }
+                  }}
                   className="rounded-md bg-white/5 px-4 py-3 text-sm font-semibold text-[#f7f1e3] ring-1 ring-inset ring-white/10 transition hover:bg-white/10"
                 >
                   {t.skip}
@@ -408,6 +501,8 @@ Estelle is ready for a 1h30 session to turn your talents into concrete results (
                 onClick={() => {
                   if (phase === "q3") submitText("passion");
                   else if (phase === "q4") submitText("inspiration");
+                  else if (phase === "q5") submitText("name");
+                  else if (phase === "q6") submitText("email");
                   else submitBirthdate();
                 }}
                 className="rounded-md bg-[#43c6c8] px-4 py-3 text-sm font-semibold text-[#071830] transition hover:bg-[#6fe6e8]"
@@ -424,12 +519,16 @@ Estelle is ready for a 1h30 session to turn your talents into concrete results (
               {locale === "fr"
                 ? "Tu peux réserver maintenant, ou recommencer le diagnostic."
                 : "You can book now, or restart the diagnosis."}
+              {saveError ? <div className="mt-1 text-[#f7f1e3]/80">{saveError}</div> : null}
             </div>
             <Link
-              href={bookingHref}
+              href={bookingHrefWithAnswers}
+              onMouseEnter={() => {
+                void persistAnswersIfNeeded();
+              }}
               className="inline-flex items-center justify-center rounded-md bg-[#d5b162] px-5 py-3 text-sm font-semibold text-[#101010] transition hover:bg-[#e1c47e]"
             >
-              {t.cta}
+              {saving ? (locale === "fr" ? "Préparation..." : "Preparing...") : t.cta}
             </Link>
           </div>
         ) : null}
