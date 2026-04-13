@@ -1,4 +1,7 @@
 import LandingBackground from "./LandingBackground";
+import LandingGenerationHero, {
+  type LandingHeroDict,
+} from "./LandingGenerationHero";
 import SpotBulleHeader from "./SpotBulleHeader";
 import type { BookingModalDict } from "./SpotBulleBookingModal";
 
@@ -12,6 +15,7 @@ export type SpotBulleHomeDict = {
   nav: Record<string, string>;
   footer: Record<string, string>;
   landingHeader: LandingHeaderDict;
+  landingHero: LandingHeroDict;
   booking?: BookingModalDict;
 };
 
@@ -35,6 +39,13 @@ export default function SpotBulleHome({
       />
       <section className="relative isolate min-h-[max(55svh,calc(660px+630px+614px+840px))]">
         <LandingBackground />
+        <div className="relative z-10 flex w-full justify-start px-0 pt-10 sm:px-4 sm:pt-14 md:px-[140px] md:pt-[76px]">
+          <LandingGenerationHero
+            dict={dict.landingHero}
+            locale={locale}
+            bookingDict={dict.booking ?? {}}
+          />
+        </div>
       </section>
     </div>
   );

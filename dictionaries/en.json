@@ -14,6 +14,15 @@
     "subline": "Discover your elemental strengths with our new “SpotBulle” agent and unlock your unique potential in 2026.",
     "ctaRdv": "Book an appointment"
   },
+  "landingHero": {
+    "title": "Generation revealed",
+    "subtitle": "Your path to success starts today",
+    "bodyBefore": "Discover your ",
+    "bodyEmphasis": "elemental strengths",
+    "bodyAfter": " with our new “SpotBulle” agent and unlock your unique potential in 2026.",
+    "cta": "Start my SpotBulle exploration",
+    "brandLabel": "SpotBulle"
+  },
   "hero": {
     "tagline": "Personalised educational support • Confidence • Self-awareness • Guidance for the future",
     "title": "Certified teacher • Learning coach • Guidance • Project-based pedagogy",
