@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import {
   LANDING_BACKGROUND_LAYERS,
   LANDING_BACKGROUND_LAYOUT,
@@ -35,6 +36,19 @@ export default function LandingBackground() {
   }
 
   if (layout === "split-vertical") {
+    const overlayStyle = (layer: (typeof layers)[number]) =>
+      layer.overlaySrc
+        ? {
+            backgroundImage: `url(${layer.overlaySrc})`,
+            backgroundSize: layer.overlayBackgroundSize ?? "cover",
+            backgroundPosition:
+              layer.overlayBackgroundPosition ??
+              (layer.overlayVerticalAlign === "bottom"
+                ? "center bottom"
+                : "center top"),
+          }
+        : null;
+
     return (
       <div
         className="pointer-events-none absolute inset-0 flex flex-col overflow-hidden"
@@ -43,6 +57,73 @@ export default function LandingBackground() {
         {layers.map((layer, index) => {
           const fixedRow =
             typeof layer.splitRowPx === "number" && layer.splitRowPx > 0;
+          const rowFlex = fixedRow
+            ? { height: layer.splitRowPx, flex: "0 0 auto" as const }
+            : {};
+
+          if (layer.overlaySrc || layer.rowLeftSrc) {
+            const oh = layer.overlaySrc ? overlayStyle(layer) : null;
+            return (
+              <div
+                key={`${layer.src}-${index}`}
+                className={
+                  fixedRow
+                    ? "relative shrink-0 overflow-hidden"
+                    : "relative min-h-0 flex-1 overflow-hidden"
+                }
+                style={rowFlex}
+              >
+                <div
+                  className="absolute inset-0 bg-no-repeat"
+                  style={layerStyle(layer)}
+                />
+                {oh ? (
+                  <div
+                    className={
+                      layer.overlayVerticalAlign === "bottom"
+                        ? "absolute bottom-0 left-0 right-0 z-1 bg-no-repeat"
+                        : "absolute left-0 right-0 top-0 z-1 bg-no-repeat"
+                    }
+                    style={{
+                      ...oh,
+                      height:
+                        typeof layer.overlayHeightPx === "number"
+                          ? layer.overlayHeightPx
+                          : "100%",
+                    }}
+                  />
+                ) : null}
+                {layer.rowLeftSrc ? (
+                  <img
+                    src={layer.rowLeftSrc}
+                    alt=""
+                    decoding="async"
+                    draggable={false}
+                    className="pointer-events-none absolute z-2 h-auto select-none"
+                    style={{
+                      left:
+                        typeof layer.rowLeftOffsetXPx === "number"
+                          ? layer.rowLeftOffsetXPx
+                          : 0,
+                      bottom:
+                        typeof layer.rowLeftBottomPx === "number"
+                          ? layer.rowLeftBottomPx
+                          : 60,
+                      width:
+                        typeof layer.rowLeftWidthPx === "number"
+                          ? layer.rowLeftWidthPx
+                          : 224,
+                      objectFit: (layer.rowLeftBackgroundSize ??
+                        "contain") as CSSProperties["objectFit"],
+                      objectPosition:
+                        layer.rowLeftBackgroundPosition ?? "left center",
+                    }}
+                  />
+                ) : null}
+              </div>
+            );
+          }
+
           return (
             <div
               key={`${layer.src}-${index}`}
@@ -53,7 +134,7 @@ export default function LandingBackground() {
               }
               style={{
                 ...layerStyle(layer),
-                ...(fixedRow ? { height: layer.splitRowPx, flex: "0 0 auto" } : {}),
+                ...rowFlex,
               }}
             />
           );
