@@ -9,6 +9,11 @@
     "contact": "Contact",
     "book": "Réserver un appel"
   },
+  "landingHeader": {
+    "headline": "aujourd'hui",
+    "subline": "Découvre tes forces élémentaires avec notre nouvel agent « SpotBulle » et active ton potentiel unique en 2026.",
+    "ctaRdv": "Réserver un RDV"
+  },
   "hero": {
     "tagline": "Accompagnement éducatif personnalisé • Confiance • Conscience de soi • Orientation",
     "title": "Professeure certifiée • Coach pédagogique • Orientation • Pédagogie de projet",

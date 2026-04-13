@@ -9,6 +9,11 @@
     "contact": "Contact",
     "book": "Book a call"
   },
+  "landingHeader": {
+    "headline": "today",
+    "subline": "Discover your elemental strengths with our new “SpotBulle” agent and unlock your unique potential in 2026.",
+    "ctaRdv": "Book an appointment"
+  },
   "hero": {
     "tagline": "Personalised educational support • Confidence • Self-awareness • Guidance for the future",
     "title": "Certified teacher • Learning coach • Guidance • Project-based pedagogy",
