@@ -1,4 +1,11 @@
+import {
+  landingSplitBandHeightPx,
+  landingSplitBandTopPx,
+} from "@/lib/landingBandGeometry";
 import LandingBackground from "./LandingBackground";
+import LandingEstelleBg2Band, {
+  type LandingEstelleDict,
+} from "./LandingEstelleBg2Band";
 import LandingGenerationHero, {
   type LandingHeroDict,
 } from "./LandingGenerationHero";
@@ -16,6 +23,7 @@ export type SpotBulleHomeDict = {
   footer: Record<string, string>;
   landingHeader: LandingHeaderDict;
   landingHero: LandingHeroDict;
+  landingEstelle: LandingEstelleDict;
   booking?: BookingModalDict;
 };
 
@@ -45,6 +53,18 @@ export default function SpotBulleHome({
             locale={locale}
             bookingDict={dict.booking ?? {}}
           />
+        </div>
+
+        <div
+          className="pointer-events-none absolute inset-x-0 z-11"
+          style={{
+            top: landingSplitBandTopPx(1),
+            height: landingSplitBandHeightPx(1),
+          }}
+        >
+          <div className="pointer-events-auto mx-auto h-full min-h-0 max-w-[1232px] overflow-x-hidden overflow-y-auto px-2 sm:px-4 md:px-6">
+            <LandingEstelleBg2Band dict={dict.landingEstelle} locale={locale} />
+          </div>
         </div>
       </section>
     </div>
