@@ -7,7 +7,7 @@ import type { CSSProperties } from "react";
  *   `01-sky.webp`, `02-gradient.png`, `03-grain.webp`
  * **Stack layout:** list **bottom → top** (first entry = back layer).
  *
- * **Split-vertical layout:** one column — layers in array order = **top → bottom**. Rows are equal height unless a layer sets **`splitRowPx`** (fixed band height in px); remaining layers share the rest with **`flex-1`**. Optional **`overlaySrc`** draws another image on top of `src` in the **same row**; use **`overlayVerticalAlign: "bottom"`** to pin that overlay to the row’s lower edge. Optional **`rowLeftSrc`** draws an image along **`left: 0`** inside the same row (above base and strip overlay).
+ * **Split-vertical layout:** one column — layers in array order = **top → bottom**. Rows are equal height unless a layer sets **`splitRowPx`** (fixed band height in px); remaining layers share the rest with **`flex-1`**. Optional **`overlaySrc`** draws another image on top of `src` in the **same row**; use **`overlayVerticalAlign: "bottom"`** to pin that overlay to the row’s lower edge. Optional **`rowBottomSrc`** draws an extra image anchored to the row bottom in the same div.
  *
  * **Split-horizontal layout:** one row — layers in array order = **left → right**, equal width columns.
  *
@@ -34,6 +34,12 @@ export type LandingBackgroundLayer = {
   overlayHeightPx?: number;
   /** Pin the overlay strip to the top (default) or bottom of the row. */
   overlayVerticalAlign?: "top" | "bottom";
+  /** `split-vertical` only: extra image drawn at the bottom of the same row. */
+  rowBottomSrc?: string;
+  rowBottomBackgroundSize?: string;
+  rowBottomBackgroundPosition?: string;
+  /** Height for the bottom image strip (px); defaults to full row. */
+  rowBottomHeightPx?: number;
   /** `split-vertical` only: native `<img>` (absolutely positioned), above base + `overlaySrc`. */
   rowLeftSrc?: string;
   /** Passed to the image as `object-fit` (e.g. `contain`, `cover`). */
@@ -72,7 +78,11 @@ export const LANDING_BACKGROUND_LAYERS: LandingBackgroundLayer[] = [
     src: "/images/backgrounds/bg2.png",
     backgroundSize: "cover",
     backgroundPosition: "center",
-    splitRowPx: 630,
+    splitRowPx: 1024,
+    rowBottomSrc: "/images/backgrounds/bg2.5.png",
+    rowBottomBackgroundSize: "cover",
+    rowBottomBackgroundPosition: "center bottom",
+    rowBottomHeightPx: 394,
     overlaySrc: "/images/backgrounds/e1haut.png",
     overlayBackgroundSize: "cover",
     overlayBackgroundPosition: "center bottom",

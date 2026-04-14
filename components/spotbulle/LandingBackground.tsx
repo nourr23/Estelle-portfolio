@@ -48,6 +48,15 @@ export default function LandingBackground() {
                 : "center top"),
           }
         : null;
+    const rowBottomStyle = (layer: (typeof layers)[number]) =>
+      layer.rowBottomSrc
+        ? {
+            backgroundImage: `url(${layer.rowBottomSrc})`,
+            backgroundSize: layer.rowBottomBackgroundSize ?? "cover",
+            backgroundPosition:
+              layer.rowBottomBackgroundPosition ?? "center bottom",
+          }
+        : null;
 
     return (
       <div
@@ -61,8 +70,9 @@ export default function LandingBackground() {
             ? { height: layer.splitRowPx, flex: "0 0 auto" as const }
             : {};
 
-          if (layer.overlaySrc || layer.rowLeftSrc) {
+          if (layer.overlaySrc || layer.rowBottomSrc || layer.rowLeftSrc) {
             const oh = layer.overlaySrc ? overlayStyle(layer) : null;
+            const bh = layer.rowBottomSrc ? rowBottomStyle(layer) : null;
             return (
               <div
                 key={`${layer.src}-${index}`}
@@ -77,12 +87,24 @@ export default function LandingBackground() {
                   className="absolute inset-0 bg-no-repeat"
                   style={layerStyle(layer)}
                 />
+                {bh ? (
+                  <div
+                    className="absolute bottom-0 left-0 right-0 z-1 bg-no-repeat"
+                    style={{
+                      ...bh,
+                      height:
+                        typeof layer.rowBottomHeightPx === "number"
+                          ? layer.rowBottomHeightPx
+                          : "100%",
+                    }}
+                  />
+                ) : null}
                 {oh ? (
                   <div
                     className={
                       layer.overlayVerticalAlign === "bottom"
-                        ? "absolute bottom-0 left-0 right-0 z-1 bg-no-repeat"
-                        : "absolute left-0 right-0 top-0 z-1 bg-no-repeat"
+                        ? "absolute bottom-0 left-0 right-0 z-2 bg-no-repeat"
+                        : "absolute left-0 right-0 top-0 z-2 bg-no-repeat"
                     }
                     style={{
                       ...oh,
@@ -99,7 +121,7 @@ export default function LandingBackground() {
                     alt=""
                     decoding="async"
                     draggable={false}
-                    className="pointer-events-none absolute z-2 h-auto select-none"
+                    className="pointer-events-none absolute z-3 h-auto select-none"
                     style={{
                       left:
                         typeof layer.rowLeftOffsetXPx === "number"

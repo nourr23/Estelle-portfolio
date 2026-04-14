@@ -31,7 +31,35 @@
     "lastName": "DRION",
     "tagline": "Une approche bienveillante et structurée pour lever les blocages et activer tes talents innés.",
     "body": "Estelle s'appuie sur une expérience diversifiée d'enseignante de français et de coach en orientation, combinée à une lecture énergétique unique : process communication model & elements.",
-    "cta": "En savoir plus"
+    "cta": "En savoir plus",
+    "cards": [
+      {
+        "iconSrc": "/icons/Examens.png",
+        "title": "Excellence aux examens & orientation",
+        "subtitle": "Niveau 3ème à Lycée",
+        "body": [
+          "• Préparation intensive au Brevet des collèges (DNB) et Baccalauréat de français (Oral et écrit).",
+          "• Orientation stratégique : Parcoursup, choix des spécialités"
+        ]
+      },
+      {
+        "iconSrc": "/icons/ampoule.png",
+        "title": "Accompagnement scolaire sur mesure",
+        "subtitle": "Dys / TDAH / HPI",
+        "body": [
+          "Pédagogie adaptée à chaque type de pensée.",
+          "Enseignements basés sur le profil élémentaire détecté: Cours de français, méthodologie et soutien pour les élèves atypiques."
+        ]
+      },
+      {
+        "iconSrc": "/icons/roquette.png",
+        "title": "Séjours à thème en immersion",
+        "subtitle": "\"entreprendre pour apprendre\" • Learning by doing",
+        "body": [
+          "Développer ses soft skills, son esprit d'initiative, la gestion de projet et le leadership"
+        ]
+      }
+    ]
   },
   "hero": {
     "tagline": "Accompagnement éducatif personnalisé • Confiance • Conscience de soi • Orientation",
@@ -217,17 +245,31 @@
     "offers": [
       {
         "title": "Confiance & méthode",
-        "bullets": ["émotions", "stress", "organisation", "prise de parole"],
+        "bullets": [
+          "émotions",
+          "stress",
+          "organisation",
+          "prise de parole"
+        ],
         "result": "Résultat : sérénité + autonomie"
       },
       {
         "title": "Orientation & projet",
-        "bullets": ["mieux se connaître", "identifier ses talents", "construire un parcours"],
+        "bullets": [
+          "mieux se connaître",
+          "identifier ses talents",
+          "construire un parcours"
+        ],
         "result": "Résultat : clarté + motivation"
       },
       {
         "title": "Examens",
-        "bullets": ["brevet", "bac français", "Grand Oral", "préparation ciblée"],
+        "bullets": [
+          "brevet",
+          "bac français",
+          "Grand Oral",
+          "préparation ciblée"
+        ],
         "result": "Résultat : progression + confiance"
       }
     ],
@@ -269,22 +311,39 @@
       {
         "title": "Vision",
         "body": "Le monde change. Les compétences de demain se construisent par la parole, l’identité et la confiance.",
-        "bullets": ["compétences 2035", "parole", "identité", "confiance"]
+        "bullets": [
+          "compétences 2035",
+          "parole",
+          "identité",
+          "confiance"
+        ]
       },
       {
         "title": "Expérience",
         "body": "Capsules, pitch, immersion : des formats pour apprendre à se présenter, convaincre et se projeter.",
-        "bullets": ["capsule", "pitch", "immersion"]
+        "bullets": [
+          "capsule",
+          "pitch",
+          "immersion"
+        ]
       },
       {
         "title": "Plateforme",
         "body": "Portfolio vidéo, galaxie des talents, Spotcoach : des outils pour valoriser les compétences.",
-        "bullets": ["portfolio vidéo", "galaxie des talents", "IA / Spotcoach"]
+        "bullets": [
+          "portfolio vidéo",
+          "galaxie des talents",
+          "IA / Spotcoach"
+        ]
       },
       {
         "title": "Utilité",
         "body": "Orientation, employabilité, confiance : SpotBulle sert à se démarquer et à construire un projet.",
-        "bullets": ["orientation", "employabilité", "confiance"]
+        "bullets": [
+          "orientation",
+          "employabilité",
+          "confiance"
+        ]
       }
     ],
     "ctaPrimary": "Découvrir SpotBulle",
@@ -297,17 +356,29 @@
       {
         "title": "Bruxelles",
         "body": "Institutions européennes, excellence et découverte des enjeux publics.",
-        "bullets": ["institutions européennes", "excellence", "ouverture"]
+        "bullets": [
+          "institutions européennes",
+          "excellence",
+          "ouverture"
+        ]
       },
       {
         "title": "Agadir",
         "body": "Entreprendre pour apprendre : une expérience dynamique pour oser et expérimenter.",
-        "bullets": ["entrepreneuriat", "projet", "confiance"]
+        "bullets": [
+          "entrepreneuriat",
+          "projet",
+          "confiance"
+        ]
       },
       {
         "title": "Séjours thématiques",
         "body": "Conscience de soi, bien-être, orientation… formats sur-mesure selon les besoins.",
-        "bullets": ["conscience de soi", "bien-être", "orientation"]
+        "bullets": [
+          "conscience de soi",
+          "bien-être",
+          "orientation"
+        ]
       }
     ],
     "cta": "Demander des infos"
@@ -361,9 +432,18 @@
     "docsTitle": "Documents consultables",
     "docsBody": "CV, lettre de recommandation et pièces de référence peuvent être mis à disposition sur le site pour attester du parcours, des responsabilités exercées et de la qualité de l’accompagnement proposé.",
     "docButtons": [
-      { "label": "Voir mon CV", "href": "/documents/cv-estelle-drion.pdf" },
-      { "label": "Lire une recommandation", "href": "/documents/recommandation.pdf" },
-      { "label": "Consulter mes références", "href": "/documents/rapport-inspection.pdf" }
+      {
+        "label": "Voir mon CV",
+        "href": "/documents/cv-estelle-drion.pdf"
+      },
+      {
+        "label": "Lire une recommandation",
+        "href": "/documents/recommandation.pdf"
+      },
+      {
+        "label": "Consulter mes références",
+        "href": "/documents/rapport-inspection.pdf"
+      }
     ],
     "guaranteeTitle": "Ce que cela garantit aux familles",
     "guaranteeBody": "Un accompagnement fondé sur une vraie expérience de terrain, une bonne connaissance des parcours scolaires, un engagement fort sur l’orientation et une capacité à construire des réponses sur-mesure, y compris pour les élèves qui ont besoin d’un cadre plus individualisé."
@@ -516,7 +596,11 @@
     "subtitle": "Une première séance de 1h30 pour poser un cadre juste",
     "intro": "Cette séance permet d’analyser la situation de l’élève, de comprendre son mode de fonctionnement, de préciser les besoins et de construire la formule la plus pertinente.",
     "slotsTitle": "CRÉNEAUX RÉSERVABLES",
-    "days": ["Mer 16", "Jeu 17", "Ven 18"],
+    "days": [
+      "Mer 16",
+      "Jeu 17",
+      "Ven 18"
+    ],
     "tags": [
       "primaire",
       "collège",
@@ -525,7 +609,14 @@
       "orientation",
       "oral"
     ],
-    "slots": ["09:00", "11:00", "14:30", "16:30", "18:00", "19:30"],
+    "slots": [
+      "09:00",
+      "11:00",
+      "14:30",
+      "16:30",
+      "18:00",
+      "19:30"
+    ],
     "cta": "Choisir un créneau",
     "reassurance": "À l’issue de cette première séance, vous repartez avec un premier éclairage clair sur le profil, les besoins et les pistes de travail."
   },
@@ -544,4 +635,3 @@
     "contactPageLink": "Page contact"
   }
 }
-

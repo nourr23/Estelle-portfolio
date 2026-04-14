@@ -45,7 +45,7 @@ export default function SpotBulleHome({
         landingPromo={dict.landingHeader}
         bookingDict={dict.booking ?? {}}
       />
-      <section className="relative isolate min-h-[max(55svh,calc(660px+630px+614px+840px))]">
+      <section className="relative isolate min-h-[max(55svh,calc(660px+630px+394px+614px+840px))]">
         <LandingBackground />
         <div className="relative z-10 flex w-full justify-start px-0 pt-10 sm:px-4 sm:pt-14 md:px-[140px] md:pt-[76px]">
           <LandingGenerationHero
@@ -65,6 +65,20 @@ export default function SpotBulleHome({
           <div className="pointer-events-auto mx-auto h-full min-h-0 max-w-[1232px] overflow-x-hidden overflow-y-auto px-2 sm:px-4 md:px-6">
             <LandingEstelleBg2Band dict={dict.landingEstelle} locale={locale} />
           </div>
+        </div>
+
+        <div
+          className="pointer-events-none absolute inset-x-0 z-11 flex items-center justify-center"
+          style={{
+            top: landingSplitBandTopPx(2),
+            height: landingSplitBandHeightPx(2),
+          }}
+        >
+          <p className="select-none text-center text-[72px] font-bold leading-[0.9] text-white/40 md:text-[120px]">
+            <span className="block">révèle</span>
+            <span className="block">ton</span>
+            <span className="block">potentiel</span>
+          </p>
         </div>
       </section>
     </div>
