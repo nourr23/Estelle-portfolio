@@ -10,6 +10,7 @@ import LandingGenerationHero, {
   type LandingHeroDict,
 } from "./LandingGenerationHero";
 import LandingBg4RdvBand, { type LandingRdvFormDict } from "./LandingBg4RdvBand";
+import SpotBulleFooter from "./SpotBulleFooter";
 import SpotBulleHeader from "./SpotBulleHeader";
 import type { BookingModalDict } from "./SpotBulleBookingModal";
 
@@ -95,6 +96,7 @@ export default function SpotBulleHome({
           </div>
         </div>
       </section>
+      <SpotBulleFooter dict={dict} locale={locale} />
     </div>
   );
 }
