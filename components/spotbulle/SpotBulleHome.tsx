@@ -9,6 +9,7 @@ import LandingEstelleBg2Band, {
 import LandingGenerationHero, {
   type LandingHeroDict,
 } from "./LandingGenerationHero";
+import LandingBg4RdvBand, { type LandingRdvFormDict } from "./LandingBg4RdvBand";
 import SpotBulleHeader from "./SpotBulleHeader";
 import type { BookingModalDict } from "./SpotBulleBookingModal";
 
@@ -24,6 +25,7 @@ export type SpotBulleHomeDict = {
   landingHeader: LandingHeaderDict;
   landingHero: LandingHeroDict;
   landingEstelle: LandingEstelleDict;
+  landingRdvForm: LandingRdvFormDict;
   booking?: BookingModalDict;
 };
 
@@ -45,7 +47,7 @@ export default function SpotBulleHome({
         landingPromo={dict.landingHeader}
         bookingDict={dict.booking ?? {}}
       />
-      <section className="relative isolate min-h-[max(55svh,calc(660px+630px+394px+614px+840px))]">
+      <section className="relative isolate min-h-[max(55svh,calc(660px+1024px+614px+840px))]">
         <LandingBackground />
         <div className="relative z-10 flex w-full justify-start px-0 pt-10 sm:px-4 sm:pt-14 md:px-[140px] md:pt-[76px]">
           <LandingGenerationHero
@@ -79,6 +81,18 @@ export default function SpotBulleHome({
             <span className="block">ton</span>
             <span className="block">potentiel</span>
           </p>
+        </div>
+
+        <div
+          className="pointer-events-none absolute inset-x-0 z-11"
+          style={{
+            top: landingSplitBandTopPx(3),
+            height: landingSplitBandHeightPx(3),
+          }}
+        >
+          <div className="pointer-events-auto mx-auto h-full min-h-0 max-w-[1232px] overflow-x-hidden overflow-y-auto px-2 sm:px-4 md:px-6">
+            <LandingBg4RdvBand dict={dict.landingRdvForm} locale={locale} />
+          </div>
         </div>
       </section>
     </div>

@@ -98,7 +98,7 @@ export default function SpotBulleHeader({
               />
             </Link>
 
-            <div className="min-w-0 flex-1 text-left">
+            <div className="hidden min-w-0 flex-1 text-left md:block">
               <p className="text-sm font-bold capitalize text-[rgba(255,255,255,0.2)] md:text-base">
                 {landingPromo.headline}
               </p>

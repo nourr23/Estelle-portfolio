@@ -61,6 +61,30 @@
       }
     ]
   },
+  "landingRdvForm": {
+    "title": "Book an appointment",
+    "subtitle": "Video call with Estelle!",
+    "intro": "A first video contact, no commitment.",
+    "birthDate": "Date of birth (optional)",
+    "email": "Email",
+    "passion": "Passion, sport, or talent",
+    "passionPlaceholder": "E.g. music, sports, drawing…",
+    "inspiration": "Someone who inspires you",
+    "inspirationPlaceholder": "E.g. family member, athlete, entrepreneur…",
+    "confirm": "Confirm booking",
+    "slotsModalTitle": "Available times",
+    "slotsModalIntro": "Pick a time for this day.",
+    "noSlotsThisDay": "No slots that day. Try another date.",
+    "pickSlotHint": "Pick a day, then a time.",
+    "bookedSuccess": "Booking confirmed. See you soon!",
+    "bookedFail": "Could not complete the booking. Try again or pick another slot.",
+    "answersFail": "Could not save your request. Please try again shortly.",
+    "slotsFetchFail": "Could not load available slots.",
+    "loadingSlots": "Loading calendar…",
+    "calendarWeekdays": ["S", "M", "T", "W", "T", "F", "S"],
+    "prevMonth": "Previous month",
+    "nextMonth": "Next month"
+  },
   "hero": {
     "tagline": "Personalised educational support • Confidence • Self-awareness • Guidance for the future",
     "title": "Certified teacher • Learning coach • Guidance • Project-based pedagogy",

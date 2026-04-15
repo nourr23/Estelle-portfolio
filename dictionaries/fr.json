@@ -61,6 +61,30 @@
       }
     ]
   },
+  "landingRdvForm": {
+    "title": "Prendre un RDV",
+    "subtitle": "en visio avec Estelle !",
+    "intro": "Un premier contact en visio sans engagement.",
+    "birthDate": "Date de naissance (facultatif)",
+    "email": "Email",
+    "passion": "Passion, sport ou talent",
+    "passionPlaceholder": "Ex. : musique, sport, dessin…",
+    "inspiration": "Personne ou modèle qui t’inspire",
+    "inspirationPlaceholder": "Ex. : proche, sportif, entrepreneur…",
+    "confirm": "Confirmer réservation",
+    "slotsModalTitle": "Créneaux disponibles",
+    "slotsModalIntro": "Choisis une heure pour ce jour.",
+    "noSlotsThisDay": "Aucun créneau ce jour-là. Essaie une autre date.",
+    "pickSlotHint": "Choisis un jour, puis un horaire.",
+    "bookedSuccess": "Réservation confirmée. À très vite !",
+    "bookedFail": "Impossible de finaliser la réservation. Réessaie ou choisis un autre créneau.",
+    "answersFail": "Impossible d’enregistrer ta demande. Réessaie dans un instant.",
+    "slotsFetchFail": "Impossible de charger les créneaux.",
+    "loadingSlots": "Chargement du calendrier…",
+    "calendarWeekdays": ["D", "L", "M", "M", "J", "V", "S"],
+    "prevMonth": "Mois précédent",
+    "nextMonth": "Mois suivant"
+  },
   "hero": {
     "tagline": "Accompagnement éducatif personnalisé • Confiance • Conscience de soi • Orientation",
     "title": "Professeure certifiée • Coach pédagogique • Orientation • Pédagogie de projet",
