@@ -14,6 +14,7 @@ export type LandingEstelleDict = {
   experienceSub: string;
   firstName: string;
   lastName: string;
+  sideBadge: string;
   tagline: string;
   body: string;
   cta: string;
