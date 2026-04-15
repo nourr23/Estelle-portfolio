@@ -4,7 +4,11 @@ import {
   LANDING_BACKGROUND_LAYOUT,
 } from "@/lib/landingBackgroundLayers";
 
-export default function LandingBackground() {
+export default function LandingBackground({
+  hideFirstRowArt = false,
+}: {
+  hideFirstRowArt?: boolean;
+}) {
   const layers = LANDING_BACKGROUND_LAYERS;
   if (layers.length === 0) return null;
 
@@ -36,6 +40,10 @@ export default function LandingBackground() {
   }
 
   if (layout === "split-vertical") {
+    const firstRowPx = LANDING_BACKGROUND_LAYERS[0]?.splitRowPx;
+    const hiddenOffset =
+      hideFirstRowArt && typeof firstRowPx === "number" ? firstRowPx : 0;
+    const visibleLayers = hideFirstRowArt ? layers.slice(1) : layers;
     const overlayStyle = (layer: (typeof layers)[number]) =>
       layer.overlaySrc
         ? {
@@ -61,9 +69,10 @@ export default function LandingBackground() {
     return (
       <div
         className="pointer-events-none absolute inset-0 flex flex-col overflow-hidden"
+        style={hiddenOffset > 0 ? { paddingTop: hiddenOffset } : undefined}
         aria-hidden
       >
-        {layers.map((layer, index) => {
+        {visibleLayers.map((layer, index) => {
           const fixedRow =
             typeof layer.splitRowPx === "number" && layer.splitRowPx > 0;
           const rowFlex = fixedRow
