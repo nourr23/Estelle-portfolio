@@ -79,7 +79,7 @@ export default function SpotBulleHome({
               bookingDict={dict.booking ?? {}}
             />
           </div>
-          <div className="pointer-events-none absolute inset-x-0 bottom-7 hidden justify-end pr-8 sm:pr-12 md:flex md:pr-20 lg:pr-28">
+          {/* <div className="pointer-events-none absolute inset-x-0 bottom-7 hidden justify-end pr-8 sm:pr-12 md:flex md:pr-20 lg:pr-28"> */}
             <div className="max-w-[340px] rounded-2xl bg-[#0a3d40]/65 px-5 py-3 text-white/90 backdrop-blur-[1px]">
               <span className="block text-[24px] font-bold leading-tight">
                 Un premier aperçu, puis
@@ -90,7 +90,7 @@ export default function SpotBulleHome({
                 sur mesure
               </span>
             </div>
-          </div>
+          {/* </div> */}
         </div>
 
         <div className="pointer-events-auto relative h-[1024px] w-full overflow-hidden">
