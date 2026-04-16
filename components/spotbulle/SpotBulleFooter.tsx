@@ -40,7 +40,7 @@ export default function SpotBulleFooter({
                     {dict.nav.young}
                   </Link>
                   <Link className={linkClass} href={`${prefix}/spotbulle`}>
-                    SpotBulle Agent IA
+                    {dict.footer.spotbulleAgent}
                   </Link>
                 </div>
               </div>

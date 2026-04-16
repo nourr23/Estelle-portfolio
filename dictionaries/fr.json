@@ -62,6 +62,16 @@
       }
     ]
   },
+  "landingBg1Badge": {
+    "line1": "Un premier aperçu, puis",
+    "line2": "un accompagnement",
+    "line3": "sur mesure"
+  },
+  "landingReveal": {
+    "line1": "révèle",
+    "line2": "ton",
+    "line3": "potentiel"
+  },
   "landingRdvForm": {
     "title": "Prendre un RDV",
     "subtitle": "en visio avec Estelle !",
@@ -657,6 +667,7 @@
     "phone": "WhatsApp : +33 6 28 35 34 50",
     "location": "Casablanca – Anfa",
     "site": "Site : genup.com",
-    "contactPageLink": "Page contact"
+    "contactPageLink": "Page contact",
+    "spotbulleAgent": "SpotBulle Agent IA"
   }
 }

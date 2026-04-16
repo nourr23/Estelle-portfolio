@@ -22,6 +22,16 @@ export type SpotBulleHomeDict = {
   landingHero: LandingHeroDict;
   landingEstelle: LandingEstelleDict;
   landingRdvForm: LandingRdvFormDict;
+  landingBg1Badge: {
+    line1: string;
+    line2: string;
+    line3: string;
+  };
+  landingReveal: {
+    line1: string;
+    line2: string;
+    line3: string;
+  };
   booking?: BookingModalDict;
 };
 
@@ -64,6 +74,15 @@ export default function SpotBulleHome({
             }}
             aria-hidden
           />
+          {/* <div
+            className="pointer-events-none absolute inset-y-0 right-0 w-[56%] opacity-5 bg-no-repeat opacity-85"
+            style={{
+              backgroundImage: "url('/images/backgrounds/animatedmoons.jpeg')",
+              backgroundSize: "cover",
+              backgroundPosition: "right center",
+            }}
+            aria-hidden
+          /> */}
           <img
             src="/images/backgrounds/h1.png"
             alt=""
@@ -80,14 +99,14 @@ export default function SpotBulleHome({
             />
           </div>
           {/* <div className="pointer-events-none absolute inset-x-0 bottom-7 hidden justify-end pr-8 sm:pr-12 md:flex md:pr-20 lg:pr-28"> */}
-            <div className="max-w-[340px] rounded-2xl bg-[#0a3d40]/65 px-5 py-3 text-white/90 backdrop-blur-[1px]">
-              <span className="block text-[24px] font-bold leading-tight">
-                Un premier aperçu, puis
+            <div className="absolute right-0 bottom-3 rounded-tl-3xl rounded-bl-3xl bg-[#0a3d40]/65 pl-5 pr-14 py-3 text-white/90 backdrop-blur-[1px]">
+              <span className="block text-[18px] font-bold leading-tight md:text-[24px]">
+                {dict.landingBg1Badge.line1}
               </span>
-              <span className="mt-1 block text-[24px] font-normal leading-tight">
-                un accompagnement
+              <span className="mt-1 block text-[18px] font-normal leading-tight md:text-[24px]">
+                {dict.landingBg1Badge.line2}
                 <br />
-                sur mesure
+                {dict.landingBg1Badge.line3}
               </span>
             </div>
           {/* </div> */}
@@ -143,9 +162,9 @@ export default function SpotBulleHome({
           <div className="relative h-full w-full">
             <div className="flex h-full w-full items-center justify-center">
               <p className="select-none text-center text-[72px] font-bold leading-[0.9] text-white/40 md:text-[120px]">
-                <span className="block">révèle</span>
-                <span className="block">ton</span>
-                <span className="block">potentiel</span>
+                <span className="block">{dict.landingReveal.line1}</span>
+                <span className="block">{dict.landingReveal.line2}</span>
+                <span className="block">{dict.landingReveal.line3}</span>
               </p>
             </div>
           </div>

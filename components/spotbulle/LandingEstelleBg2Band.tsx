@@ -33,7 +33,7 @@ export default function LandingEstelleBg2Band({
   return (
     <div className="flex h-full min-h-0 flex-col gap-5 px-3 py-4 sm:px-5 sm:py-5 md:px-10 md:py-6 lg:px-14">
       <div className="flex min-h-0 flex-col gap-4 md:flex-row md:items-stretch md:gap-8">
-        <div className="flex w-[250px] shrink-0 flex-col overflow-hidden rounded-2xl bg-white shadow-md">
+        <div className="flex w-[200px] shrink-0 flex-col overflow-hidden rounded-2xl bg-white shadow-md md:w-[250px]">
           <div className="relative aspect-4/5 w-full min-h-[200px] sm:min-h-[240px] md:aspect-3/4 md:min-h-0">
             <Image
               src="/images/photoEstelle.png"
