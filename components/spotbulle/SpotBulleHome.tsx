@@ -47,12 +47,7 @@ export default function SpotBulleHome({
 }) {
   return (
     <div className="bg-[#062a2c] font-sans text-[#f7f1e3]">
-      <SpotBulleHeader
-        dict={dict}
-        locale={locale}
-        landingPromo={dict.landingHeader}
-        bookingDict={dict.booking ?? {}}
-      />
+      <SpotBulleHeader dict={dict} locale={locale} />
       <section className="relative isolate">
         <div className="pointer-events-auto relative h-[660px] w-full overflow-hidden">
           <div

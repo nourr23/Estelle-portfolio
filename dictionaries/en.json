@@ -7,7 +7,13 @@
     "experiences": "Experiences",
     "about": "About",
     "contact": "Contact",
-    "book": "Book a call"
+    "book": "Book a call",
+    "quiSuisJe": "About me",
+    "excellenceExamens": "Exam excellence",
+    "besoinsParticuliers": "Specific needs",
+    "orientationStrategie": "Guidance",
+    "sejoursImmersion": "Stays",
+    "spotbulleScript": "SpotBulle script"
   },
   "landingHeader": {
     "headline": "today",

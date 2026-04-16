@@ -1,0 +1,351 @@
+{
+  "quiSuisJe": {
+    "title": "About me",
+    "breadcrumbLabel": "About me",
+    "lead": "Expertise at the service of your success; intuition at the service of your potential.",
+    "sections": [
+      {
+        "title": "🎓 30 years in the field",
+        "paragraphs": [
+          "As a certified teacher of modern French literature, I have supported students through academic challenges for three decades. Based in Morocco within the AEFE network, I work in an international context. That dual culture gives me a strategic view of guidance (Parcoursup, speciality choices) focused on adaptability and mobility—key skills for 2026 and beyond."
+        ]
+      },
+      {
+        "title": "✨ My method: experience meets intuition",
+        "paragraphs": [
+          "My support is not limited to textbooks. It blends three decades of teaching, deep intuition and concrete assessment tools.",
+          "I do not only transmit knowledge: I decode who you are (or who your child is) to remove blockages where they actually sit."
+        ]
+      },
+      {
+        "title": "🧭 How I structure follow-up",
+        "paragraphs": [
+          "Everything starts with an in-depth first meeting. To ground that intuitive read, I use concrete tools (elemental profiles, Process Communication Model).",
+          "That combined reading shapes your strategy:"
+        ],
+        "bullets": [
+          "For the student: a diagnostic that reveals innate strengths and rebuilds confidence.",
+          "For parents: a rigorous, reassuring pedagogical structure.",
+          "For results: fully personalised lessons and guidance (Brevet, Bac, post-Bac) based on the first assessment."
+        ]
+      },
+      {
+        "title": "Goal",
+        "paragraphs": [
+          "Turn exam and guidance stress into a clear, ambitious project that truly fits you."
+        ]
+      }
+    ],
+    "cta": {
+      "label": "Book my 1h30 session with Estelle",
+      "hint": "An authentic conversation to define your action plan together."
+    }
+  },
+  "excellenceExamens": {
+    "title": "Exam excellence",
+    "breadcrumbLabel": "Exam excellence",
+    "lead": "Brevet, French Bac and Grand Oral — bespoke preparation. Exams are not an end in themselves: they are performances prepared to measure.",
+    "sections": [
+      {
+        "title": "A personalised method",
+        "paragraphs": [
+          "No one-size-fits-all recipe. Each pathway is built around the student's profile and learning style.",
+          "After an initial diagnostic, I adapt the work:"
+        ],
+        "bullets": [
+          "Visual memory → mind maps and structuring diagrams",
+          "Intuitive memory → global understanding and personal ownership",
+          "Auditory / kinaesthetic profile → oral practice and real-life situations"
+        ]
+      },
+      {
+        "title": "Innovation: video portfolio",
+        "paragraphs": [
+          "Recording performances so students can analyse delivery and eloquence—building both written voice and spoken ease.",
+          "Learning becomes more natural, efficient and lasting."
+        ]
+      },
+      {
+        "title": "✍️ French Bac and Brevet",
+        "paragraphs": [
+          "Master the method. Unlock potential."
+        ],
+        "bullets": [
+          "Linear analysis and commentary: structure without freezing",
+          "Essays: clear, rigorous thinking",
+          "French oral: precision and ease"
+        ]
+      },
+      {
+        "title": "Objective",
+        "paragraphs": [
+          "Stop merely sitting the exam—learn to own it."
+        ]
+      },
+      {
+        "title": "🎤 Grand Oral",
+        "paragraphs": [
+          "The art of convincing and embodying your speech."
+        ],
+        "bullets": [
+          "Build fluent, sharp argumentation",
+          "Work on voice, posture and presence",
+          "Answer the jury with assurance"
+        ]
+      },
+      {
+        "title": "Why this support?",
+        "bullets": [
+          "Targeted, efficient preparation",
+          "Method matched to the student's profile",
+          "Knowledge of AEFE and international requirements",
+          "Deep work on confidence and oral skills"
+        ]
+      },
+      {
+        "title": "My conviction",
+        "paragraphs": [
+          "We are not only preparing an exam—we are building success that feels like you."
+        ]
+      }
+    ],
+    "cta": {
+      "label": "Book my 1h30 diagnostic session",
+      "hint": "A first conversation to identify your learning style and design a bespoke strategy."
+    }
+  },
+  "besoinsParticuliers": {
+    "title": "Specific learning needs",
+    "breadcrumbLabel": "Specific needs",
+    "lead": "Atypical profiles from primary to lycée. Learning differently is a strength, not an obstacle.",
+    "sections": [
+      {
+        "title": "Turn difference into strength",
+        "paragraphs": [
+          "Some children do not fit the standard mould. Whether gifted profiles, ADHD or specific learning differences, their intelligence needs the right key. At GENUP we do not format the student—we adapt teaching to how they process information."
+        ]
+      },
+      {
+        "title": "🎯 Precision pedagogy",
+        "paragraphs": [
+          "My approach draws on robust educational science. Exercises are bespoke and aligned with current frameworks:"
+        ],
+        "bullets": [
+          "Bloom's taxonomy: progression from understanding to creation, at the student's cognitive pace.",
+          "Triangulation of learning: crossing knowledge, methods and contexts for deep, durable memory."
+        ]
+      },
+      {
+        "title": "🛠️ Support from primary school",
+        "paragraphs": [
+          "Excellence starts early. I work from primary level to lay calm foundations:"
+        ],
+        "bullets": [
+          "Learning to learn: identify strategies that work for the child.",
+          "Specific entry points: visual, intuitive or kinaesthetic memory as the profile suggests.",
+          "Valuing progress: turn feelings of failure into sharp awareness of strengths."
+        ]
+      },
+      {
+        "title": "🎥 Video portfolio as a mirror",
+        "paragraphs": [
+          "For atypical profiles, seeing themselves succeed is the first step to confidence.",
+          "I integrate image capture and video of performances (pitches, readings, argumentation) so the child can observe posture and eloquence, track progress kindly and objectively, and build confidence for future orals."
+        ]
+      },
+      {
+        "quote": "My role is to translate the curriculum into your child's mother tongue: that of their elemental profile."
+      },
+      {
+        "title": "Give your child tools for boundless success",
+        "paragraphs": []
+      }
+    ],
+    "cta": {
+      "label": "Book my 1h30 diagnostic session",
+      "hint": "A full assessment to identify learning style and design bespoke support."
+    }
+  },
+  "orientationStrategie": {
+    "title": "Guidance and strategy",
+    "breadcrumbLabel": "Guidance and strategy",
+    "lead": "Building a borderless future: Parcoursup, specialities and networks. Guidance is not a destination—it is a precision strategy.",
+    "sections": [
+      {
+        "title": "The GENUP approach",
+        "paragraphs": [
+          "Choosing specialities from troisième or completing Parcoursup should be a moment of growth, not anxiety. GENUP combines leading AI with intimate knowledge of demanding pathways."
+        ]
+      },
+      {
+        "title": "🤖 SpotBulle AI: your bespoke guidance radar",
+        "paragraphs": [
+          "To stay as close as possible to each young person's profile, I designed a dedicated AI agent."
+        ],
+        "bullets": [
+          "Smart search: live exploration of school and university databases in France and abroad.",
+          "Profile matching: crossing elemental test results with demanding programme requirements.",
+          "Ongoing watch: emerging pathways and bridges."
+        ]
+      },
+      {
+        "title": "🇫🇷 & 🌍 France and international (AEFE)",
+        "paragraphs": [
+          "Drawing on AEFE experience, I navigate complex guidance for international, binational or expatriate families:"
+        ],
+        "bullets": [
+          "Parcoursup end-to-end: motivation letters, CV structure, highlighting extracurricular experience.",
+          "Concrete bridges with schools in France.",
+          "Global applications: Europe, North America and equivalences."
+        ]
+      },
+      {
+        "title": "🧭 Parcours Avenir: from troisième",
+        "paragraphs": [
+          "Anticipating is succeeding. From collège I support students to:"
+        ],
+        "bullets": [
+          "Choose specialities aligned with future career goals.",
+          "Build a coherent, attractive academic file for selection panels.",
+          "Explore tomorrow's professions through their elemental nature (Air, Earth, Fire, Water)."
+        ]
+      },
+      {
+        "title": "🎥 Motivation video portfolio",
+        "paragraphs": [
+          "For many business, art or design schools, video is decisive. Together we prepare your pitch video: recording, eloquence and visual impact for recruiters."
+        ]
+      },
+      {
+        "quote": "Successful guidance is where a revealed identity meets a strategically chosen pathway."
+      },
+      {
+        "title": "Secure your trajectory today",
+        "paragraphs": []
+      }
+    ],
+    "cta": {
+      "label": "Book my 1h30 strategy session",
+      "hint": "A full assessment to activate your personalised AI roadmap and sketch your next steps."
+    }
+  },
+  "sejoursImmersion": {
+    "title": "Immersion stays",
+    "breadcrumbLabel": "Immersion stays",
+    "lead": "“Learn by doing” — collective adventure and entrepreneurship as a classroom.",
+    "sections": [
+      {
+        "title": "Why these stays?",
+        "paragraphs": [
+          "Talent is not only learned from books—it is lived in the field.",
+          "In France or abroad, GENUP offers immersion stays that turn ideas into concrete projects, with experts from the global “Learn by Doing / Entrepreneurship” ecosystem. Each young person becomes the driver of their own progress."
+        ]
+      },
+      {
+        "title": "🚀 The mini-company concept",
+        "paragraphs": [
+          "We do not only simulate—we build. Participants enter a real mini-company journey:"
+        ],
+        "bullets": [
+          "Proof of concept: from abstract idea to tangible prototype.",
+          "Collective strategy: collaborate, negotiate and rally around a shared goal.",
+          "Responsibility: key roles (Marketing, Finance, HR, Design) aligned with elemental profiles from SpotBulle AI."
+        ]
+      },
+      {
+        "title": "🎓 Learning by doing",
+        "paragraphs": [
+          "Mistakes fuel learning; action is the best teacher. The programme helps you to:"
+        ],
+        "bullets": [
+          "Grow personality: overcome shyness, speak in public, take initiative.",
+          "Build soft skills: creativity, stress management, leadership, complex problem solving.",
+          "Test careers in real life to confirm a vocation."
+        ]
+      },
+      {
+        "title": "🌍 International mentoring",
+        "paragraphs": [
+          "Recognised mentors from business and education share field experience, inspire with their journeys and challenge ideas toward excellence."
+        ]
+      },
+      {
+        "title": "🎥 Adventure portfolio",
+        "paragraphs": [
+          "Each stay is documented. Participants leave with:"
+        ],
+        "bullets": [
+          "A recording of their final pitch to an expert jury.",
+          "A digital portfolio for applications (business schools, IUT, bachelor programmes)."
+        ]
+      },
+      {
+        "quote": "Entrepreneurship gives your ideas the power to transform who you are."
+      }
+    ],
+    "cta": {
+      "label": "Discover upcoming stays and destinations",
+      "hint": "Limited places to keep mentoring bespoke."
+    },
+    "secondaryCta": {
+      "label": "Contact us for dates",
+      "hint": "Write to us for the next sessions.",
+      "hrefKey": "contact"
+    }
+  },
+  "spotbulleScript": {
+    "title": "SpotBulle AI agent script",
+    "breadcrumbLabel": "SpotBulle script",
+    "lead": "Clean final version: hook, dynamic questionnaire, wrap-up and call to action.",
+    "sections": [
+      {
+        "title": "The hook",
+        "paragraphs": [
+          "“Hi! 👋 I'm SpotBulle, Estelle's AI. In 30 seconds I'll help you uncover hidden strengths to boost your success. Ready to start?”"
+        ]
+      },
+      {
+        "title": "Dynamic questionnaire (summary)",
+        "bullets": [
+          "Profile: Imagine / Organise / Help / Lead.",
+          "Learning: See / Listen / Do.",
+          "Engine: passion, sport or standout talent.",
+          "Inspiration: mentor or public figure.",
+          "Compass (optional): date of birth."
+        ]
+      },
+      {
+        "title": "The questionnaire",
+        "bullets": [
+          "Your profile: “If you led a project, would you rather imagine (creative), organise (methodical), help (empathetic) or lead?”",
+          "How you learn: “To understand well, do you prefer diagrams and colours, listening to explanations, or doing things directly?”",
+          "Your engine: “What passion, sport or talent are you proud of?”",
+          "Your inspiration: “Is there a famous person or mentor whose journey inspires you?”",
+          "Your compass (optional): “What is your date of birth? It helps me refine your natural energies.”"
+        ]
+      },
+      {
+        "title": "The conclusion (hand-off to Estelle)",
+        "paragraphs": [
+          "“Great! 🎯 With your passion for [Passion] and your inspiration from [Inspiration], I see an energy like [Profile, e.g. Fire/Air]. You have real potential as [Quality]! Estelle has already reviewed your profile. She is waiting for a 1h30 session to turn your talents into concrete success (Bac, Brevet or guidance). Shall we book your slot?”"
+        ]
+      },
+      {
+        "title": "Action button",
+        "paragraphs": [
+          "Suggested label: “Book my 1h30 session with Estelle”."
+        ]
+      },
+      {
+        "title": "Outcome",
+        "paragraphs": [
+          "A personalised diagnostic and an immediate invitation to book Estelle's 1h30 session."
+        ]
+      }
+    ],
+    "cta": {
+      "label": "Book my 1h30 session with Estelle",
+      "hint": "Use the contact page to pick a time slot."
+    }
+  }
+}
