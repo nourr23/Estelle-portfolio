@@ -1,3 +1,6 @@
+ "use client";
+
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -29,11 +32,39 @@ export default function LandingEstelleBg2Band({
   locale: "fr" | "en";
 }) {
   const aboutHref = `/${locale}/a-propos`;
+  const rootRef = useRef<HTMLDivElement | null>(null);
+  const [isPhotoVisible, setIsPhotoVisible] = useState(false);
+
+  useEffect(() => {
+    const node = rootRef.current;
+    if (!node || isPhotoVisible) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+        setIsPhotoVisible(true);
+        observer.disconnect();
+      },
+      {
+        threshold: 0.25,
+      }
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [isPhotoVisible]);
 
   return (
-    <div className="flex h-full min-h-0 flex-col gap-5 px-3 py-4 sm:px-5 sm:py-5 md:px-10 md:py-6 lg:px-14">
+    <div
+      ref={rootRef}
+      className="flex h-full min-h-0 flex-col gap-5 px-3 py-4 sm:px-5 sm:py-5 md:px-10 md:py-6 lg:px-14"
+    >
       <div className="flex min-h-0 flex-col gap-4 md:flex-row md:items-stretch md:gap-8">
-        <div className="flex w-[200px] shrink-0 flex-col overflow-hidden rounded-2xl bg-white shadow-md md:w-[250px]">
+        <div
+          className={`estelle-photo-in flex w-[200px] shrink-0 flex-col overflow-hidden rounded-2xl bg-white shadow-md md:w-[250px] ${
+            isPhotoVisible ? "estelle-photo-in-visible" : ""
+          }`}
+        >
           <div className="relative aspect-4/5 w-full min-h-[200px] sm:min-h-[240px] md:aspect-3/4 md:min-h-0">
             <Image
               src="/images/photoEstelle.png"

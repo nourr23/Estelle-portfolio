@@ -11,5 +11,12 @@ export default async function QuiSuisJePage({
   const dict = await getDictionary(resolvedLocale);
   const content = dict.marketingPages.quiSuisJe;
 
-  return <SpotBulleMarketingPage dict={dict} locale={resolvedLocale} content={content} />;
+  return (
+    <SpotBulleMarketingPage
+      dict={dict}
+      locale={resolvedLocale}
+      content={content}
+      bg2FullWidthRepeat
+    />
+  );
 }

@@ -4,7 +4,8 @@ import LandingEstelleBg2Band, {
 import LandingGenerationHero, {
   type LandingHeroDict,
 } from "./LandingGenerationHero";
-import LandingBg4RdvBand, { type LandingRdvFormDict } from "./LandingBg4RdvBand";
+import LandingBg4RdvSection from "./LandingBg4RdvSection";
+import type { LandingRdvFormDict } from "./LandingBg4RdvBand";
 import SpotBulleFooter from "./SpotBulleFooter";
 import SpotBulleHeader from "./SpotBulleHeader";
 import type { BookingModalDict } from "./SpotBulleBookingModal";
@@ -165,40 +166,7 @@ export default function SpotBulleHome({
           </div>
         </div>
 
-        <div className="pointer-events-auto relative h-[840px] w-full overflow-hidden">
-          <div
-            className="pointer-events-none absolute inset-0 bg-no-repeat"
-            style={{
-              backgroundImage: "url('/images/backgrounds/bg4.png')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-            aria-hidden
-          />
-          <div
-            className="pointer-events-none absolute bottom-0 left-0 right-0 z-1 bg-no-repeat"
-            style={{
-              backgroundImage: "url('/images/backgrounds/e1haut.png')",
-              backgroundSize: "cover",
-              backgroundPosition: "center bottom",
-              height: 547,
-            }}
-            aria-hidden
-          />
-          <img
-            src="/images/backgrounds/h1.png"
-            alt=""
-            decoding="async"
-            draggable={false}
-            className="pointer-events-none absolute bottom-[60px] left-[-50px] z-2 h-auto w-[224px] select-none object-contain object-left"
-            aria-hidden
-          />
-          <div className="relative h-full w-full">
-            <div className="mx-auto h-full min-h-0 max-w-[1232px] overflow-x-hidden overflow-y-auto px-2 sm:px-4 md:px-6">
-              <LandingBg4RdvBand dict={dict.landingRdvForm} locale={locale} />
-            </div>
-          </div>
-        </div>
+        <LandingBg4RdvSection dict={dict.landingRdvForm} locale={locale} />
       </section>
       <SpotBulleFooter dict={dict} locale={locale} />
     </div>
