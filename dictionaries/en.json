@@ -7,7 +7,100 @@
     "experiences": "Experiences",
     "about": "About",
     "contact": "Contact",
-    "book": "Book a call"
+    "book": "Book a call",
+    "quiSuisJe": "About me",
+    "excellenceExamens": "Exam excellence",
+    "besoinsParticuliers": "Specific needs",
+    "orientationStrategie": "Guidance",
+    "sejoursImmersion": "Stays",
+    "spotbulleScript": "SpotBulle script"
+  },
+  "landingHeader": {
+    "headline": "today",
+    "subline": "Discover your elemental strengths with our new “SpotBulle” agent and unlock your unique potential in 2026.",
+    "ctaRdv": "Book an appointment"
+  },
+  "landingHero": {
+    "title": "Generation revealed",
+    "subtitle": "Your path to success starts today",
+    "bodyBefore": "Discover your ",
+    "bodyEmphasis": "elemental strengths",
+    "bodyAfter": " with our new “SpotBulle” agent and unlock your unique potential in 2026.",
+    "cta": "Start my SpotBulle exploration",
+    "brandLabel": "SpotBulle"
+  },
+  "landingEstelle": {
+    "photoAlt": "Portrait of Estelle Drion",
+    "experienceTitle": "30 years of experience",
+    "experienceSub": "supporting academic success and guidance",
+    "firstName": "Estelle",
+    "lastName": "DRION",
+    "sideBadge": "A first insight, then tailored support",
+    "tagline": "A caring, structured approach to overcome blocks and unlock your innate talents.",
+    "body": "Estelle draws on broad experience as a French teacher and guidance coach, combined with a unique energetic reading: process communication model & elements.",
+    "cta": "Learn more",
+    "cards": [
+      {
+        "iconSrc": "/icons/Examens.png",
+        "title": "Exam excellence & guidance",
+        "subtitle": "Middle school to high school",
+        "body": [
+          "• Intensive preparation for DNB and French baccalaureate (oral and written).",
+          "• Strategic guidance: Parcoursup and specialty choices"
+        ]
+      },
+      {
+        "iconSrc": "/icons/ampoule.png",
+        "title": "Tailored academic support",
+        "subtitle": "Dys / ADHD / gifted",
+        "body": [
+          "A pedagogy adapted to each way of thinking.",
+          "Support based on detected elemental profile: French classes, methodology, and coaching for atypical learners."
+        ]
+      },
+      {
+        "iconSrc": "/icons/roquette.png",
+        "title": "Immersive themed stays",
+        "subtitle": "\"learn by doing entrepreneurship\" • Learning by doing",
+        "body": [
+          "Develop soft skills, initiative, project management, and leadership"
+        ]
+      }
+    ]
+  },
+  "landingBg1Badge": {
+    "line1": "A first insight, then",
+    "line2": "tailored",
+    "line3": "support"
+  },
+  "landingReveal": {
+    "line1": "reveal",
+    "line2": "your",
+    "line3": "potential"
+  },
+  "landingRdvForm": {
+    "title": "Book an appointment",
+    "subtitle": "Video call with Estelle!",
+    "intro": "A first video contact, no commitment.",
+    "birthDate": "Date of birth (optional)",
+    "email": "Email",
+    "passion": "Passion, sport, or talent",
+    "passionPlaceholder": "E.g. music, sports, drawing…",
+    "inspiration": "Someone who inspires you",
+    "inspirationPlaceholder": "E.g. family member, athlete, entrepreneur…",
+    "confirm": "Confirm booking",
+    "slotsModalTitle": "Available times",
+    "slotsModalIntro": "Pick a time for this day.",
+    "noSlotsThisDay": "No slots that day. Try another date.",
+    "pickSlotHint": "Pick a day, then a time.",
+    "bookedSuccess": "Booking confirmed. See you soon!",
+    "bookedFail": "Could not complete the booking. Try again or pick another slot.",
+    "answersFail": "Could not save your request. Please try again shortly.",
+    "slotsFetchFail": "Could not load available slots.",
+    "loadingSlots": "Loading calendar…",
+    "calendarWeekdays": ["S", "M", "T", "W", "T", "F", "S"],
+    "prevMonth": "Previous month",
+    "nextMonth": "Next month"
   },
   "hero": {
     "tagline": "Personalised educational support • Confidence • Self-awareness • Guidance for the future",
@@ -193,17 +286,31 @@
     "offers": [
       {
         "title": "Confidence & method",
-        "bullets": ["emotions", "stress", "organization", "public speaking"],
+        "bullets": [
+          "emotions",
+          "stress",
+          "organization",
+          "public speaking"
+        ],
         "result": "Outcome: calm + autonomy"
       },
       {
         "title": "Guidance & project",
-        "bullets": ["know yourself", "identify strengths", "build a pathway"],
+        "bullets": [
+          "know yourself",
+          "identify strengths",
+          "build a pathway"
+        ],
         "result": "Outcome: clarity + motivation"
       },
       {
         "title": "Exams",
-        "bullets": ["middle school exam", "French baccalaureate", "Grand Oral", "targeted preparation"],
+        "bullets": [
+          "middle school exam",
+          "French baccalaureate",
+          "Grand Oral",
+          "targeted preparation"
+        ],
         "result": "Outcome: progress + confidence"
       }
     ],
@@ -245,22 +352,39 @@
       {
         "title": "Vision",
         "body": "The world is changing. Tomorrow’s skills are built through speaking, identity and confidence.",
-        "bullets": ["skills 2035", "speaking", "identity", "confidence"]
+        "bullets": [
+          "skills 2035",
+          "speaking",
+          "identity",
+          "confidence"
+        ]
       },
       {
         "title": "Experience",
         "body": "Capsules, pitches, immersion: formats to learn to present yourself, convince and project yourself.",
-        "bullets": ["capsule", "pitch", "immersion"]
+        "bullets": [
+          "capsule",
+          "pitch",
+          "immersion"
+        ]
       },
       {
         "title": "Platform",
         "body": "Video portfolio, talent galaxy, Spotcoach: tools to showcase skills.",
-        "bullets": ["video portfolio", "talent galaxy", "AI / Spotcoach"]
+        "bullets": [
+          "video portfolio",
+          "talent galaxy",
+          "AI / Spotcoach"
+        ]
       },
       {
         "title": "Usefulness",
         "body": "Guidance, employability, confidence: SpotBulle helps you stand out and build a project.",
-        "bullets": ["guidance", "employability", "confidence"]
+        "bullets": [
+          "guidance",
+          "employability",
+          "confidence"
+        ]
       }
     ],
     "ctaPrimary": "Discover SpotBulle",
@@ -273,17 +397,29 @@
       {
         "title": "Brussels",
         "body": "European institutions, excellence and discovering public-policy issues.",
-        "bullets": ["European institutions", "excellence", "openness"]
+        "bullets": [
+          "European institutions",
+          "excellence",
+          "openness"
+        ]
       },
       {
         "title": "Agadir",
         "body": "Learn by entrepreneuring: a dynamic experience to dare and experiment.",
-        "bullets": ["entrepreneurship", "project", "confidence"]
+        "bullets": [
+          "entrepreneurship",
+          "project",
+          "confidence"
+        ]
       },
       {
         "title": "Themed stays",
         "body": "Self-awareness, wellbeing, guidance… tailor-made formats depending on needs.",
-        "bullets": ["self-awareness", "wellbeing", "guidance"]
+        "bullets": [
+          "self-awareness",
+          "wellbeing",
+          "guidance"
+        ]
       }
     ],
     "cta": "Request info"
@@ -337,9 +473,18 @@
     "docsTitle": "Available documents",
     "docsBody": "CV, recommendation letter and reference documents can be made available on the site to confirm this journey, responsibilities held and the quality of support provided.",
     "docButtons": [
-      { "label": "View my CV", "href": "/documents/cv-estelle-drion.pdf" },
-      { "label": "Read a recommendation", "href": "/documents/recommandation.pdf" },
-      { "label": "View references", "href": "/documents/rapport-inspection.pdf" }
+      {
+        "label": "View my CV",
+        "href": "/documents/cv-estelle-drion.pdf"
+      },
+      {
+        "label": "Read a recommendation",
+        "href": "/documents/recommandation.pdf"
+      },
+      {
+        "label": "View references",
+        "href": "/documents/rapport-inspection.pdf"
+      }
     ],
     "guaranteeTitle": "What this guarantees families",
     "guaranteeBody": "Support grounded in real field experience, strong understanding of school pathways, a strong commitment to guidance and the ability to build tailor-made responses, including for students who need a more individualized framework."
@@ -492,7 +637,11 @@
     "subtitle": "A first 1h30 session to set the right framework",
     "intro": "This session helps analyze the student’s situation, understand their way of functioning, clarify needs and build the most relevant support format.",
     "slotsTitle": "BOOKABLE SLOTS",
-    "days": ["Wed 16", "Thu 17", "Fri 18"],
+    "days": [
+      "Wed 16",
+      "Thu 17",
+      "Fri 18"
+    ],
     "tags": [
       "primary",
       "middle school",
@@ -501,7 +650,14 @@
       "guidance",
       "oral exams"
     ],
-    "slots": ["09:00", "11:00", "14:30", "16:30", "18:00", "19:30"],
+    "slots": [
+      "09:00",
+      "11:00",
+      "14:30",
+      "16:30",
+      "18:00",
+      "19:30"
+    ],
     "cta": "Choose a slot",
     "reassurance": "After this first session, you leave with a clear initial read on the student’s profile, needs and directions for next steps."
   },
@@ -517,7 +673,7 @@
     "phone": "WhatsApp: +33 6 28 35 34 50",
     "location": "Casablanca – Anfa",
     "site": "Website: genup.com",
-    "contactPageLink": "Contact page"
+    "contactPageLink": "Contact page",
+    "spotbulleAgent": "SpotBulle AI Agent"
   }
 }
-

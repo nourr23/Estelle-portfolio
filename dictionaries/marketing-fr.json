@@ -1,0 +1,351 @@
+{
+  "quiSuisJe": {
+    "title": "Qui suis-je ?",
+    "breadcrumbLabel": "Qui suis-je ?",
+    "lead": "L'expertise au service de votre réussite, l'intuition au service de votre potentiel.",
+    "sections": [
+      {
+        "title": "🎓 30 ans d'expérience : Une expertise de terrain",
+        "paragraphs": [
+          "Professeure certifiée de Lettres modernes, j'accompagne depuis trois décennies les élèves dans leurs défis académiques. Aujourd'hui basée au Maroc au sein du réseau AEFE, j'évolue dans un univers international. Cette double culture m'offre une vision stratégique de l'orientation (Parcoursup, choix de spécialités) centrée sur l'adaptabilité et la mobilité, des compétences clés pour le monde de 2026."
+        ]
+      },
+      {
+        "title": "✨ Ma méthode : le croisement de l'expérience et du ressenti",
+        "paragraphs": [
+          "Mon accompagnement ne ressemble à aucun autre car il ne se limite pas aux manuels scolaires. Ma force réside dans une approche hybride qui croise mes 30 ans d'enseignement, mon intuition profonde et des outils d'analyse concrets.",
+          "Je ne me contente pas de transmettre un savoir : je décode qui vous êtes (ou qui est votre enfant) pour lever les blocages là où ils se trouvent."
+        ]
+      },
+      {
+        "title": "🧭 Comment j'organise votre suivi",
+        "paragraphs": [
+          "Tout commence par un premier entretien approfondi, véritable moment de rencontre où mes ressentis professionnels guident l'échange. Pour valider et structurer cette approche intuitive, je m'appuie sur des tests concrets (profils élémentaires, Process Communication Model).",
+          "C'est cette lecture croisée qui me permet de bâtir votre stratégie :"
+        ],
+        "bullets": [
+          "Pour le jeune : un diagnostic qui révèle tes talents innés et te redonne confiance.",
+          "Pour le parent : une structure pédagogique rigoureuse et rassurante.",
+          "Pour la réussite : des cours et un suivi d'orientation (Brevet, Bac, post-bac) entièrement personnalisés en fonction des résultats de ce premier bilan."
+        ]
+      },
+      {
+        "title": "Objectif",
+        "paragraphs": [
+          "Transformer le stress des examens et de l'orientation en un projet clair, ambitieux et surtout qui vous ressemble."
+        ]
+      }
+    ],
+    "cta": {
+      "label": "Réserver mon entretien de 1h30 avec Estelle",
+      "hint": "Un échange authentique pour définir ensemble votre plan d'action."
+    }
+  },
+  "excellenceExamens": {
+    "title": "Excellence examens",
+    "breadcrumbLabel": "Excellence examens",
+    "lead": "Brevet, Bac de français et Grand Oral — la haute couture de la réussite. L'examen n'est pas une fin en soi : c'est une performance qui se prépare sur-mesure.",
+    "sections": [
+      {
+        "title": "Une méthode personnalisée",
+        "paragraphs": [
+          "Oubliez les méthodes standardisées. Chaque accompagnement est conçu en fonction du profil de l'élève et de son mode d'apprentissage.",
+          "Après un diagnostic initial, j'adapte le travail :"
+        ],
+        "bullets": [
+          "Mémoire visuelle → cartes mentales, schémas structurants",
+          "Mémoire intuitive → compréhension globale et appropriation personnelle",
+          "Profil auditif / kinesthésique → exercices oraux et mise en situation"
+        ]
+      },
+      {
+        "title": "Innovation : portfolio vidéo",
+        "paragraphs": [
+          "Captation d'images et enregistrements pour que le jeune analyse sa prestation et son éloquence — réussir les épreuves tout en sculptant sa plume et son aisance orale.",
+          "Apprendre devient plus naturel, plus efficace, plus durable."
+        ]
+      },
+      {
+        "title": "✍️ Bac de français et brevet",
+        "paragraphs": [
+          "Maîtriser la méthode. Libérer son potentiel."
+        ],
+        "bullets": [
+          "Analyse linéaire et commentaire : structurer sans se bloquer",
+          "Dissertation : organiser sa pensée avec clarté et rigueur",
+          "Oral de français : gagner en aisance et en précision"
+        ]
+      },
+      {
+        "title": "Objectif",
+        "paragraphs": [
+          "Ne plus subir l'épreuve, mais la maîtriser."
+        ]
+      },
+      {
+        "title": "🎤 Grand Oral",
+        "paragraphs": [
+          "L'art de convaincre et d'incarner son discours."
+        ],
+        "bullets": [
+          "Construire une argumentation fluide et percutante",
+          "Travailler la voix, la posture et la présence",
+          "Répondre au jury avec assurance"
+        ]
+      },
+      {
+        "title": "Pourquoi cet accompagnement ?",
+        "bullets": [
+          "Préparation ciblée et efficace",
+          "Méthode adaptée au profil de l'élève",
+          "Expertise des exigences AEFE et internationales",
+          "Travail en profondeur sur la confiance et l'oral"
+        ]
+      },
+      {
+        "title": "Ma conviction",
+        "paragraphs": [
+          "On ne prépare pas seulement un examen. On construit une réussite qui vous ressemble."
+        ]
+      }
+    ],
+    "cta": {
+      "label": "Réserver mon entretien de diagnostic (1h30)",
+      "hint": "Un premier échange pour identifier ton mode d'apprentissage et construire une stratégie sur-mesure."
+    }
+  },
+  "besoinsParticuliers": {
+    "title": "Besoins particuliers",
+    "breadcrumbLabel": "Besoins particuliers",
+    "lead": "Profils atypiques et besoins particuliers : du primaire au lycée. Parce qu'apprendre différemment est une force, pas un obstacle.",
+    "sections": [
+      {
+        "title": "Transformer la différence en force",
+        "paragraphs": [
+          "Certains enfants ne rentrent pas dans les cases du système classique. Qu'il s'agisse de profils HPI, TDAH ou de troubles DYS, leur intelligence demande une clé d'entrée spécifique. Chez GENUP, nous ne cherchons pas à formater l'élève, mais à adapter l'enseignement à son architecture cérébrale."
+        ]
+      },
+      {
+        "title": "🎯 Une ingénierie pédagogique de précision",
+        "paragraphs": [
+          "Mon accompagnement repose sur une méthodologie rigoureuse, issue des meilleures recherches en sciences de l'éducation. Je crée des exercices conçus sur-mesure en suivant les référentiels en vigueur :"
+        ],
+        "bullets": [
+          "La taxonomie de Bloom : structurer la progression de l'élève, de la simple compréhension à la création pure, en respectant son rythme cognitif.",
+          "La triangulation des apprentissages : croiser les savoirs, les méthodes et les contextes pour une mémorisation profonde et durable."
+        ]
+      },
+      {
+        "title": "🛠️ Un accompagnement dès le primaire",
+        "paragraphs": [
+          "L'excellence se prépare tôt. J'interviens dès l'école primaire pour poser les bases d'une scolarité sereine :"
+        ],
+        "bullets": [
+          "Apprendre à apprendre : identifier les stratégies qui fonctionnent pour l'enfant.",
+          "Méthodes d'entrée spécifiques : mémoire visuelle, intuitive ou kinesthésique selon le profil décelé.",
+          "Valorisation : transformer le sentiment d'échec en une conscience aiguë de ses propres talents."
+        ]
+      },
+      {
+        "title": "🎥 Portfolio vidéo : le miroir de la progression",
+        "paragraphs": [
+          "Pour les profils atypiques, se voir réussir est le premier pas vers la confiance.",
+          "J'intègre à mon suivi une captation d'images et un enregistrement vidéo des prestations (pitchs, lectures, argumentations). Le portfolio vidéo permet à l'enfant de prendre conscience de sa posture et de son éloquence, d'analyser ses progrès de manière objective et bienveillante, et de se constituer un capital confiance pour ses futurs oraux."
+        ]
+      },
+      {
+        "quote": "Mon rôle est de traduire le programme scolaire dans la langue maternelle de votre enfant : celle de son profil élémentaire."
+      },
+      {
+        "title": "Donnez à votre enfant les outils d'une réussite sans limites",
+        "paragraphs": []
+      }
+    ],
+    "cta": {
+      "label": "Réserver mon entretien de diagnostic (1h30)",
+      "hint": "Un bilan complet pour identifier son mode d'apprentissage et bâtir son accompagnement sur-mesure."
+    }
+  },
+  "orientationStrategie": {
+    "title": "Orientation et stratégie",
+    "breadcrumbLabel": "Orientation et stratégie",
+    "lead": "Construire un avenir sans frontières : Parcoursup, spécialités et réseaux. L'orientation n'est pas une destination, c'est une stratégie de haute précision.",
+    "sections": [
+      {
+        "title": "Une approche GENUP",
+        "paragraphs": [
+          "Dans un monde éducatif en mutation, choisir ses spécialités dès la troisième ou remplir son dossier Parcoursup ne doit plus être une source d'angoisse, mais une opportunité de déploiement. Chez GENUP, nous fusionnons l'intelligence artificielle de pointe avec une connaissance intime des filières d'excellence."
+        ]
+      },
+      {
+        "title": "🤖 L'IA SpotBulle : votre radar d'orientation sur-mesure",
+        "paragraphs": [
+          "Pour offrir un accompagnement au plus près du profil de chaque jeune, j'ai conçu un agent d'intelligence artificielle exclusif."
+        ],
+        "bullets": [
+          "Recherche intelligente : exploration en temps réel des bases de données des écoles et universités en France et à l'étranger.",
+          "Matching de profil : l'IA croise les résultats des tests élémentaires (forces innées) avec les exigences des filières les plus ambitieuses.",
+          "Veille permanente : identification des passerelles et parcours émergents."
+        ]
+      },
+      {
+        "title": "🇫🇷 et 🌍 Expertise France et international (AEFE)",
+        "paragraphs": [
+          "Forte de mon expérience au sein du réseau AEFE, je maîtrise les rouages complexes de l'orientation pour les profils internationaux, binationaux ou expatriés :"
+        ],
+        "bullets": [
+          "Parcoursup de A à Z : projets de formation motivés, structuration du CV, mise en valeur des expériences extra-scolaires.",
+          "Passerelles privilégiées : identification de passerelles concrètes avec des écoles en France.",
+          "Ouverture monde : admissions à l'étranger (Europe, Amérique du Nord) et équivalences."
+        ]
+      },
+      {
+        "title": "🧭 Le parcours Avenir : dès la troisième",
+        "paragraphs": [
+          "Anticiper, c'est réussir. J'accompagne les élèves dès le collège pour :"
+        ],
+        "bullets": [
+          "Le choix des spécialités : aligner les matières avec le projet professionnel futur.",
+          "La cohérence du dossier : construire un profil académique solide et attractif pour les jurys.",
+          "La connaissance des métiers : découvrir les professions de demain en lien avec sa nature (Air, Terre, Feu, Eau)."
+        ]
+      },
+      {
+        "title": "🎥 Portfolio vidéo de motivation",
+        "paragraphs": [
+          "Pour certaines écoles de commerce, d'art ou de design, la captation vidéo est un atout majeur. Nous préparons ensemble votre vidéo de présentation (pitch) : enregistrement, éloquence et impact visuel pour marquer les recruteurs."
+        ]
+      },
+      {
+        "quote": "L'orientation réussie, c'est la rencontre entre une identité révélée et une filière stratégiquement choisie."
+      },
+      {
+        "title": "Sécurisez votre trajectoire dès aujourd'hui",
+        "paragraphs": []
+      }
+    ],
+    "cta": {
+      "label": "Réserver mon entretien stratégique (1h30)",
+      "hint": "Un bilan complet pour activer votre IA personnalisée et dessiner votre futur parcours."
+    }
+  },
+  "sejoursImmersion": {
+    "title": "Séjours en immersion",
+    "breadcrumbLabel": "Séjours immersion",
+    "lead": "« Entreprendre pour apprendre » — le pouvoir du faire : learning by doing et aventure collective.",
+    "sections": [
+      {
+        "title": "Pourquoi ces séjours ?",
+        "paragraphs": [
+          "Parce que le talent ne s'apprend pas dans les livres, il se vit sur le terrain.",
+          "En France ou à l'étranger, GENUP propose des séjours d'immersion uniques pour transformer des idées en projets concrets. En partenariat avec des experts du réseau mondial « Entreprendre pour Apprendre », nous appliquons une pédagogie active où chaque jeune devient l'acteur de sa propre réussite."
+        ]
+      },
+      {
+        "title": "🚀 Le concept : la mini-entreprise",
+        "paragraphs": [
+          "Pendant ces séjours, nous ne simulons pas, nous créons. Les jeunes sont plongés dans l'aventure d'une mini-entreprise :"
+        ],
+        "bullets": [
+          "Preuve du concept (POC) : passer de l'idée abstraite au prototype réel, valider ses intuitions par l'expérimentation.",
+          "Stratégie collective : collaborer, négocier et fédérer autour d'un objectif commun.",
+          "Responsabilisation : chaque participant occupe un rôle clé (Marketing, Finance, RH, Design) selon son profil élémentaire détecté par l'IA SpotBulle."
+        ]
+      },
+      {
+        "title": "🎓 Learning by doing",
+        "paragraphs": [
+          "Ici, l'erreur est un moteur et l'action est le meilleur professeur. Notre méthode permet de :"
+        ],
+        "bullets": [
+          "Faire grandir sa personnalité : dépasser sa timidité, prendre la parole en public, oser l'initiative.",
+          "Maîtriser les soft skills : créativité, gestion du stress, leadership, résolution de problèmes complexes.",
+          "« Hacker » son orientation : tester un métier en vrai pour confirmer une vocation."
+        ]
+      },
+      {
+        "title": "🌍 Encadrement international",
+        "paragraphs": [
+          "Mentors et encadreurs reconnus à l'international — professionnels de l'entreprise et de l'éducation pour transmettre une expérience de terrain, inspirer par leur parcours, et défier les idées pour pousser vers l'excellence."
+        ]
+      },
+      {
+        "title": "🎥 Portfolio de l'aventure",
+        "paragraphs": [
+          "Chaque séjour est documenté. Les jeunes repartent avec :"
+        ],
+        "bullets": [
+          "Une captation de leur pitch final devant un jury d'experts.",
+          "Un portfolio numérique pour les dossiers de candidature (écoles de commerce, IUT, bachelor)."
+        ]
+      },
+      {
+        "quote": "Entreprendre, c'est donner à ses idées le pouvoir de transformer sa personnalité."
+      }
+    ],
+    "cta": {
+      "label": "Découvrir les prochains séjours et destinations",
+      "hint": "Places limitées pour garantir un encadrement sur-mesure."
+    },
+    "secondaryCta": {
+      "label": "Nous contacter pour les dates",
+      "hint": "Écrivez-nous pour connaître les prochaines sessions.",
+      "hrefKey": "contact"
+    }
+  },
+  "spotbulleScript": {
+    "title": "Script de l'agent IA SpotBulle",
+    "breadcrumbLabel": "Script SpotBulle",
+    "lead": "Version finale et épurée : accroche, questionnaire dynamique, conclusion et passage à l'action.",
+    "sections": [
+      {
+        "title": "L'accroche",
+        "paragraphs": [
+          "« Salut ! 👋 Moi, c'est SpotBulle, l'IA d'Estelle. En 30 secondes, je vais t'aider à découvrir tes forces cachées pour booster ta réussite. On commence ? »"
+        ]
+      },
+      {
+        "title": "Questionnaire dynamique (résumé)",
+        "bullets": [
+          "Profil : Imagine / Organise / Aide / Mène.",
+          "Apprentissage : Voir / Écouter / Faire.",
+          "Moteur : passion, sport ou talent particulier.",
+          "Inspiration : mentor ou figure célèbre.",
+          "Boussole (optionnel) : date de naissance."
+        ]
+      },
+      {
+        "title": "Le questionnaire (tes talents et ton profil)",
+        "bullets": [
+          "Ton profil : « Si tu devais mener un projet, tu serais plutôt celui qui imagine (créatif), celui qui organise (méthodique), celui qui aide (empathique) ou celui qui mène (leader) ? »",
+          "Ta façon d'apprendre : « Pour bien comprendre, tu préfères : voir des schémas et des couleurs, écouter des explications, ou faire les choses directement ? »",
+          "Ton moteur : « Quelle est ta passion, ton sport ou le talent dont tu es fier ? (Musique, jeu vidéo, dessin, sport, cuisine, etc.) »",
+          "Ton inspiration : « Y a-t-il une personne célèbre ou un mentor qui t'inspire vraiment par son parcours ? »",
+          "Ta boussole (optionnel) : « Quelle est ta date de naissance ? Cela m'aidera à préciser tes énergies naturelles. »"
+        ]
+      },
+      {
+        "title": "La conclusion (passage à l'action avec Estelle)",
+        "paragraphs": [
+          "« Génial ! 🎯 Avec ta passion pour [Passion] et ton envie de ressembler à [Inspiration], je vois que tu as une énergie de type [Profil : ex. Feu/Air]. Tu as un vrai potentiel de [Qualité] ! Estelle a déjà analysé ton profil. Elle t'attend pour une session de 1h30 afin de transformer tes talents en une réussite concrète (Bac, Brevet ou Orientation). On réserve ton créneau ? »"
+        ]
+      },
+      {
+        "title": "Le bouton d'action",
+        "paragraphs": [
+          "Libellé suggéré : « Réserver mon RDV de 1h30 avec Estelle »."
+        ]
+      },
+      {
+        "title": "Sortie",
+        "paragraphs": [
+          "Diagnostic personnalisé et invitation immédiate au rendez-vous de 1h30 avec Estelle."
+        ]
+      }
+    ],
+    "cta": {
+      "label": "Réserver mon RDV de 1h30 avec Estelle",
+      "hint": "Accédez à la page contact pour choisir un créneau."
+    }
+  }
+}

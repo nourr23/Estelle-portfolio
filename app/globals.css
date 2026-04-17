@@ -24,3 +24,40 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Landing hero card: fade in while easing down from above */
+@keyframes landing-hero-card-in {
+  from {
+    opacity: 0;
+    transform: translateY(-18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.landing-hero-card-in {
+  animation: landing-hero-card-in 0.7s ease-out forwards;
+}
+
+/* Estelle portrait: fade in while sliding from left to right */
+@keyframes estelle-photo-in {
+  from {
+    opacity: 0;
+    transform: translateX(-18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.estelle-photo-in {
+  opacity: 0;
+  transform: translateX(-18px);
+}
+
+.estelle-photo-in-visible {
+  animation: estelle-photo-in 0.7s ease-out forwards;
+}
