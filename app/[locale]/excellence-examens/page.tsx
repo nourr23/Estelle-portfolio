@@ -11,5 +11,12 @@ export default async function ExcellenceExamensPage({
   const dict = await getDictionary(resolvedLocale);
   const content = dict.marketingPages.excellenceExamens;
 
-  return <SpotBulleMarketingPage dict={dict} locale={resolvedLocale} content={content} />;
+  return (
+    <SpotBulleMarketingPage
+      dict={dict}
+      locale={resolvedLocale}
+      content={content}
+      bg2FullWidthRepeat
+    />
+  );
 }

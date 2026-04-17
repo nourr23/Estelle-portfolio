@@ -25,6 +25,7 @@ export default function SpotBulleMarketingPage({
   locale,
   content,
   bg2FullWidthRepeat,
+  hideBg4BookingSection = false,
 }: {
   dict: {
     nav: Record<string, string>;
@@ -37,6 +38,8 @@ export default function SpotBulleMarketingPage({
   content: MarketingPageContent;
   /** Home-like `bg2` band: cover background, hero title + frosted section cards. */
   bg2FullWidthRepeat?: boolean;
+  /** Hide the BG4 calendar/booking block at the bottom. */
+  hideBg4BookingSection?: boolean;
 }) {
   const prefix = `/${locale}`;
 
@@ -233,7 +236,9 @@ export default function SpotBulleMarketingPage({
             />
             <main className="relative z-10 w-full">{bg2MainInner}</main>
           </div>
-          <LandingBg4RdvSection dict={dict.landingRdvForm} locale={locale} />
+          {hideBg4BookingSection ? null : (
+            <LandingBg4RdvSection dict={dict.landingRdvForm} locale={locale} />
+          )}
         </>
       ) : (
         <main className={mainClassName}>{creamMainInner}</main>
