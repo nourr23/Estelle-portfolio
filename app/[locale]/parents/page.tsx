@@ -1,5 +1,7 @@
 import { getDictionary, type Locale } from "../../../dictionaries";
-import SpotBulleParentsPage from "../../../components/spotbulle/SpotBulleParentsPage";
+import SpotBulleMarketingPage, {
+  type MarketingPageContent,
+} from "../../../components/spotbulle/SpotBulleMarketingPage";
 
 export default async function ParentsPageRoute({
   params,
@@ -9,7 +11,54 @@ export default async function ParentsPageRoute({
   const { locale } = await params;
   const resolvedLocale = (locale as Locale) ?? "fr";
   const dict = await getDictionary(resolvedLocale);
+  const parents = dict.parentsPage;
 
-  return <SpotBulleParentsPage dict={dict} locale={resolvedLocale} />;
+  const offersSections =
+    parents?.offers?.map((offer: { title?: string; bullets?: string[]; result?: string }) => ({
+      title: offer?.title,
+      bullets: offer?.bullets ?? [],
+      paragraphs: offer?.result ? [offer.result] : [],
+    })) ?? [];
+
+  const content: MarketingPageContent = {
+    title: parents?.title ?? "",
+    breadcrumbLabel: parents?.title ?? "",
+    lead: parents?.intro ?? "",
+    sections: [
+      {
+        title: parents?.solutionTitle,
+        paragraphs: [parents?.solutionBody].filter(Boolean),
+        bullets: parents?.solutionBullets ?? [],
+      },
+      {
+        title: parents?.offersTitle,
+      },
+      ...offersSections,
+      {
+        title: parents?.proofTitle,
+        paragraphs: [parents?.proofBody].filter(Boolean),
+      },
+      {
+        title: parents?.pricingTitle,
+        paragraphs: [parents?.pricingBody].filter(Boolean),
+      },
+    ],
+    cta: {
+      label: dict.nav?.book ?? "",
+    },
+    secondaryCta: {
+      label: parents?.ctaQuote ?? "",
+      hrefKey: "contact",
+    },
+  };
+
+  return (
+    <SpotBulleMarketingPage
+      dict={dict}
+      locale={resolvedLocale}
+      content={content}
+      bg2FullWidthRepeat
+    />
+  );
 }
 
