@@ -61,3 +61,52 @@ body {
 .estelle-photo-in-visible {
   animation: estelle-photo-in 0.7s ease-out forwards;
 }
+
+/* Reveal title: each character drops onto "potentiel" (no fade) */
+@keyframes landing-reveal-char-drop {
+  0% {
+    transform: translate3d(var(--char-start-x, 0), 0, 0) rotate(0deg);
+  }
+  28% {
+    transform: translate3d(var(--char-impact-x, 0), var(--char-drop-distance, 34px), 0)
+      rotate(var(--char-impact-rot, 0deg));
+  }
+  40% {
+    transform: translate3d(var(--char-rest-x, 0), 12px, 0)
+      rotate(calc(var(--char-impact-rot, 0deg) * -0.7));
+  }
+  52% {
+    transform: translate3d(var(--char-rest-x, 0), -6px, 0)
+      rotate(calc(var(--char-impact-rot, 0deg) * 0.35));
+  }
+  66% {
+    transform: translate3d(var(--char-rest-x, 0), 3px, 0)
+      rotate(calc(var(--char-impact-rot, 0deg) * -0.2));
+  }
+  82% {
+    transform: translate3d(var(--char-rest-x, 0), -1px, 0)
+      rotate(calc(var(--char-impact-rot, 0deg) * 0.1));
+  }
+  90% {
+    transform: translate3d(var(--char-rest-x, 0), 0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(var(--char-start-x, 0), 0, 0) rotate(0deg);
+  }
+}
+
+.landing-reveal-title .landing-reveal-line {
+  white-space: nowrap;
+  transform: translateY(0);
+  will-change: transform;
+}
+
+.landing-reveal-title .landing-reveal-char {
+  display: inline-block;
+  will-change: transform;
+}
+
+.landing-reveal-title.is-visible .landing-reveal-char {
+  animation: landing-reveal-char-drop var(--char-cycle, 6.2s) cubic-bezier(0.2, 0.86, 0.24, 1)
+    var(--char-delay, 0s) infinite;
+}
