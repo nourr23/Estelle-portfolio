@@ -5,6 +5,7 @@ import LandingGenerationHero, {
   type LandingHeroDict,
 } from "./LandingGenerationHero";
 import LandingBg4RdvSection from "./LandingBg4RdvSection";
+import LandingRevealTitle from "./LandingRevealTitle";
 import type { LandingRdvFormDict } from "./LandingBg4RdvBand";
 import SpotBulleFooter from "./SpotBulleFooter";
 import SpotBulleHeader from "./SpotBulleHeader";
@@ -145,7 +146,7 @@ export default function SpotBulleHome({
           </div>
         </div>
 
-        <div className="pointer-events-auto relative h-[614px] w-full overflow-hidden">
+        {/* <div className="pointer-events-auto relative h-[614px] w-full overflow-hidden">
           <div
             className="pointer-events-none absolute inset-0 bg-no-repeat"
             style={{
@@ -157,12 +158,28 @@ export default function SpotBulleHome({
           />
           <div className="relative h-full w-full">
             <div className="flex h-full w-full items-center justify-center">
-              <p className="select-none text-center text-[72px] font-bold leading-[0.9] text-white/40 md:text-[120px]">
-                <span className="block">{dict.landingReveal.line1}</span>
-                <span className="block">{dict.landingReveal.line2}</span>
-                <span className="block">{dict.landingReveal.line3}</span>
-              </p>
+              <LandingRevealTitle
+                line1={dict.landingReveal.line1}
+                line2={dict.landingReveal.line2}
+                line3={dict.landingReveal.line3}
+              />
             </div>
+          </div>
+        </div> */}
+
+        <div className="pointer-events-auto relative h-[680px] w-full overflow-hidden bg-[#062a2c]">
+          <div className="flex h-full w-full items-center justify-center">
+            <video
+              className="h-full w-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+            >
+              <source src="/videos/section4.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
 
