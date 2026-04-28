@@ -27,9 +27,9 @@ export function SpotBulleDiagnosticModal({
     <Modal
       open={open}
       onClose={onClose}
-      bare
+      title={locale === "fr" ? "Diagnostic SpotBulle" : "SpotBulle diagnosis"}
       closeLabel={locale === "fr" ? "Fermer" : "Close"}
-      ariaLabel={locale === "fr" ? "Diagnostic SpotBulle" : "SpotBulle diagnosis"}
+      rootClassName="z-[110]"
     >
       <SpotBulleAgentChat
         key={sessionKey}

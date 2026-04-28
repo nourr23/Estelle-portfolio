@@ -109,9 +109,11 @@ export default function SpotBulleHeader({
             <p className="text-sm font-bold capitalize text-[#f7f1e3] md:text-base">
               {landingPromo.headline}
             </p>
-            <p className="mt-0.5 max-w-[281px] text-[10px] leading-snug text-[#f7f1e3]/85">
-              {landingPromo.subline}
-            </p>
+            {landingPromo.subline ? (
+              <p className="mt-0.5 max-w-[281px] text-[10px] leading-snug text-[#f7f1e3]/85">
+                {landingPromo.subline}
+              </p>
+            ) : null}
           </div>
         </div>
 

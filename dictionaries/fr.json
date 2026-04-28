@@ -16,12 +16,12 @@
     "spotbulleScript": "Script SpotBulle"
   },
   "landingHeader": {
-    "headline": "aujourd'hui",
-    "subline": "Découvre tes forces élémentaires avec notre nouvel agent « SpotBulle » et active ton potentiel unique en 2026.",
+    "headline": "",
+    "subline": "",
     "ctaRdv": "Réserver un RDV"
   },
   "landingHero": {
-    "title": "Génération révélée",
+    "title": "Ton diagnostic en 30 secondes",
     "subtitle": "Ton chemin vers le succès commence aujourd'hui",
     "bodyBefore": "Découvre tes ",
     "bodyEmphasis": "forces élémentaires",
@@ -35,18 +35,18 @@
     "experienceSub": "au service de la réussite scolaire et de l'orientation",
     "firstName": "Estelle",
     "lastName": "DRION",
-    "sideBadge": "Un premier aperçu, puis un accompagnement sur mesure",
-    "tagline": "Une approche bienveillante et structurée pour lever les blocages et activer tes talents innés.",
-    "body": "Estelle s'appuie sur une expérience diversifiée d'enseignante de français et de coach en orientation, combinée à une lecture énergétique unique : process communication model & elements.",
-    "cta": "En savoir plus",
+    "sideBadge": "Un premier échange sans engagement, puis un accompagnement sur mesure.",
+    "tagline": "Une approche bienveillante et structurée pour aider votre enfant à dépasser ses blocages, reprendre confiance et réussir.",
+    "body": "Je m’appuie sur plus de 30 ans d’expérience en tant qu’enseignante de français et coach en orientation pour accompagner chaque élève de manière personnalisée. Mon approche permet de mieux comprendre son fonctionnement, de reprendre confiance et de progresser durablement.",
+    "cta": "Aider mon enfant",
     "cards": [
       {
         "iconSrc": "/icons/Examens.png",
         "title": "Excellence aux examens & orientation",
         "subtitle": "Niveau 3ème à Lycée",
         "body": [
-          "• Préparation intensive au Brevet des collèges (DNB) et Baccalauréat de français (Oral et écrit).",
-          "• Orientation stratégique : Parcoursup, choix des spécialités"
+          "• Préparation intensive au Brevet des Collèges (DNB) et Baccalauréat de français (Oral et Écrit).",
+          "• Orientation stratégique : Parcoursup, choix des spécialités."
         ]
       },
       {
@@ -55,23 +55,23 @@
         "subtitle": "Dys / TDAH / HPI",
         "body": [
           "Pédagogie adaptée à chaque type de pensée.",
-          "Enseignements basés sur le profil élémentaire détecté: Cours de français, méthodologie et soutien pour les élèves atypiques."
+          "Accompagnement fondé sur le profil élémentaire détecté : cours de français, aide transversale, méthodologie et soutien pour les élèves atypiques."
         ]
       },
       {
         "iconSrc": "/icons/roquette.png",
-        "title": "Séjours à thème en immersion",
+        "title": "Séjours à thème en immersion en France et au Maroc",
         "subtitle": "\"entreprendre pour apprendre\" • Learning by doing",
         "body": [
-          "Développer ses soft skills, son esprit d'initiative, la gestion de projet et le leadership"
+          "Développer ses soft skills, son esprit d'initiative, la gestion de projet et le leadership."
         ]
       }
     ]
   },
   "landingBg1Badge": {
-    "line1": "Un premier aperçu, puis",
-    "line2": "un accompagnement",
-    "line3": "sur mesure"
+    "line1": "Un premier échange sans engagement,",
+    "line2": "puis un accompagnement",
+    "line3": "sur mesure."
   },
   "landingReveal": {
     "line1": "révèle",

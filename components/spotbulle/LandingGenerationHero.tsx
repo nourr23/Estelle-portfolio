@@ -24,7 +24,7 @@ export default function LandingGenerationHero({
   bookingDict: BookingModalDict;
 }) {
   return (
-    <article className="landing-hero-card-in pointer-events-auto relative w-full overflow-hidden rounded-[22px] border border-white/12 bg-[#0d3538]/50 px-7 pb-9 pt-9 shadow-[0_24px_60px_rgba(0,0,0,0.35)] md:max-w-[600px] md:px-10 md:pb-10 md:pt-10">
+    <article className="landing-hero-card-in pointer-events-auto relative w-full rounded-[22px] border border-white/12 bg-[#0d3538]/50 px-7 pb-9 pt-9 shadow-[0_24px_60px_rgba(0,0,0,0.35)] md:max-w-[600px] md:px-10 md:pb-10 md:pt-10">
       <div
         className="pointer-events-none absolute -left-28 -top-20 h-72 w-72 rounded-full bg-[radial-gradient(closest-side,rgba(255,248,220,0.22)_0%,rgba(120,200,190,0.08)_45%,transparent_70%)] opacity-90"
         aria-hidden

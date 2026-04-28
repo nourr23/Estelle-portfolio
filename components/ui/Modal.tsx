@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, type ReactNode } from "react";
+import { createPortal } from "react-dom";
 
 type ModalProps = {
   open: boolean;
@@ -44,8 +45,10 @@ export function Modal({
 
   if (!open) return null;
 
+  const modalRoot = typeof document !== "undefined" ? document.body : null;
+
   if (bare) {
-    return (
+    const content = (
       <div
         className={`fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 ${rootClassName ?? ""}`}
         role="presentation"
@@ -65,9 +68,10 @@ export function Modal({
         </div>
       </div>
     );
+    return modalRoot ? createPortal(content, modalRoot) : content;
   }
 
-  return (
+  const content = (
     <div
       className={`fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 ${rootClassName ?? ""}`}
       role="presentation"
@@ -104,4 +108,5 @@ export function Modal({
       </div>
     </div>
   );
+  return modalRoot ? createPortal(content, modalRoot) : content;
 }
