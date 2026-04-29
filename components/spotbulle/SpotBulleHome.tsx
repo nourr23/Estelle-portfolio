@@ -146,7 +146,7 @@ export default function SpotBulleHome({
           </div>
         </div>
 
-        {/* <div className="pointer-events-auto relative h-[614px] w-full overflow-hidden">
+        <div className="pointer-events-auto relative h-[614px] w-full overflow-hidden md:hidden">
           <div
             className="pointer-events-none absolute inset-0 bg-no-repeat"
             style={{
@@ -165,9 +165,9 @@ export default function SpotBulleHome({
               />
             </div>
           </div>
-        </div> */}
+        </div>
 
-        <div className="pointer-events-auto relative h-[680px] w-full overflow-hidden bg-[#062a2c]">
+        <div className="pointer-events-auto relative hidden h-[680px] w-full overflow-hidden bg-[#062a2c] md:block">
           <div className="flex h-full w-full items-center justify-center">
             <video
               className="h-full w-full object-cover"

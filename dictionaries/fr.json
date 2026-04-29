@@ -52,7 +52,7 @@
       {
         "iconSrc": "/icons/ampoule.png",
         "title": "Accompagnement scolaire sur mesure",
-        "subtitle": "Dys / TDAH / HPI",
+        "subtitle": "DYS / TDAH / HPI",
         "body": [
           "Pédagogie adaptée à chaque type de pensée.",
           "Accompagnement fondé sur le profil élémentaire détecté : cours de français, aide transversale, méthodologie et soutien pour les élèves atypiques."
@@ -61,7 +61,7 @@
       {
         "iconSrc": "/icons/roquette.png",
         "title": "Séjours à thème en immersion en France et au Maroc",
-        "subtitle": "\"entreprendre pour apprendre\" • Learning by doing",
+        "subtitle": "\"Entreprendre pour Apprendre\" • Learning by doing",
         "body": [
           "Développer ses soft skills, son esprit d'initiative, la gestion de projet et le leadership."
         ]
@@ -166,7 +166,7 @@
         "title": "Expériences & séjours",
         "bullets": [
           "Bruxelles : institutions européennes",
-          "Agadir : entreprendre pour apprendre",
+          "Agadir : Entreprendre pour Apprendre",
           "séjours thématiques (conscience de soi, orientation…)"
         ],
         "result": "Résultat : ouverture + ambition"
@@ -214,7 +214,7 @@
     }
   },
   "offresPage": {
-    "title": "Offres & parcours",
+    "title": "Tarifs et Formules",
     "intro": "Tout le détail des programmes, du parcours SpotBulle, des séjours et des passerelles — au-delà de la synthèse de la page d’accueil.",
     "buckets": [
       {
@@ -254,7 +254,7 @@
         "Oral, posture et confiance pour oser parler et présenter vos idées",
         "Networking & entrepreneuriat : apprendre en expérimentant, pas seulement en théorie",
         "Séjours à thème sur-mesure (ex. conscience de soi / bien-être / institutions européennes — aussi pensés dans une logique parents–jeunes selon le projet)",
-        "Exemple de dynamique jeunes : séjour du type « entreprendre pour apprendre » (ex. Agadir) — contenu et dates selon calendrier"
+        "Exemple de dynamique jeunes : séjour du type « Entreprendre pour Apprendre » (ex. Agadir) — contenu et dates selon calendrier"
       ],
       "ctaReservation": "Réserver une première séance"
     }
@@ -338,7 +338,7 @@
     "experiencesIntro": "Des formats dynamiques pour apprendre, oser et se projeter.",
     "experiencesBullets": [
       "Bruxelles : institutions européennes",
-      "Agadir : entreprendre pour apprendre",
+      "Agadir : Entreprendre pour Apprendre",
       "séjours thématiques (conscience de soi, orientation…)"
     ],
     "spotbulleTitle": "SpotBulle",
