@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import SpotBulleFooter from "./SpotBulleFooter";
 import SpotBulleHeader, { type LandingPromoDict } from "./SpotBulleHeader";
 import type { BookingModalDict } from "./SpotBulleBookingModal";
@@ -26,6 +27,8 @@ export default function SpotBulleMarketingPage({
   content,
   bg2FullWidthRepeat,
   hideBg4BookingSection = false,
+  preBookingVideoSrc,
+  preBookingMobileSection,
 }: {
   dict: {
     nav: Record<string, string>;
@@ -40,6 +43,10 @@ export default function SpotBulleMarketingPage({
   bg2FullWidthRepeat?: boolean;
   /** Hide the BG4 calendar/booking block at the bottom. */
   hideBg4BookingSection?: boolean;
+  /** Optional full-width video section shown before BG4 booking section. */
+  preBookingVideoSrc?: string;
+  /** Optional mobile-only section shown instead of pre-booking video. */
+  preBookingMobileSection?: ReactNode;
 }) {
   const prefix = `/${locale}`;
 
@@ -236,6 +243,30 @@ export default function SpotBulleMarketingPage({
             />
             <main className="relative z-10 w-full">{bg2MainInner}</main>
           </div>
+          {preBookingVideoSrc ? (
+            <>
+              {preBookingMobileSection ? (
+                <div className="pointer-events-auto relative w-full overflow-hidden md:hidden">
+                  {preBookingMobileSection}
+                </div>
+              ) : null}
+              <div className="pointer-events-auto relative hidden h-[680px] w-full overflow-hidden bg-[#062a2c] md:block">
+                <div className="flex h-full w-full items-center justify-center">
+                  <video
+                    className="h-full w-full object-cover"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                  >
+                    <source src={preBookingVideoSrc} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </>
+          ) : null}
           {hideBg4BookingSection ? null : (
             <LandingBg4RdvSection dict={dict.landingRdvForm} locale={locale} />
           )}
