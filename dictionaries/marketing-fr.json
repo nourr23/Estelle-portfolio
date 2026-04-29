@@ -42,7 +42,7 @@
     }
   },
   "excellenceExamens": {
-    "title": "Excellence examens",
+    "title": "PRÉPARATION EXAMENS",
     "breadcrumbLabel": "Excellence examens",
     "lead": "Brevet, Bac de français et Grand Oral — la haute couture de la réussite. L'examen n'est pas une fin en soi : c'est une performance qui se prépare sur-mesure.",
     "sections": [
@@ -66,7 +66,7 @@
         ]
       },
       {
-        "title": "✍️ Bac de français et brevet",
+        "title": "Bac de français et brevet",
         "paragraphs": [
           "Maîtriser la méthode. Libérer son potentiel."
         ],
@@ -83,7 +83,7 @@
         ]
       },
       {
-        "title": "🎤 Grand Oral",
+        "title": "Grand Oral",
         "paragraphs": [
           "L'art de convaincre et d'incarner son discours."
         ],
@@ -154,7 +154,7 @@
         ]
       },
       {
-        "title": "Donnez à votre enfant les outils d'une réussite sans limites",
+        "title": "Demain votre enfant en confiance et en réussite.",
         "paragraphs": []
       }
     ],
@@ -166,123 +166,138 @@
   "orientationStrategie": {
     "title": "Orientation et stratégie",
     "breadcrumbLabel": "Orientation et stratégie",
-    "lead": "Construire un avenir sans frontières : Parcoursup, spécialités et réseaux. L'orientation n'est pas une destination, c'est une stratégie de haute précision.",
+    "lead": "Je bénéficie d'une expérience de professeure principale en collège et en lycée depuis plus de 20 ans. A ce titre, j'accompagne les jeunes dans la construction de leur orientation de manière progressive, structurée et profondément personnalisée et j'accorde une importance particulière à la construction d'un projet en lien avec les transitions actuelles du monde professionnel.",
     "sections": [
       {
-        "title": "Une approche GENUP",
+        "title": "Mon objectif",
         "paragraphs": [
-          "Dans un monde éducatif en mutation, choisir ses spécialités dès la troisième ou remplir son dossier Parcoursup ne doit plus être une source d'angoisse, mais une opportunité de déploiement. Chez GENUP, nous fusionnons l'intelligence artificielle de pointe avec une connaissance intime des filières d'excellence."
-        ]
-      },
-      {
-        "title": "L'IA SpotBulle : votre radar d'orientation sur-mesure",
-        "paragraphs": [
-          "Pour offrir un accompagnement au plus près du profil de chaque jeune, j'ai conçu un agent d'intelligence artificielle exclusif."
+          "Contrairement à une orientation classique souvent rapide et standardisée, mon approche prend le temps de comprendre chaque élève dans sa singularité."
         ],
         "bullets": [
-          "Recherche intelligente : exploration en temps réel des bases de données des écoles et universités en France et à l'étranger.",
-          "Matching de profil : l'IA croise les résultats des tests élémentaires (forces innées) avec les exigences des filières les plus ambitieuses.",
-          "Veille permanente : identification des passerelles et parcours émergents."
+          "Les aider à mieux se connaître.",
+          "Identifier leurs forces.",
+          "Construire un projet qui a du sens et porteur d'avenir en termes de filières."
         ]
       },
       {
-        "title": "Expertise France et international (AEFE)",
+        "title": "Ce que je travaille avec eux",
+        "bullets": [
+          "Leurs centres d'intérêt.",
+          "Leur personnalité.",
+          "Leurs modes de fonctionnement.",
+          "Leurs aspirations profondes."
+        ]
+      },
+      {
+        "title": "Avant / Après",
         "paragraphs": [
-          "Forte de mon expérience au sein du réseau AEFE, je maîtrise les rouages complexes de l'orientation pour les profils internationaux, binationaux ou expatriés :"
+          "L'orientation devient alors un choix éclairé, et non une décision subie."
         ],
         "bullets": [
-          "Parcoursup de A à Z : projets de formation motivés, structuration du CV, mise en valeur des expériences extra-scolaires.",
-          "Passerelles privilégiées : identification de passerelles concrètes avec des écoles en France.",
-          "Ouverture monde : admissions à l'étranger (Europe, Amérique du Nord) et équivalences."
+          "Avant : hésitations, manque de motivation, peur de se tromper.",
+          "Après : un projet clair, une direction, une confiance en eux et une aide dans le choix des spécialités et filières en lien avec les métiers porteurs de sens et d'opportunités de travail."
         ]
       },
       {
-        "title": "Le parcours Avenir : dès la troisième",
-        "paragraphs": [
-          "Anticiper, c'est réussir. J'accompagne les élèves dès le collège pour :"
-        ],
+        "title": "Les étapes de l'accompagnement",
         "bullets": [
-          "Le choix des spécialités : aligner les matières avec le projet professionnel futur.",
-          "La cohérence du dossier : construire un profil académique solide et attractif pour les jurys.",
-          "La connaissance des métiers : découvrir les professions de demain en lien avec sa nature."
+          "1. Comprendre le profil et le fonctionnement de l'élève.",
+          "2. Identifier ses forces et ses centres d'intérêt.",
+          "3. Explorer les pistes d'orientation possibles.",
+          "4. Construire un projet cohérent et motivant en lien avec les métiers de demain."
         ]
       },
       {
-        "title": "Portfolio vidéo de motivation",
+        "title": "Portfolio vidéo ou eportfolio",
         "paragraphs": [
-          "Pour certaines écoles de commerce, d'art ou de design, la captation vidéo est un atout majeur. Nous préparons ensemble votre vidéo de présentation (pitch) : enregistrement, éloquence et impact visuel pour marquer les recruteurs."
+          "Pour certaines Ecoles de commerce, d’art ou de design, le portfolio numérique ou le portfolio vidéo est un atout majeur. Nous préparons ensemble ces supports pour optimiser vos chances de réussite."
         ]
-      },
-      {
-        "quote": "L'orientation réussie, c'est la rencontre entre une identité révélée et une filière stratégiquement choisie."
-      },
-      {
-        "title": "Sécurisez votre trajectoire dès aujourd'hui",
-        "paragraphs": []
       }
     ],
     "cta": {
-      "label": "Réserver mon entretien stratégique (1h30)",
-      "hint": "Un bilan complet pour activer votre IA personnalisée et dessiner votre futur parcours."
+      "label": "Aider mon enfant à trouver sa voie",
+      "hint": "Un premier échange pour construire une orientation claire, progressive et adaptée à son profil."
     }
   },
   "sejoursImmersion": {
-    "title": "Séjours en immersion",
+    "title": "SÉJOURS & IMMERSION – ENTREPRENDRE POUR APPRENDRE",
     "breadcrumbLabel": "Séjours immersion",
-    "lead": "« Entreprendre pour apprendre » — le pouvoir du faire : learning by doing et aventure collective.",
+    "lead": "On ne se découvre pas en restant assis à une table. On se révèle en agissant, en étant en groupe, en étant épaulé dans des lieux inspirants. J'accompagne les jeunes à travers des séjours d'immersion conçus comme de véritables expériences d'apprentissage par l'action.",
     "sections": [
       {
-        "title": "Pourquoi ces séjours ?",
+        "title": "Une immersion qui met en mouvement",
         "paragraphs": [
-          "Parce que le talent ne s'apprend pas dans les livres, il se vit sur le terrain.",
-          "En France ou à l'étranger, GENUP propose des séjours d'immersion uniques pour transformer des idées en projets concrets. En partenariat avec des experts du réseau mondial « Entreprendre pour Apprendre », nous appliquons une pédagogie active où chaque jeune devient l'acteur de sa propre réussite."
+          "Ici, on ne se contente pas d'observer : on expérimente, on crée, on s'exprime.",
+          "Parce que c'est en faisant que les jeunes prennent confiance et commencent à se projeter."
         ]
       },
       {
-        "title": "🚀 Le concept : la mini-entreprise",
+        "title": "Le concept : Entreprendre pour apprendre",
         "paragraphs": [
-          "Pendant ces séjours, nous ne simulons pas, nous créons. Les jeunes sont plongés dans l'aventure d'une mini-entreprise :"
+          "« Entreprendre pour apprendre », c'est permettre aux jeunes de devenir acteurs de leur parcours.",
+          "Ils ne sont plus spectateurs : ils deviennent créateurs."
         ],
         "bullets": [
-          "Preuve du concept (POC) : passer de l'idée abstraite au prototype réel, valider ses intuitions par l'expérimentation.",
-          "Stratégie collective : collaborer, négocier et fédérer autour d'un objectif commun.",
-          "Responsabilisation : chaque participant occupe un rôle clé (Marketing, Finance, RH, Design) selon son profil élémentaire détecté par l'IA SpotBulle."
+          "Leur autonomie.",
+          "Leur capacité à prendre des initiatives.",
+          "Leur confiance en eux.",
+          "Leur sens des responsabilités."
         ]
       },
       {
-        "title": "🎓 Learning by doing",
+        "title": "Ce que votre enfant va vivre",
         "paragraphs": [
-          "Ici, l'erreur est un moteur et l'action est le meilleur professeur. Notre méthode permet de :"
+          "Chaque séjour est structuré autour d'une dynamique active :"
         ],
         "bullets": [
-          "Faire grandir sa personnalité : dépasser sa timidité, prendre la parole en public, oser l'initiative.",
-          "Maîtriser les soft skills : créativité, gestion du stress, leadership, résolution de problèmes complexes.",
-          "« Hacker » son orientation : tester un métier en vrai pour confirmer une vocation."
+          "Découverte d'un univers (sport, création, expression...).",
+          "Mise en action à travers des projets.",
+          "Travail en équipe.",
+          "Prise de parole."
         ]
       },
       {
-        "title": "🌍 Encadrement international",
+        "title": "Avant / Après",
         "paragraphs": [
-          "Mentors et encadreurs reconnus à l'international — professionnels de l'entreprise et de l'éducation pour transmettre une expérience de terrain, inspirer par leur parcours, et défier les idées pour pousser vers l'excellence."
-        ]
-      },
-      {
-        "title": "🎥 Portfolio de l'aventure",
-        "paragraphs": [
-          "Chaque séjour est documenté. Les jeunes repartent avec :"
+          "L'objectif : passer de l'idée à l'expérience."
         ],
         "bullets": [
-          "Une captation de leur pitch final devant un jury d'experts.",
-          "Un portfolio numérique pour les dossiers de candidature (écoles de commerce, IUT, bachelor)."
+          "Avant : manque de motivation, difficulté à se projeter, peur de se tromper.",
+          "Après : un jeune plus engagé, plus autonome, capable d'exprimer ses idées, prêt à se projeter dans un projet."
         ]
       },
       {
-        "quote": "Entreprendre, c'est donner à ses idées le pouvoir de transformer sa personnalité."
+        "title": "L'expérience SpotBulle",
+        "paragraphs": [
+          "Chaque séjour se conclut par un temps fort de valorisation.",
+          "Les jeunes sont accompagnés pour présenter leur projet, raconter leur expérience et prendre la parole avec confiance, sous forme de pitch oral ou vidéo.",
+          "C'est là que l'expérience prend tout son sens."
+        ]
+      },
+      {
+        "title": "Mon rôle",
+        "paragraphs": [
+          "Je ne propose pas simplement un séjour. J'accompagne une transformation."
+        ],
+        "bullets": [
+          "En amont : préparation et objectifs.",
+          "Pendant : accompagnement et mise en action.",
+          "Après : mise en valeur et projection."
+        ]
+      },
+      {
+        "title": "Une expérience qui fait grandir",
+        "bullets": [
+          "Mieux se connaître.",
+          "Découvrir leurs capacités.",
+          "Oser sortir de leur zone de confort.",
+          "Et surtout : prendre confiance en leur potentiel."
+        ]
       }
     ],
     "cta": {
-      "label": "Découvrir les prochains séjours et destinations",
-      "hint": "Places limitées pour garantir un encadrement sur-mesure."
+      "label": "Découvrir les prochains séjours en France et au Maroc",
+      "hint": "Un premier échange pour identifier le séjour le plus adapté au profil de votre enfant."
     },
     "secondaryCta": {
       "label": "Nous contacter pour les dates",
