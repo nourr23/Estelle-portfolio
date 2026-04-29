@@ -17,6 +17,7 @@ export default async function OrientationStrategiePage({
       locale={resolvedLocale}
       content={content}
       bg2FullWidthRepeat
+      preBookingVideoSrc="/videos/section4.mp4"
     />
   );
 }

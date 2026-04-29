@@ -26,6 +26,7 @@ export default function SpotBulleMarketingPage({
   content,
   bg2FullWidthRepeat,
   hideBg4BookingSection = false,
+  preBookingVideoSrc,
 }: {
   dict: {
     nav: Record<string, string>;
@@ -40,6 +41,8 @@ export default function SpotBulleMarketingPage({
   bg2FullWidthRepeat?: boolean;
   /** Hide the BG4 calendar/booking block at the bottom. */
   hideBg4BookingSection?: boolean;
+  /** Optional full-width video section shown before BG4 booking section. */
+  preBookingVideoSrc?: string;
 }) {
   const prefix = `/${locale}`;
 
@@ -236,6 +239,23 @@ export default function SpotBulleMarketingPage({
             />
             <main className="relative z-10 w-full">{bg2MainInner}</main>
           </div>
+          {preBookingVideoSrc ? (
+            <div className="pointer-events-auto relative h-[680px] w-full overflow-hidden bg-[#062a2c]">
+              <div className="flex h-full w-full items-center justify-center">
+                <video
+                  className="h-full w-full object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                >
+                  <source src={preBookingVideoSrc} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          ) : null}
           {hideBg4BookingSection ? null : (
             <LandingBg4RdvSection dict={dict.landingRdvForm} locale={locale} />
           )}
