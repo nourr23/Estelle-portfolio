@@ -306,7 +306,7 @@ export default function LandingBg4RdvBand({
           className="w-full max-w-[min(100%,260px)] shrink-0 space-y-3 rounded-xl border border-white/10 bg-[#0d3538]/45 px-3 py-4 shadow-[0_20px_50px_rgba(0,0,0,0.25)] backdrop-blur-sm sm:max-w-[300px] sm:space-y-4 sm:rounded-[20px] sm:px-4 sm:py-5 md:max-w-[350px] md:px-7 md:py-8"
         >
           <div>
-            <h2 className="text-[18px] font-bold leading-tight text-[#022636] sm:text-[22px] md:text-[26px]">
+            <h2 className="text-[18px] font-bold leading-tight text-[#d5b162] sm:text-[22px] md:text-[26px]">
               {dict.title}
             </h2>
             <p className="mt-1 text-[13px] font-semibold leading-snug text-[#0f6f70] sm:text-[15px]">
