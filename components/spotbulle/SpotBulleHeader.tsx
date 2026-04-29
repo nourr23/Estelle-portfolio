@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import LanguageSwitch from "./LanguageSwitch";
-import { SpotBulleDiagnosticModalTrigger } from "./SpotBulleDiagnosticModal";
 import type { BookingModalDict } from "./SpotBulleBookingModal";
 
 /** Same surface as home: brand teal + `haloheader.png`. */
@@ -52,7 +51,6 @@ export default function SpotBulleHeader({
   const prefix = `/${locale}`;
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const landingPromo = dict.landingHeader;
-  const bookingDict = dict.booking ?? {};
 
   const navLinks = [
     { href: prefix, label: dict.nav.home },
@@ -117,13 +115,12 @@ export default function SpotBulleHeader({
           </div>
         </div>
 
-        <SpotBulleDiagnosticModalTrigger
-          locale={locale}
-          bookingDict={bookingDict}
+        <Link
+          href={`${prefix}/offres`}
           className="shrink-0 rounded-full bg-[#d5b162] px-4 py-2.5 text-xs font-bold text-white shadow-sm transition hover:bg-[#e1c47e] md:px-5 md:text-sm"
         >
-          {landingPromo.ctaRdv}
-        </SpotBulleDiagnosticModalTrigger>
+          {locale === "fr" ? "Tarifs et Formules" : "Pricing & Plans"}
+        </Link>
       </div>
 
       {isMobileMenuOpen ? (
