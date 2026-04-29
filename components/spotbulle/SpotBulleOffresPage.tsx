@@ -2,6 +2,75 @@ import Link from "next/link";
 import SpotBulleFooter from "./SpotBulleFooter";
 import SpotBulleHeader from "./SpotBulleHeader";
 
+function ServiceIcon({ index }: { index: number }) {
+  const cls = "h-6 w-6 text-[#0f6c72]";
+
+  switch (index) {
+    case 0:
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={cls}>
+          <circle cx="12" cy="8" r="4" />
+          <path d="M4 20c1.8-3.8 5-5.6 8-5.6S18.2 16.2 20 20" />
+        </svg>
+      );
+    case 1:
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={cls}>
+          <path d="M12 21s6-6 6-10a6 6 0 1 0-12 0c0 4 6 10 6 10Z" />
+          <circle cx="12" cy="11" r="2.2" />
+        </svg>
+      );
+    case 2:
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={cls}>
+          <circle cx="7.5" cy="10" r="2.5" />
+          <circle cx="16.5" cy="10" r="2.5" />
+          <path d="M3.5 18c1-2.6 2.8-4 4-4s3 .9 4 3.2M12.5 17.2c1.1-2.3 2.7-3.2 4-3.2s3 1.4 4 4" />
+        </svg>
+      );
+    case 3:
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={cls}>
+          <path d="m3 10 9-4 9 4-9 4-9-4Z" />
+          <path d="M6 12v4c2.5 2 9.5 2 12 0v-4" />
+          <path d="M21 11v5" />
+        </svg>
+      );
+    case 4:
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={cls}>
+          <circle cx="12" cy="12" r="8" />
+          <path d="M12 7v5l3 2" />
+          <path d="M9 4.8 6.8 7M15 4.8 17.2 7" />
+        </svg>
+      );
+    case 5:
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={cls}>
+          <path d="M12 12.8s-3.2-2-3.2-4.6a1.9 1.9 0 0 1 3.2-1.2 1.9 1.9 0 0 1 3.2 1.2c0 2.6-3.2 4.6-3.2 4.6Z" />
+          <path d="M3.8 16.6c1.1-1 2.2-1.6 3.1-1.6.9 0 1.6.5 2.7 1.6l1.1 1.1c.8.8 2 .8 2.8 0l1.1-1.1c1.1-1.1 1.8-1.6 2.7-1.6.9 0 2 .6 3.1 1.6" />
+          <path d="M4.8 19.1c1 .9 1.9 1.3 2.7 1.3 1.1 0 1.9-.6 2.8-1.5M19.2 19.1c-1 .9-1.9 1.3-2.7 1.3-1.1 0-1.9-.6-2.8-1.5" />
+        </svg>
+      );
+    case 6:
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" className={cls}>
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M3 14.5 10.8 13l4.8 5.3 1.8-.3-2.7-6.2 4.2-.8a2 2 0 0 0 1.6-2.4 2 2 0 0 0-2.3-1.5l-4.2.8-4.7-4.8-1.8.3 2.7 5.7L2.6 11a1.6 1.6 0 0 0-1.2 1.9c.2 1 .9 1.7 1.6 1.6Z"
+          />
+        </svg>
+      );
+    default:
+      return (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={cls}>
+          <path d="m3 13 8-3 3-6 7 2-2 7-6 3-3 5-2-6-5-2Z" />
+        </svg>
+      );
+  }
+}
+
 export default function SpotBulleOffresPage({
   dict,
   locale,
@@ -164,6 +233,11 @@ export default function SpotBulleOffresPage({
                       index < 4 ? "lg:w-[24%]" : "lg:w-[32%]"
                     }`}
                   >
+                    <div className="mb-3 flex w-full justify-center">
+                      <div className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-[#cbe8e2]/70 bg-[#e8f6f3]">
+                        <ServiceIcon index={index} />
+                      </div>
+                    </div>
                     <h2 className="text-[22px] font-bold leading-tight text-[#B6F0EA]">{card.title}</h2>
                     <p className="mt-3 text-sm leading-relaxed text-white/88">{card.text}</p>
                     {card.bullets?.length ? (
