@@ -95,6 +95,11 @@ export default function LandingEstelleBg2Band({
             <p className="pt-1 text-[18px] font-bold leading-snug text-[#022636] md:text-[24px]">
               {dict.tagline}
             </p>
+            <p className="text-[12px] font-semibold leading-relaxed text-[#022636] md:text-[16px]">
+              {locale === "fr"
+                ? "Coach et professeure de français spécialisée pour les élèves du réseau AEFE / OSUI au Maroc."
+                : "French teacher and coach specialized for students in the AEFE / OSUI network in Morocco."}
+            </p>
             <p className="text-[12px] leading-relaxed text-[#022636] md:text-[16px]">
               {dict.body}
             </p>

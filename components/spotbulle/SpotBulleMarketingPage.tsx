@@ -10,6 +10,8 @@ export type MarketingSection = {
   paragraphs?: string[];
   bullets?: string[];
   quote?: string;
+  imageSrc?: string;
+  imageAlt?: string;
 };
 
 export type MarketingPageContent = {
@@ -182,6 +184,14 @@ export default function SpotBulleMarketingPage({
               key={`${section.title ?? "section"}-${idx}`}
               className="rounded-2xl border border-white/12 bg-[#0a3d40]/55 px-4 py-4 text-white/95 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] md:px-6 md:py-5"
             >
+              {section.imageSrc ? (
+                <img
+                  src={section.imageSrc}
+                  alt={section.imageAlt ?? ""}
+                  className="mb-4 w-full rounded-xl border border-white/10 object-contain"
+                  loading="lazy"
+                />
+              ) : null}
               {section.title ? (
                 <h2 className="text-[17px] font-bold leading-tight text-[#B6F0EA] md:text-[22px]">
                   {section.title}
