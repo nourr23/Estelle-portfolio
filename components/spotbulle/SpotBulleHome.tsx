@@ -51,7 +51,7 @@ export default function SpotBulleHome({
     <div className="bg-[#062a2c] font-sans text-[#f7f1e3]">
       <SpotBulleHeader dict={dict} locale={locale} />
       <section className="relative isolate">
-        <div className="pointer-events-auto relative h-[660px] w-full overflow-hidden">
+        <div className="pointer-events-auto relative h-[1100px] w-full overflow-hidden">
           <div
             className="pointer-events-none absolute inset-0 bg-no-repeat"
             style={{
@@ -88,44 +88,20 @@ export default function SpotBulleHome({
             className="pointer-events-none absolute bottom-[60px] left-[-50px] z-2 h-auto w-[224px] select-none object-contain object-left"
             aria-hidden
           />
-          <div className="flex w-full justify-start px-0 pt-10 sm:px-4 sm:pt-14 md:px-[140px] md:pt-[76px]">
-            <LandingGenerationHero
-              dict={dict.landingHero}
-              locale={locale}
-              bookingDict={dict.booking ?? {}}
-            />
-          </div>
-          {/* <div className="pointer-events-none absolute inset-x-0 bottom-7 hidden justify-end pr-8 sm:pr-12 md:flex md:pr-20 lg:pr-28"> */}
-            <div className="absolute right-0 bottom-3 rounded-tl-3xl rounded-bl-3xl bg-[#0a3d40]/65 pl-5 pr-14 py-3 text-white/90 backdrop-blur-[1px]">
-              <span className="block text-[18px] font-bold leading-tight md:text-[24px]">
-                {dict.landingBg1Badge.line1}
-              </span>
-              <span className="mt-1 block text-[18px] font-normal leading-tight md:text-[24px]">
-                {dict.landingBg1Badge.line2}
-                <br />
-                {dict.landingBg1Badge.line3}
-              </span>
+          <div className="relative h-full w-full">
+            <div className="mx-auto h-full min-h-0 max-w-[1232px] overflow-x-hidden overflow-y-auto px-2 sm:px-4 md:px-6">
+              <LandingEstelleBg2Band dict={dict.landingEstelle} locale={locale} />
             </div>
-          {/* </div> */}
+          </div>
         </div>
 
-        <div className="pointer-events-auto relative h-[1024px] w-full overflow-hidden">
+        <div className="pointer-events-auto relative h-[664px] w-full overflow-hidden">
           <div
             className="pointer-events-none absolute inset-0 bg-no-repeat"
             style={{
               backgroundImage: "url('/images/backgrounds/bg2.png')",
               backgroundSize: "cover",
               backgroundPosition: "center",
-            }}
-            aria-hidden
-          />
-          <div
-            className="pointer-events-none absolute bottom-0 left-0 right-0 bg-no-repeat"
-            style={{
-              backgroundImage: "url('/images/backgrounds/bg2.5.png')",
-              backgroundSize: "cover",
-              backgroundPosition: "center bottom",
-              height: 394,
             }}
             aria-hidden
           />
@@ -139,10 +115,22 @@ export default function SpotBulleHome({
             }}
             aria-hidden
           />
-          <div className="relative h-full w-full">
-            <div className="mx-auto h-full min-h-0 max-w-[1232px] overflow-x-hidden overflow-y-auto px-2 sm:px-4 md:px-6">
-              <LandingEstelleBg2Band dict={dict.landingEstelle} locale={locale} />
-            </div>
+          <div className="flex w-full justify-start px-0 pt-10 sm:px-4 sm:pt-14 md:px-[140px] md:pt-[76px]">
+            <LandingGenerationHero
+              dict={dict.landingHero}
+              locale={locale}
+              bookingDict={dict.booking ?? {}}
+            />
+          </div>
+          <div className="absolute right-0 bottom-3 rounded-tl-3xl rounded-bl-3xl bg-[#0a3d40]/65 pl-5 pr-14 py-3 text-white/90 backdrop-blur-[1px]">
+            <span className="block text-[18px] font-bold leading-tight md:text-[24px]">
+              {dict.landingBg1Badge.line1}
+            </span>
+            <span className="mt-1 block text-[18px] font-normal leading-tight md:text-[24px]">
+              {dict.landingBg1Badge.line2}
+              <br />
+              {dict.landingBg1Badge.line3}
+            </span>
           </div>
         </div>
 

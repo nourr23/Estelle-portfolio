@@ -19,6 +19,11 @@ export default async function AProposPage({
     lead: about?.intro ?? "",
     sections: [
       {
+        title: resolvedLocale === "fr" ? "Diplôme" : "Diploma",
+        imageSrc: "/images/diplome.jpeg",
+        imageAlt: resolvedLocale === "fr" ? "Diplôme d'Estelle" : "Estelle diploma",
+      },
+      {
         title: about?.estelleHeading,
         paragraphs: [about?.role, about?.tone].filter(Boolean),
       },
