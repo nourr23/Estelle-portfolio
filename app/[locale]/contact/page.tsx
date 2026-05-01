@@ -21,6 +21,7 @@ export default async function ContactPageRoute({
         bullets: [
           dict.footer?.line,
           dict.footer?.phone,
+          "Téléphone Maroc : 07 82 09 75 93",
           dict.footer?.location,
           "spotbulle.com",
         ].filter(Boolean),

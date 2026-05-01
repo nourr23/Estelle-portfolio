@@ -25,7 +25,7 @@
     "subtitle": "Un mini test à faire ensemble pour découvrir ce qui le rend unique",
     "bodyBefore": "Découvre tes ",
     "bodyEmphasis": "forces élémentaires",
-    "bodyAfter": " avec notre nouvel agent « SpotBulle » et active ton potentiel unique en 2026.",
+    "bodyAfter": " avec notre nouvel agent « SpotBulle » et active ton potentiel en 2026.",
     "cta": "Lancer l’exploration Spotbulle",
     "brandLabel": "SpotBulle"
   },
@@ -323,7 +323,7 @@
   },
   "jeunesPage": {
     "kicker": "JEUNES",
-    "title": "Prendre confiance. Réussir. Te démarquer.",
+    "title": "Jeunes",
     "intro": "Tu veux progresser à l’oral, réussir tes examens, construire ton orientation, ou vivre une expérience qui te fait grandir ?",
     "tagline": "Pourquoi attendre ? Entreprendre, c’est apprendre.",
     "ctaExperiences": "Voir les expériences",
@@ -430,8 +430,8 @@
     "role": "Professeure certifiée & coach pédagogique",
     "tone": "Académique & rassurante",
     "portrait": "Portrait d’Estelle Drion",
-    "immediate": "Ce que les parents doivent comprendre immédiatement",
-    "pillars": "Expérience • méthode • accompagnement sur-mesure • réservation simple",
+    "immediate": "",
+    "pillars": "",
     "audiencesTitle": "Publics accompagnés",
     "audiences": [
       "école primaire si besoin",
