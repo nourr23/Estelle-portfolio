@@ -59,7 +59,7 @@ export default function LandingEstelleBg2Band({
       ref={rootRef}
       className="flex h-full min-h-0 flex-col gap-5 px-3 py-4 sm:px-5 sm:py-5 md:px-10 md:py-6 lg:px-14"
     >
-      <div className="flex min-h-0 flex-col gap-4 md:flex-row md:items-stretch md:gap-8">
+      <div className="flex min-h-0 flex-col gap-4 md:flex-row md:items-start md:gap-8">
         <div
           className={`estelle-photo-in flex w-[200px] shrink-0 flex-col overflow-hidden rounded-2xl bg-white shadow-md md:w-[250px] ${
             isPhotoVisible ? "estelle-photo-in-visible" : ""
@@ -95,14 +95,14 @@ export default function LandingEstelleBg2Band({
             <p className="pt-1 text-[18px] font-bold leading-snug text-[#022636] md:text-[24px]">
               {dict.tagline}
             </p>
-            <p className="text-[12px] font-semibold leading-relaxed text-[#022636] md:text-[16px]">
+            <p className="text-[12px] font-semibold leading-relaxed text-[#d5b162] md:text-[16px]">
               {locale === "fr"
                 ? "Coach et professeure de français spécialisée pour les élèves du réseau AEFE / OSUI au Maroc."
                 : "French teacher and coach specialized for students in the AEFE / OSUI network in Morocco."}
             </p>
-            <p className="text-[12px] leading-relaxed text-[#022636] md:text-[16px]">
-              {dict.body}
-            </p>
+            {dict.body?.trim() ? (
+              <p className="text-[12px] leading-relaxed text-[#022636] md:text-[16px]">{dict.body}</p>
+            ) : null}
           </div>
 
           <div className="flex justify-end pt-2 md:pt-0">
