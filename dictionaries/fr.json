@@ -9,7 +9,7 @@
     "contact": "Contact",
     "book": "Réserver un appel",
     "quiSuisJe": "Qui suis-je ?",
-    "excellenceExamens": "Excellence examens",
+    "excellenceExamens": "Préparation Examen",
     "besoinsParticuliers": "Besoins particuliers",
     "orientationStrategie": "Orientation & stratégie",
     "sejoursImmersion": "Séjours immersion",
@@ -21,12 +21,12 @@
     "ctaRdv": "Réserver un RDV"
   },
   "landingHero": {
-    "title": "Ton diagnostic en 30 secondes",
-    "subtitle": "Ton chemin vers le succès commence aujourd'hui",
+    "title": "Révéler le potentiel de votre enfant en quelques minutes",
+    "subtitle": "Un mini test à faire ensemble pour découvrir ce qui le rend unique",
     "bodyBefore": "Découvre tes ",
     "bodyEmphasis": "forces élémentaires",
     "bodyAfter": " avec notre nouvel agent « SpotBulle » et active ton potentiel unique en 2026.",
-    "cta": "Lancer mon exploration SpotBulle",
+    "cta": "Lancer l’exploration Spotbulle",
     "brandLabel": "SpotBulle"
   },
   "landingEstelle": {
@@ -42,7 +42,7 @@
     "cards": [
       {
         "iconSrc": "/icons/Examens.png",
-        "title": "Excellence aux examens & orientation",
+        "title": "Préparation aux examens & orientation",
         "subtitle": "Niveau 3ème à Lycée",
         "body": [
           "• Préparation intensive au Brevet des Collèges (DNB) et Baccalauréat de français (Oral et Écrit).",
@@ -81,7 +81,7 @@
   "landingRdvForm": {
     "title": "Prendre un RDV",
     "subtitle": "en visio avec Estelle !",
-    "intro": "Un premier contact en visio sans engagement.",
+    "intro": "Au préalable quelques renseignements sur votre enfant.",
     "birthDate": "Date de naissance (facultatif)",
     "email": "Email",
     "passion": "Passion, sport ou talent",

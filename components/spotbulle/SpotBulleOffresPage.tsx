@@ -121,6 +121,7 @@ export default function SpotBulleOffresPage({
             price: "400 DH",
             unit: "/ séance",
             bullets: ["Méthodologie", "Analyse de textes", "Préparation à l'oral"],
+            note: "Maximum 5 élèves",
           },
           {
             title: "Orientation & Stratégie (Forfait Premium)",
