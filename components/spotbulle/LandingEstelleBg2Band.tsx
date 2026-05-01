@@ -74,14 +74,6 @@ export default function LandingEstelleBg2Band({
               sizes="(max-width: 768px) 100vw, 320px"
             />
           </div>
-          <div className="border-t border-[#0a3d40]/10 px-4 py-3 md:px-5 md:py-4">
-            <p className="text-[18px] font-bold leading-snug text-[#022636] md:text-[24px]">
-              {dict.experienceTitle}
-            </p>
-            <p className="mt-1 text-[14px] leading-snug text-[#022636] md:text-[16px]">
-              {dict.experienceSub}
-            </p>
-          </div>
         </div>
 
         <div className="flex min-h-0 min-w-0 w-full max-w-[min(420px,100%)] flex-1 flex-col justify-between gap-3 md:py-1">
@@ -92,13 +84,13 @@ export default function LandingEstelleBg2Band({
             <p className="font-black leading-[0.92] tracking-tight text-white max-md:text-[44px] max-md:leading-none md:text-[72px] lg:text-[96px]">
               {dict.lastName}
             </p>
-            <p className="pt-1 text-[18px] font-bold leading-snug text-[#022636] md:text-[24px]">
-              {dict.tagline}
-            </p>
-            <p className="text-[12px] font-semibold leading-relaxed text-[#d5b162] md:text-[16px]">
+            <p className="pt-2 text-[14px] font-semibold leading-snug text-[#d5b162] md:pt-2.5 md:text-[18px]">
               {locale === "fr"
                 ? "Coach et professeure de français spécialisée pour les élèves du réseau AEFE / OSUI au Maroc."
                 : "French teacher and coach specialized for students in the AEFE / OSUI network in Morocco."}
+            </p>
+            <p className="pt-1 text-[18px] font-bold leading-snug text-[#022636] md:text-[24px]">
+              {dict.tagline}
             </p>
             {dict.body?.trim() ? (
               <p className="text-[12px] leading-relaxed text-[#022636] md:text-[16px]">{dict.body}</p>
