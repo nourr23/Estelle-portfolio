@@ -8,10 +8,10 @@
     "about": "À propos",
     "contact": "Contact",
     "book": "Réserver un appel",
-    "quiSuisJe": "Qui suis-je ?",
+    "quiSuisJe": "BIO QUI JE SUIS?",
     "excellenceExamens": "Préparation Examen",
     "besoinsParticuliers": "Besoins particuliers",
-    "orientationStrategie": "Orientation & stratégie",
+    "orientationStrategie": "Méthode et pédagogie",
     "sejoursImmersion": "Séjours immersion",
     "spotbulleScript": "Script SpotBulle"
   },
@@ -38,7 +38,7 @@
     "sideBadge": "Un premier échange sans engagement, puis un accompagnement sur mesure.",
     "tagline": "Une approche bienveillante et structurée pour aider votre enfant à dépasser ses blocages, reprendre confiance et réussir.",
     "body": "",
-    "cta": "Aider mon enfant",
+    "cta": "Découvrir mon parcours",
     "cards": [
       {
         "iconSrc": "/icons/Examens.png",

@@ -54,10 +54,10 @@ export default function SpotBulleHeader({
 
   const navLinks = [
     { href: prefix, label: dict.nav.home },
+    { href: `${prefix}/orientation-strategie`, label: dict.nav.orientationStrategie },
     { href: `${prefix}/qui-suis-je`, label: dict.nav.quiSuisJe },
     { href: `${prefix}/excellence-examens`, label: dict.nav.excellenceExamens },
     { href: `${prefix}/besoins-particuliers`, label: dict.nav.besoinsParticuliers },
-    { href: `${prefix}/orientation-strategie`, label: dict.nav.orientationStrategie },
     { href: `${prefix}/sejours-immersion`, label: dict.nav.sejoursImmersion },
   ];
 
