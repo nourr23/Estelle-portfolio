@@ -67,7 +67,7 @@ export default function LandingEstelleBg2Band({
         >
           <div className="relative aspect-4/5 w-full min-h-[200px] sm:min-h-[240px] md:aspect-3/4 md:min-h-0">
             <Image
-              src="/images/estelleImage.jpeg"
+              src="/images/newEstellePhoto.jpeg"
               alt={dict.photoAlt}
               fill
               className="object-cover object-top"
@@ -138,7 +138,7 @@ export default function LandingEstelleBg2Band({
             <p className="mt-1 text-center text-[12px] font-semibold text-white md:text-[14px]">
               {card.subtitle}
             </p>
-            <div className="mt-8 space-y-1.5 text-[13px] leading-relaxed text-white md:text-[15px]">
+            <div className="mt-8 space-y-1.5 text-[13px] leading-relaxed text-[#022636] md:text-[15px]">
               {card.body.map((line, i) => (
                 <p key={`${card.title}-${i}`}>{line}</p>
               ))}
