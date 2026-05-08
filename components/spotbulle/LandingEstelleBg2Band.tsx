@@ -67,7 +67,7 @@ export default function LandingEstelleBg2Band({
         >
           <div className="relative aspect-4/5 w-full min-h-[200px] sm:min-h-[240px] md:aspect-3/4 md:min-h-0">
             <Image
-              src="/images/newEstellePhoto.jpeg"
+              src="/images/estelleImage.jpeg"
               alt={dict.photoAlt}
               fill
               className="object-cover object-top"
