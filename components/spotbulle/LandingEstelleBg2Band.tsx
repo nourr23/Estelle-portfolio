@@ -60,21 +60,16 @@ export default function LandingEstelleBg2Band({
       className="flex h-full min-h-0 flex-col gap-5 px-3 py-4 sm:px-5 sm:py-5 md:px-10 md:py-6 lg:px-14"
     >
       <div className="flex min-h-0 flex-col gap-4 md:flex-row md:items-start md:gap-8">
-        <div
-          className={`estelle-photo-in flex w-[200px] shrink-0 flex-col overflow-hidden rounded-2xl bg-white shadow-md md:w-[250px] ${
+        <Image
+          src="/images/estelleImage.jpeg"
+          alt={dict.photoAlt}
+          width={1121}
+          height={1600}
+          sizes="(max-width: 768px) 200px, 250px"
+          className={`estelle-photo-in h-auto w-[200px] max-w-full shrink-0 rounded-2xl bg-white shadow-md md:w-[250px] ${
             isPhotoVisible ? "estelle-photo-in-visible" : ""
           }`}
-        >
-          <div className="relative aspect-4/5 w-full min-h-[200px] sm:min-h-[240px] md:aspect-3/4 md:min-h-0">
-            <Image
-              src="/images/estelleImage.jpeg"
-              alt={dict.photoAlt}
-              fill
-              className="object-cover object-top"
-              sizes="(max-width: 768px) 100vw, 320px"
-            />
-          </div>
-        </div>
+        />
 
         <div className="flex min-h-0 min-w-0 w-full max-w-[min(420px,100%)] flex-1 flex-col justify-between gap-3 md:py-1">
           <div className="min-w-0 space-y-2 md:space-y-3">
