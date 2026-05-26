@@ -92,10 +92,10 @@ export default function SpotBulleHeader({
             <IconHome className="h-5 w-5" />
           </Link>
 
-          <Link href={prefix} className="flex shrink-0 items-center" aria-label="GenUp">
+          <Link href={prefix} className="flex shrink-0 items-center" aria-label="GenUp 2050">
             <Image
               src="/brand/Logo_GenUp_LQ_contours_blanc.png"
-              alt="GenUp"
+              alt="GenUp 2050"
               width={160}
               height={48}
               priority
