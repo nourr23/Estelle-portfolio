@@ -23,7 +23,7 @@ export default async function ContactPageRoute({
           dict.footer?.phone,
           "Téléphone Maroc : 07 82 09 75 93",
           dict.footer?.location,
-          "spotbulle.com",
+          dict.footer?.site,
         ].filter(Boolean),
       },
     ],
