@@ -15,10 +15,10 @@ export default function SpotBulleFooter({
     <footer className="border-t border-white/20 bg-[#0E5F65] bg-[url('/images/backgrounds/halo-2.png')] bg-cover bg-center bg-no-repeat">
       <div className="mx-auto max-w-[1440px] px-4 py-5 sm:px-8">
         <div className="flex items-end gap-4 sm:gap-8">
-          <Link href={prefix} className="shrink-0" aria-label="GenUp">
+          <Link href={prefix} className="shrink-0" aria-label="GenUp 2050">
             <Image
               src="/brand/Logo_GenUp_LQ_contours_blanc.png"
-              alt="GenUp"
+              alt="GenUp 2050"
               width={160}
               height={52}
               className="h-[52px] w-auto sm:h-[60px]"

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "GenUp",
-  description: "Accompagnement éducatif personnalisé",
+  title: "GenUp 2050",
+  description: "Accompagnement éducatif personnalisé — GenUp 2050",
 };
 
 export async function generateStaticParams() {
